@@ -1,0 +1,601 @@
+Timestamp,Choose your gender,Age,Division,University,Living Situation,What is your course?,Your current year of Study,What is your CGPA?,Financial Stress Level,Marital status,Do you have Depression?,Do you have Anxiety?,Do you have Panic attack?,Family History of Mental Illness,Did you seek any specialist for a treatment?
+2023-05-08 22:26:16,Male,24.0,Sylhet,American International University-Bangladesh,With Family,Political Science,year 2,3.00 - 3.49,Low,No,Yes,No,No,Yes,No
+2024-11-08 01:16:02,Male,21.0,Dhaka,Shahjalal University of Science and Technology,With Roommates,Environmental Science,year 4,2.00 - 2.49,High,No,No,No,No,No,No
+2022-03-25 12:15:39,Male,26.0,Khulna,University of Asia Pacific,With Family,Agriculture,,2.00 - 2.49,High,,Yes,Yes,Yes,Yes,Yes
+2023-09-16 22:51:35,Male,22.0,Sylhet,Rajshahi University,Alone,International Relations,year 2,3.50 - 4.00,Low,Yes,Yes,Yes,Yes,Yes,No
+,Male,25.0,Chattogram,University of Dhaka,Alone,EEE,year 1,2.00 - 2.49,High,Yes,No,No,Yes,Yes,Yes
+2025-10-26 14:08:42,Male,26.0,Dhaka,Bangladesh University of Engineering and Technology,Alone,Economics,Year 1,3.00 - 3.49,Medium,Yes,No,No,Yes,Yes,Yes
+2024-12-23 02:58:11,Female,18.0,Chattogram,University of Dhaka,Alone,Media Studies,year 4,2.50 - 2.99,Medium,Yes,No,No,Yes,No,No
+2023-11-18 07:21:39,Male,21.0,Rajshahi,,Alone,Social Work,year 3,2.50 - 2.99,Medium,Yes,No,Yes,Yes,No,Yes
+2022-12-13 04:32:18,Female,18.0,Dhaka,Independent University Bangladesh,With Family,Agriculture,Year 4,3.50 - 4.00,Medium,No,Yes,No,No,Yes,Yes
+2025-06-07 09:47:46,Male,,Rangpur,Daffodil International University,With Family,Genetics,Year 4,3.00 - 3.49,High,No,No,No,No,Yes,No
+2023-01-19 05:11:47,Male,20.0,Mymensingh,Military Institute of Science and Technology,Alone,History,year 4,2.00 - 2.49,Medium,Yes,No,No,Yes,No,No
+2022-05-07 02:22:13,Male,22.0,Mymensingh,Leading University,Dormitory,Urban Planning,,0 - 1.99,Medium,Yes,Yes,No,,Yes,No
+2022-08-26 14:29:21,Male,24.0,Sylhet,American International University-Bangladesh,Alone,Sociology,Year 3,2.00 - 2.49,High,Yes,,Yes,No,No,No
+2025-08-27 01:38:51,Female,23.0,Rangpur,BRAC University,With Roommates,Textile Engineering,Year 2,3.00 - 3.49,Medium,Yes,No,No,Yes,Yes,Yes
+2024-11-12 01:39:41,Male,18.0,Barishal,Bangladesh University of Engineering and Technology,With Family,Public Health,Year 2,3.50 - 4.00,High,No,Yes,No,No,Yes,No
+2024-01-08 05:09:38,Female,25.0,Rajshahi,Ahsanullah University of Science and Technology,Alone,Physics,Year 2,0 - 1.99,Medium,,Yes,No,No,Yes,Yes
+2024-05-08 14:09:26,Male,25.0,Chattogram,Independent University Bangladesh,With Family,,Year 4,3.00 - 3.49,Low,No,Yes,Yes,Yes,Yes,No
+2024-05-31 15:29:14,Female,25.0,Rajshahi,Daffodil International University,Alone,Environmental Science,year 4,3.50 - 4.00,High,No,No,No,Yes,,Yes
+2025-05-24 20:24:55,Female,25.0,Barishal,United International University,With Family,Software Engineering,year 3,3.50 - 4.00,High,No,Yes,No,Yes,Yes,Yes
+2025-02-28 15:41:52,Female,24.0,Rangpur,Jahangirnagar University,Dormitory,Microbiology,year 1,0 - 1.99,High,Yes,No,Yes,Yes,No,No
+2022-10-19 23:00:54,Male,19.0,Rajshahi,Military Institute of Science and Technology,Dormitory,Statistics,year 4,2.00 - 2.49,Low,Yes,No,Yes,Yes,No,No
+2023-02-17 04:27:30,Female,21.0,Dhaka,North South University,With Roommates,Media Studies,year 4,3.00 - 3.49,Low,No,No,No,No,Yes,Yes
+2023-08-08 14:39:34,Male,21.0,Mymensingh,Shahjalal University of Science and Technology,With Family,,year 1,,High,Yes,Yes,No,No,No,Yes
+2022-09-01 09:51:25,Male,21.0,Chattogram,Ahsanullah University of Science and Technology,Dormitory,Agriculture,year 1,0 - 1.99,High,No,Yes,,No,No,Yes
+,Male,19.0,Sylhet,East West University,Dormitory,English,Year 1,2.00 - 2.49,Low,Yes,No,No,Yes,Yes,No
+,Male,20.0,Mymensingh,Ahsanullah University of Science and Technology,With Family,Telecommunication,year 2,0 - 1.99,High,No,No,Yes,No,,No
+2025-05-17 01:51:37,Female,19.0,Rangpur,Daffodil International University,With Family,History,year 2,2.00 - 2.49,High,No,No,Yes,No,Yes,Yes
+2024-09-13 22:32:42,Male,21.0,Khulna,Rajshahi University,With Family,History,,0 - 1.99,Low,Yes,No,Yes,No,No,
+2023-07-02 18:15:57,Female,19.0,Dhaka,BRAC University,With Family,,Year 4,2.00 - 2.49,Medium,Yes,No,Yes,Yes,No,Yes
+,Female,23.0,Rajshahi,University of Asia Pacific,With Family,Tourism,year 2,3.00 - 3.49,High,,No,Yes,No,No,Yes
+2025-09-08 21:23:09,Male,21.0,Rajshahi,Independent University Bangladesh,With Family,Genetics,year 4,2.50 - 2.99,Medium,No,No,No,No,Yes,No
+2025-07-17 11:50:13,Male,18.0,,,With Roommates,International Relations,year 4,3.50 - 4.00,High,No,No,Yes,No,Yes,No
+2022-03-20 09:42:29,Female,22.0,Dhaka,Jahangirnagar University,With Roommates,Finance,year 4,0 - 1.99,Low,No,No,No,No,Yes,No
+2022-02-08 16:57:00,Female,20.0,Khulna,United International University,With Roommates,Anthropology,year 3,3.00 - 3.49,,Yes,No,Yes,Yes,Yes,Yes
+2025-05-03 16:45:31,Male,22.0,Barishal,Military Institute of Science and Technology,Alone,,year 4,3.00 - 3.49,Medium,Yes,Yes,No,No,Yes,Yes
+2024-12-02 04:17:48,Male,20.0,Rangpur,Shahjalal University of Science and Technology,Alone,Media Studies,Year 4,2.50 - 2.99,Low,Yes,No,Yes,No,No,Yes
+2025-03-31 17:52:07,Female,19.0,Sylhet,Ahsanullah University of Science and Technology,Dormitory,Environmental Science,year 2,0 - 1.99,Low,Yes,Yes,Yes,No,No,Yes
+2024-09-15 13:53:49,Male,19.0,Rajshahi,Independent University Bangladesh,With Roommates,Accounting,Year 3,3.00 - 3.49,High,Yes,Yes,No,Yes,No,No
+2022-10-10 07:23:35,Male,21.0,Dhaka,Leading University,With Family,International Relations,year 1,2.00 - 2.49,High,Yes,Yes,No,Yes,Yes,Yes
+2023-06-25 12:27:40,Male,25.0,Chattogram,East West University,Dormitory,Mathematics,,2.50 - 2.99,Medium,Yes,No,Yes,,Yes,No
+2024-05-29 00:39:29,Female,21.0,,BRAC University,With Family,Textile Engineering,Year 4,3.50 - 4.00,High,Yes,Yes,No,No,Yes,Yes
+2022-04-23 02:37:55,Male,19.0,Dhaka,Islamic University of Technology,Dormitory,Accounting,year 2,3.50 - 4.00,Medium,No,No,Yes,Yes,Yes,No
+2025-03-23 17:56:34,Female,18.0,Rangpur,American International University-Bangladesh,Alone,,Year 3,0 - 1.99,High,Yes,Yes,Yes,Yes,Yes,Yes
+2025-05-30 05:04:21,Male,24.0,Rangpur,,With Roommates,CSE,year 3,3.50 - 4.00,Medium,Yes,No,No,Yes,Yes,Yes
+2025-02-16 13:08:48,Male,20.0,Dhaka,American International University-Bangladesh,With Roommates,Anthropology,Year 3,3.00 - 3.49,Low,Yes,No,Yes,No,Yes,No
+2023-12-17 06:31:45,Female,21.0,Rangpur,University of Asia Pacific,Alone,CSE,year 1,0 - 1.99,High,No,No,No,,Yes,No
+2023-08-20 03:12:43,Male,25.0,Khulna,Daffodil International University,With Family,Genetics,year 4,2.00 - 2.49,High,Yes,Yes,No,No,No,No
+2023-08-06 11:32:02,Female,19.0,,North South University,With Family,Sociology,Year 2,3.00 - 3.49,High,No,Yes,No,Yes,No,Yes
+2023-04-27 07:56:15,Female,20.0,Dhaka,American International University-Bangladesh,With Family,Accounting,year 4,2.50 - 2.99,Low,Yes,No,Yes,No,Yes,No
+2024-10-06 18:22:36,Female,22.0,,East West University,Dormitory,Architecture,Year 2,0 - 1.99,Low,Yes,Yes,Yes,No,No,
+2025-08-29 21:12:33,Male,,Rangpur,University of Asia Pacific,,English,Year 2,3.50 - 4.00,Medium,No,No,Yes,No,No,No
+2024-04-13 07:47:17,Male,24.0,Chattogram,Islamic University of Technology,With Roommates,Economics,Year 2,3.50 - 4.00,High,No,No,No,No,No,No
+2022-02-22 00:36:50,Female,18.0,Rangpur,Shahjalal University of Science and Technology,With Family,English,Year 2,2.50 - 2.99,,Yes,Yes,No,,Yes,No
+,Female,,Rajshahi,Southeast University,Alone,Physics,year 1,2.00 - 2.49,Medium,Yes,No,Yes,Yes,Yes,Yes
+2022-12-30 13:11:41,Female,23.0,Rajshahi,University of Chittagong,With Family,Islamic Studies,Year 4,0 - 1.99,Medium,Yes,No,Yes,Yes,No,No
+2024-02-08 16:46:10,Male,25.0,Rajshahi,Bangladesh University of Engineering and Technology,With Family,Microbiology,year 4,2.00 - 2.49,High,Yes,No,Yes,No,No,Yes
+2025-07-27 10:24:51,Female,25.0,Dhaka,Islamic University of Technology,With Family,Civil,year 4,3.50 - 4.00,Low,,No,,No,Yes,No
+2023-01-13 21:21:01,Male,22.0,Khulna,Islamic University of Technology,Dormitory,Accounting,year 1,3.50 - 4.00,Medium,No,Yes,Yes,Yes,,Yes
+2023-08-28 21:06:59,Female,23.0,,Ahsanullah University of Science and Technology,With Roommates,Microbiology,Year 4,3.00 - 3.49,High,Yes,Yes,Yes,Yes,Yes,
+2022-07-15 10:00:26,Female,26.0,Chattogram,University of Asia Pacific,With Roommates,Chemistry,year 2,3.00 - 3.49,,No,No,No,No,Yes,No
+2025-10-11 13:35:44,Female,19.0,Mymensingh,Bangladesh University of Engineering and Technology,Alone,Political Science,year 2,0 - 1.99,High,No,No,No,No,Yes,
+2025-10-18 13:56:06,Male,20.0,Rangpur,Islamic University of Technology,With Roommates,Tourism,year 3,,Low,No,Yes,Yes,No,No,No
+2025-03-23 20:33:29,Female,21.0,Mymensingh,BRAC University,With Roommates,Software Engineering,year 2,0 - 1.99,Low,No,No,No,Yes,Yes,No
+2025-05-01 03:42:15,Female,,Chattogram,Jahangirnagar University,Alone,Sociology,Year 3,3.50 - 4.00,High,No,No,No,,No,Yes
+2024-12-31 17:03:00,Male,18.0,Khulna,Islamic University of Technology,With Roommates,Finance,year 2,3.50 - 4.00,High,Yes,Yes,No,No,Yes,No
+2022-12-19 21:47:05,Female,18.0,Rajshahi,Daffodil International University,With Roommates,Business Administration,year 4,2.50 - 2.99,High,No,No,Yes,Yes,Yes,
+2022-08-20 14:20:24,Male,20.0,Mymensingh,Rajshahi University,Dormitory,Computer Engineering,Year 2,3.50 - 4.00,Low,No,No,No,No,No,No
+2025-05-14 21:34:46,,23.0,Barishal,Rajshahi University,Alone,Agriculture,Year 4,0 - 1.99,Low,Yes,No,Yes,No,No,Yes
+2022-08-11 00:50:52,Female,23.0,Barishal,Military Institute of Science and Technology,Dormitory,Education,year 3,2.50 - 2.99,Medium,,No,Yes,Yes,No,No
+2022-07-30 06:26:48,Male,24.0,Rajshahi,Ahsanullah University of Science and Technology,With Roommates,Software Engineering,Year 3,0 - 1.99,Medium,No,Yes,Yes,Yes,No,No
+2023-04-25 07:52:38,Female,24.0,Sylhet,University of Chittagong,With Family,,year 4,0 - 1.99,High,Yes,No,Yes,No,No,No
+2022-08-23 06:16:40,Male,26.0,Chattogram,Southeast University,With Family,Education,year 2,2.00 - 2.49,,Yes,Yes,Yes,Yes,Yes,No
+2025-03-23 00:03:35,Male,19.0,Rangpur,Independent University Bangladesh,,Computer Engineering,year 1,0 - 1.99,Low,No,No,No,Yes,No,No
+2024-05-05 02:41:11,Male,25.0,Mymensingh,Islamic University of Technology,With Roommates,Sociology,,,Low,No,No,No,Yes,Yes,No
+2022-11-26 17:11:06,,26.0,Barishal,American International University-Bangladesh,Dormitory,Agriculture,Year 3,3.50 - 4.00,High,No,Yes,Yes,No,Yes,
+2024-11-23 18:59:37,Female,22.0,Mymensingh,University of Chittagong,With Roommates,Business Administration,Year 1,3.00 - 3.49,High,Yes,No,Yes,Yes,Yes,Yes
+2023-06-10 21:08:44,Male,20.0,Mymensingh,,Alone,Urban Planning,year 3,2.50 - 2.99,Low,No,Yes,No,,Yes,No
+2022-12-16 02:21:26,Female,22.0,Rangpur,Southeast University,With Roommates,Business Administration,Year 2,3.00 - 3.49,High,Yes,Yes,,Yes,No,No
+,Female,22.0,Sylhet,East West University,Alone,Law,year 2,2.50 - 2.99,Low,No,No,Yes,No,Yes,No
+,Female,25.0,Chattogram,Rajshahi University,With Roommates,Economics,year 4,3.50 - 4.00,Low,No,No,Yes,Yes,No,Yes
+2024-03-12 23:25:00,Male,24.0,Barishal,Independent University Bangladesh,Dormitory,Environmental Science,year 1,3.50 - 4.00,High,Yes,No,Yes,Yes,Yes,No
+2024-09-21 01:43:06,Female,22.0,Dhaka,,With Roommates,Public Health,Year 3,2.00 - 2.49,Low,Yes,Yes,No,No,Yes,No
+2025-09-25 10:47:34,Male,18.0,Barishal,Independent University Bangladesh,Dormitory,Finance,year 1,3.00 - 3.49,Low,No,No,Yes,No,Yes,No
+2024-02-12 22:50:06,Male,20.0,Khulna,University of Dhaka,Alone,Media Studies,year 1,2.00 - 2.49,High,No,Yes,No,Yes,No,Yes
+2024-09-26 07:18:38,Male,26.0,Barishal,BRAC University,Dormitory,Finance,Year 3,2.00 - 2.49,Low,No,Yes,No,Yes,Yes,No
+2024-10-24 10:11:31,Male,25.0,Dhaka,Independent University Bangladesh,With Roommates,Political Science,Year 4,2.50 - 2.99,Low,No,,Yes,Yes,No,Yes
+2024-12-05 09:24:58,Female,25.0,Chattogram,Ahsanullah University of Science and Technology,With Family,Tourism,Year 1,0 - 1.99,Low,No,Yes,No,,Yes,No
+2022-04-24 11:39:35,Female,20.0,Barishal,North South University,With Family,Statistics,,2.00 - 2.49,High,Yes,Yes,No,No,No,No
+2022-05-22 17:20:31,Male,21.0,Chattogram,Southeast University,With Family,Statistics,year 2,3.00 - 3.49,Low,Yes,Yes,Yes,Yes,Yes,Yes
+2024-01-28 04:16:42,Female,24.0,Barishal,University of Asia Pacific,,Agriculture,Year 2,0 - 1.99,Low,No,No,No,No,Yes,No
+2024-07-30 14:07:42,Male,18.0,Sylhet,BRAC University,Alone,Mathematics,Year 2,2.00 - 2.49,Low,Yes,Yes,No,Yes,Yes,Yes
+2022-05-20 23:05:22,Female,25.0,Rangpur,Military Institute of Science and Technology,,Environmental Science,year 3,0 - 1.99,Medium,No,Yes,No,Yes,Yes,Yes
+2025-06-01 15:25:40,Male,19.0,Barishal,University of Chittagong,,Management,year 4,2.50 - 2.99,Low,,No,Yes,No,Yes,Yes
+2024-05-08 09:39:23,Male,25.0,Chattogram,American International University-Bangladesh,With Family,Physics,Year 4,2.50 - 2.99,High,Yes,No,Yes,,Yes,
+2022-10-09 18:22:11,Male,21.0,Rajshahi,Shahjalal University of Science and Technology,With Roommates,Marketing,year 4,2.00 - 2.49,Low,Yes,Yes,No,Yes,No,Yes
+2025-11-21 08:28:55,Female,24.0,Barishal,Jahangirnagar University,With Family,Computer Engineering,Year 4,3.50 - 4.00,,No,No,No,Yes,,Yes
+2023-09-17 16:50:21,Male,22.0,Rajshahi,Bangladesh University of Engineering and Technology,Alone,Information Systems,Year 1,2.00 - 2.49,Low,Yes,Yes,Yes,Yes,,No
+2025-03-04 10:07:37,Female,18.0,Sylhet,Southeast University,With Roommates,Islamic Studies,year 4,2.00 - 2.49,Low,No,No,Yes,No,,Yes
+2025-08-26 11:54:24,Female,25.0,Dhaka,,With Roommates,Pharmacy,Year 4,2.50 - 2.99,High,Yes,No,No,No,No,No
+2025-08-05 13:15:46,,20.0,Chattogram,Southeast University,Dormitory,Finance,Year 1,0 - 1.99,Medium,No,,Yes,No,Yes,Yes
+2024-11-29 20:09:44,Female,24.0,,University of Dhaka,Alone,Management,Year 3,3.00 - 3.49,Low,Yes,Yes,No,,No,Yes
+2023-03-17 16:44:23,Female,,Rangpur,United International University,With Family,Education,Year 3,0 - 1.99,Medium,No,Yes,No,Yes,No,Yes
+2022-12-15 04:24:14,Male,22.0,Chattogram,Bangladesh University of Engineering and Technology,With Family,CSE,Year 4,0 - 1.99,High,Yes,No,No,No,Yes,No
+,Female,22.0,Dhaka,Daffodil International University,With Roommates,Sociology,year 4,2.00 - 2.49,Medium,Yes,Yes,Yes,No,Yes,No
+2023-01-23 16:12:48,Female,26.0,Khulna,Islamic University of Technology,With Roommates,Public Health,,3.50 - 4.00,Low,No,Yes,Yes,No,Yes,No
+2025-06-08 14:07:59,Female,23.0,Dhaka,Bangladesh University of Engineering and Technology,Alone,Economics,year 2,2.50 - 2.99,Medium,No,Yes,Yes,No,Yes,Yes
+2025-10-08 02:49:41,Female,25.0,Chattogram,University of Asia Pacific,Alone,Physics,Year 2,3.00 - 3.49,,No,No,No,Yes,Yes,Yes
+2024-12-14 20:59:11,Male,20.0,Dhaka,East West University,Dormitory,Business Administration,year 2,3.50 - 4.00,High,No,Yes,Yes,No,No,Yes
+2023-04-03 02:41:05,Female,25.0,Dhaka,Islamic University of Technology,With Roommates,Physics,year 1,3.50 - 4.00,High,Yes,Yes,No,No,No,No
+2025-04-01 22:57:37,Female,22.0,Dhaka,University of Dhaka,With Family,Public Health,Year 4,2.00 - 2.49,High,No,Yes,No,,No,Yes
+2023-03-09 06:33:15,Male,26.0,Chattogram,Jahangirnagar University,With Roommates,Management,year 1,0 - 1.99,Low,,Yes,Yes,Yes,Yes,Yes
+,Male,26.0,Mymensingh,University of Dhaka,Alone,Tourism,year 2,2.50 - 2.99,High,No,Yes,No,Yes,Yes,Yes
+2025-10-09 00:21:31,Female,22.0,Chattogram,Shahjalal University of Science and Technology,With Family,Marketing,Year 2,2.50 - 2.99,Low,Yes,No,No,No,No,No
+2022-11-26 11:09:53,Male,25.0,Khulna,University of Dhaka,Dormitory,Finance,Year 4,,High,No,Yes,Yes,Yes,No,No
+2025-12-21 17:33:39,Male,18.0,Rangpur,North South University,Dormitory,Education,year 4,3.50 - 4.00,High,Yes,Yes,Yes,Yes,No,Yes
+2024-10-29 04:33:20,Female,20.0,,Military Institute of Science and Technology,Alone,Information Systems,year 3,3.00 - 3.49,Low,No,Yes,No,No,Yes,Yes
+2022-12-23 20:49:28,Male,20.0,Khulna,Jahangirnagar University,Dormitory,Mathematics,year 4,0 - 1.99,High,No,No,No,Yes,Yes,No
+2023-05-18 05:56:30,Female,25.0,Barishal,Islamic University of Technology,With Roommates,Media Studies,Year 3,0 - 1.99,High,No,,Yes,No,Yes,Yes
+2025-11-07 21:41:35,Male,23.0,,Jahangirnagar University,Alone,Marketing,Year 1,3.00 - 3.49,High,Yes,No,Yes,No,Yes,Yes
+2025-01-29 00:37:34,Male,22.0,Rangpur,Jahangirnagar University,Dormitory,CSE,,2.50 - 2.99,High,Yes,Yes,Yes,Yes,No,No
+2022-07-22 02:52:31,Female,18.0,Mymensingh,United International University,Alone,Genetics,year 1,0 - 1.99,Low,Yes,Yes,No,No,Yes,No
+2023-09-09 01:53:40,Female,25.0,Dhaka,Bangladesh University of Engineering and Technology,With Family,Pharmacy,,0 - 1.99,Low,No,No,Yes,No,Yes,Yes
+,Female,26.0,Sylhet,North South University,Alone,History,year 4,3.00 - 3.49,Low,Yes,No,No,No,Yes,Yes
+2024-06-27 18:18:59,Male,24.0,Barishal,Ahsanullah University of Science and Technology,Alone,Islamic Studies,Year 4,0 - 1.99,Low,Yes,No,Yes,No,Yes,No
+2023-05-29 06:00:30,Female,24.0,Dhaka,Ahsanullah University of Science and Technology,With Roommates,Psychology,year 2,2.50 - 2.99,High,,Yes,Yes,,No,Yes
+2025-08-06 06:44:45,Male,26.0,Rajshahi,Military Institute of Science and Technology,Alone,CSE,Year 3,2.50 - 2.99,,No,Yes,No,Yes,Yes,Yes
+2022-08-25 13:36:11,,23.0,Khulna,University of Asia Pacific,,,Year 2,2.00 - 2.49,Medium,Yes,No,No,Yes,No,Yes
+2025-02-20 22:33:24,Male,25.0,Chattogram,Southeast University,Alone,Business Administration,year 1,2.00 - 2.49,High,Yes,Yes,Yes,Yes,Yes,Yes
+2022-08-09 08:25:51,Female,26.0,Khulna,American International University-Bangladesh,With Roommates,Management,year 3,,High,Yes,Yes,No,Yes,Yes,No
+2023-09-10 13:10:19,Female,21.0,Chattogram,Military Institute of Science and Technology,With Family,Urban Planning,Year 4,2.00 - 2.49,Medium,Yes,Yes,No,No,Yes,
+2023-03-14 15:51:56,Female,21.0,Barishal,United International University,Alone,Urban Planning,Year 2,2.00 - 2.49,High,No,,Yes,No,No,Yes
+2024-12-28 12:33:16,Male,18.0,Rajshahi,East West University,Alone,Computer Engineering,year 1,,Medium,Yes,No,Yes,No,Yes,No
+2024-07-04 06:21:40,Male,21.0,Dhaka,Jahangirnagar University,With Roommates,Finance,Year 1,2.50 - 2.99,,No,Yes,No,No,Yes,Yes
+2025-10-10 18:03:59,Female,24.0,Barishal,Islamic University of Technology,Alone,Physics,year 2,2.00 - 2.49,High,No,Yes,No,No,,No
+2022-09-07 13:18:10,Male,23.0,Barishal,University of Chittagong,With Roommates,Media Studies,year 1,0 - 1.99,Low,,No,No,Yes,Yes,No
+2025-06-05 12:41:03,Female,21.0,Chattogram,Leading University,With Roommates,,year 2,3.50 - 4.00,High,Yes,Yes,No,Yes,No,No
+2025-09-23 01:22:43,Male,23.0,Rangpur,BRAC University,Alone,Computer Engineering,Year 3,0 - 1.99,High,No,,No,No,No,No
+2023-04-14 11:49:31,Male,25.0,Chattogram,,With Roommates,Telecommunication,year 1,3.50 - 4.00,High,Yes,,,Yes,Yes,Yes
+2023-04-22 18:05:12,Female,23.0,Rangpur,Islamic University of Technology,With Roommates,Management,Year 2,3.00 - 3.49,High,Yes,No,Yes,No,Yes,Yes
+2023-12-22 18:54:20,Male,25.0,Rajshahi,Daffodil International University,Alone,Economics,Year 1,2.50 - 2.99,Low,No,No,Yes,Yes,No,Yes
+,,24.0,Khulna,Shahjalal University of Science and Technology,With Family,Islamic Studies,Year 1,,Medium,,Yes,Yes,Yes,No,
+2023-11-18 14:43:47,Male,20.0,Sylhet,,,,Year 3,3.00 - 3.49,Medium,No,Yes,Yes,,No,Yes
+2022-01-09 13:52:37,Male,22.0,Dhaka,North South University,With Family,Urban Planning,Year 1,3.50 - 4.00,Low,Yes,Yes,No,No,No,No
+2025-08-11 19:58:10,Male,20.0,Mymensingh,Shahjalal University of Science and Technology,With Family,International Relations,Year 3,0 - 1.99,Medium,Yes,Yes,No,No,Yes,No
+2023-06-14 00:15:22,Female,25.0,Chattogram,American International University-Bangladesh,Alone,,year 3,3.00 - 3.49,Low,No,Yes,Yes,No,No,Yes
+2024-11-07 17:29:35,Female,18.0,Sylhet,Leading University,Alone,Information Systems,Year 1,3.00 - 3.49,Low,No,No,No,Yes,,Yes
+2022-07-15 19:46:14,Female,23.0,Dhaka,Ahsanullah University of Science and Technology,With Family,Accounting,year 2,3.00 - 3.49,Medium,Yes,Yes,Yes,Yes,No,No
+2023-11-08 08:54:08,,21.0,Mymensingh,Ahsanullah University of Science and Technology,Dormitory,Management,Year 1,2.50 - 2.99,High,No,No,No,,No,No
+2024-02-14 09:43:00,Male,26.0,Barishal,BRAC University,Dormitory,Political Science,year 2,2.50 - 2.99,Medium,No,Yes,Yes,No,No,No
+2022-01-19 12:40:19,Male,26.0,Chattogram,East West University,With Roommates,Chemistry,Year 1,2.50 - 2.99,Medium,No,Yes,Yes,No,No,Yes
+2024-10-31 01:51:58,Male,18.0,Mymensingh,Jahangirnagar University,Dormitory,Pharmacy,Year 4,3.50 - 4.00,High,Yes,No,Yes,No,Yes,Yes
+2025-08-12 05:25:09,Male,24.0,Barishal,North South University,With Roommates,Agriculture,Year 1,2.50 - 2.99,Medium,Yes,No,No,Yes,Yes,Yes
+2025-03-28 18:59:40,Male,26.0,Chattogram,University of Dhaka,With Family,Islamic Studies,year 3,,Medium,Yes,No,No,Yes,Yes,No
+2024-03-06 12:43:35,Female,26.0,Rangpur,Jahangirnagar University,With Family,Agriculture,Year 2,2.00 - 2.49,Medium,No,Yes,No,No,Yes,No
+2024-02-08 15:16:20,Male,20.0,Rangpur,Ahsanullah University of Science and Technology,With Roommates,Business Administration,year 2,0 - 1.99,High,No,No,No,Yes,No,Yes
+2022-10-11 22:20:32,,23.0,Sylhet,Ahsanullah University of Science and Technology,Alone,Chemistry,year 3,2.00 - 2.49,Medium,Yes,No,No,No,No,No
+2022-07-08 02:57:59,Female,20.0,Rajshahi,East West University,With Roommates,Computer Engineering,Year 4,3.00 - 3.49,High,Yes,Yes,Yes,No,Yes,No
+2024-01-10 13:34:23,Male,18.0,Dhaka,Shahjalal University of Science and Technology,Alone,CSE,year 1,2.50 - 2.99,High,No,Yes,,Yes,No,No
+2023-09-14 16:21:08,Female,,Rangpur,Rajshahi University,With Roommates,Management,Year 1,3.00 - 3.49,High,No,No,Yes,No,Yes,No
+2023-07-08 13:02:00,Female,18.0,Barishal,Southeast University,Alone,Economics,Year 1,2.50 - 2.99,Medium,Yes,No,Yes,No,Yes,No
+2024-01-30 15:32:11,Male,24.0,Khulna,Rajshahi University,With Roommates,Islamic Studies,year 2,3.00 - 3.49,High,Yes,,No,No,Yes,
+2025-02-17 05:45:21,Female,,Chattogram,,With Family,Tourism,Year 1,0 - 1.99,Low,Yes,Yes,Yes,Yes,Yes,No
+2025-08-31 17:45:08,Female,21.0,Rajshahi,American International University-Bangladesh,Alone,Education,year 3,3.50 - 4.00,Low,No,Yes,Yes,No,No,No
+2022-09-18 18:54:16,,18.0,Rajshahi,Leading University,With Family,Environmental Science,Year 3,2.50 - 2.99,Medium,No,Yes,Yes,Yes,Yes,Yes
+2025-03-23 13:36:02,Male,26.0,,Ahsanullah University of Science and Technology,With Roommates,Physics,Year 2,3.00 - 3.49,Medium,Yes,No,Yes,,Yes,No
+2023-02-13 13:40:08,Male,21.0,Khulna,Independent University Bangladesh,With Family,Management,Year 3,2.50 - 2.99,High,,Yes,No,No,No,No
+2024-06-03 05:06:29,Male,,Khulna,Southeast University,Alone,International Relations,year 2,3.50 - 4.00,High,No,No,No,Yes,No,Yes
+2025-03-07 03:10:55,Male,25.0,Khulna,Military Institute of Science and Technology,With Family,International Relations,Year 1,3.50 - 4.00,Medium,,Yes,No,No,No,No
+2023-06-06 09:49:42,Male,26.0,Dhaka,Jahangirnagar University,,Agriculture,year 4,2.00 - 2.49,Medium,Yes,No,Yes,,No,Yes
+2024-02-09 23:29:17,Male,18.0,Barishal,Independent University Bangladesh,With Family,Psychology,Year 3,3.50 - 4.00,High,No,No,No,No,Yes,No
+,Male,25.0,Chattogram,Shahjalal University of Science and Technology,Dormitory,Management,year 3,2.50 - 2.99,Low,No,No,Yes,No,Yes,No
+2023-12-23 08:28:43,Female,19.0,Dhaka,Shahjalal University of Science and Technology,Dormitory,Environmental Science,Year 3,3.50 - 4.00,High,Yes,Yes,,No,Yes,Yes
+2025-01-05 12:32:35,Female,19.0,Chattogram,BRAC University,Dormitory,Marketing,year 1,2.50 - 2.99,Low,No,No,No,Yes,No,Yes
+2022-12-12 09:19:09,Male,24.0,Sylhet,Islamic University of Technology,With Family,Pharmacy,year 4,0 - 1.99,Medium,Yes,No,Yes,No,No,Yes
+2024-01-05 18:06:44,Male,19.0,Dhaka,Daffodil International University,Alone,Civil,year 4,3.50 - 4.00,Low,No,Yes,No,,No,Yes
+2024-09-28 17:25:15,Male,23.0,Rangpur,Islamic University of Technology,Alone,Computer Engineering,year 3,2.00 - 2.49,Low,No,No,Yes,No,No,Yes
+2025-09-09 07:08:13,,19.0,Rangpur,Daffodil International University,With Family,Social Work,Year 4,3.00 - 3.49,High,No,Yes,Yes,Yes,Yes,No
+2024-09-20 01:08:49,Female,22.0,Barishal,Daffodil International University,With Family,Genetics,Year 2,2.50 - 2.99,High,Yes,No,Yes,No,No,No
+2025-05-24 19:43:50,Male,21.0,Mymensingh,Southeast University,Alone,Statistics,year 2,2.50 - 2.99,Low,Yes,Yes,No,No,Yes,Yes
+2023-09-21 13:44:51,Male,25.0,Mymensingh,Jahangirnagar University,With Family,Social Work,year 1,2.50 - 2.99,High,No,No,Yes,No,No,No
+2022-03-09 13:47:21,Female,18.0,Chattogram,Bangladesh University of Engineering and Technology,Alone,Economics,Year 3,3.00 - 3.49,Low,Yes,Yes,Yes,,No,Yes
+2024-12-08 06:09:30,Female,24.0,Barishal,Independent University Bangladesh,With Roommates,Textile Engineering,year 4,3.00 - 3.49,High,No,Yes,No,Yes,Yes,No
+2023-09-25 14:16:39,Male,,Barishal,Southeast University,With Roommates,Statistics,year 2,2.50 - 2.99,Medium,No,Yes,No,No,Yes,Yes
+,Female,21.0,Rangpur,Rajshahi University,With Roommates,English,Year 1,3.00 - 3.49,Medium,No,Yes,Yes,No,No,Yes
+2024-04-08 18:59:51,Male,24.0,Dhaka,Leading University,With Roommates,Psychology,year 2,2.50 - 2.99,Medium,No,Yes,Yes,Yes,No,Yes
+2024-03-22 18:49:37,Male,25.0,Sylhet,Ahsanullah University of Science and Technology,With Family,Tourism,Year 1,3.00 - 3.49,Low,Yes,Yes,Yes,,No,Yes
+2025-01-19 02:09:11,,19.0,Sylhet,Bangladesh University of Engineering and Technology,Alone,Islamic Studies,Year 1,3.50 - 4.00,Low,Yes,No,No,Yes,Yes,Yes
+2022-05-12 22:46:10,,23.0,Dhaka,University of Chittagong,Dormitory,English,year 4,3.50 - 4.00,Low,Yes,No,No,,Yes,No
+2024-05-04 08:29:31,Female,18.0,Mymensingh,Daffodil International University,Dormitory,Islamic Studies,year 1,2.00 - 2.49,Low,Yes,No,Yes,No,Yes,Yes
+2022-12-26 14:50:55,Male,23.0,Dhaka,Daffodil International University,Dormitory,Computer Engineering,year 4,3.50 - 4.00,High,Yes,Yes,,No,Yes,Yes
+2025-07-17 04:41:23,Female,19.0,Barishal,University of Dhaka,Dormitory,Pharmacy,year 2,0 - 1.99,Medium,No,No,No,No,Yes,
+2025-02-10 23:04:34,Female,20.0,Khulna,Independent University Bangladesh,Dormitory,Microbiology,year 3,2.50 - 2.99,High,Yes,Yes,Yes,No,No,Yes
+2023-08-09 06:56:08,Female,21.0,Rangpur,Khulna University,With Roommates,Anthropology,year 4,3.00 - 3.49,Medium,No,No,Yes,No,No,No
+2025-05-05 16:59:27,Female,19.0,Dhaka,Ahsanullah University of Science and Technology,Alone,Business Administration,year 1,3.50 - 4.00,Medium,Yes,No,Yes,No,No,No
+2022-01-16 10:00:11,Female,18.0,Sylhet,Ahsanullah University of Science and Technology,With Family,Accounting,Year 2,2.50 - 2.99,High,,No,Yes,No,Yes,Yes
+2022-05-23 11:49:33,Male,20.0,Rajshahi,University of Chittagong,With Family,Agriculture,year 4,2.00 - 2.49,Low,No,No,,Yes,No,No
+2023-09-12 20:37:42,Male,25.0,,University of Asia Pacific,With Roommates,Information Systems,year 4,,High,Yes,No,No,No,Yes,No
+2024-09-21 05:02:59,Female,24.0,Chattogram,United International University,With Roommates,Chemistry,year 4,0 - 1.99,Medium,Yes,Yes,Yes,No,Yes,No
+2022-09-10 19:38:49,Female,21.0,Barishal,North South University,With Family,Textile Engineering,Year 3,0 - 1.99,Medium,No,,Yes,Yes,Yes,Yes
+2022-01-22 03:40:10,Male,,Chattogram,Bangladesh University of Engineering and Technology,With Roommates,Business Administration,Year 4,2.00 - 2.49,High,Yes,No,No,Yes,No,No
+2023-09-16 15:30:06,Male,24.0,Chattogram,East West University,With Roommates,Civil,year 4,2.00 - 2.49,Medium,No,No,No,No,Yes,No
+2024-06-08 17:37:09,,26.0,Khulna,University of Dhaka,Alone,,Year 2,0 - 1.99,Low,Yes,No,No,No,No,No
+2025-06-05 07:02:08,Male,21.0,,East West University,Alone,Biochemistry,Year 1,3.00 - 3.49,Medium,Yes,No,No,Yes,No,Yes
+2022-06-17 16:32:40,Female,21.0,Mymensingh,BRAC University,With Family,Software Engineering,year 2,3.00 - 3.49,High,Yes,No,No,Yes,Yes,No
+2023-05-10 08:36:09,Female,21.0,Rajshahi,Leading University,Dormitory,Software Engineering,Year 2,3.50 - 4.00,High,No,No,No,Yes,Yes,Yes
+2024-12-22 23:25:50,Male,25.0,Rajshahi,Ahsanullah University of Science and Technology,Dormitory,Genetics,Year 2,0 - 1.99,Medium,No,Yes,Yes,Yes,No,Yes
+2024-07-02 17:03:35,Male,22.0,Khulna,Jahangirnagar University,Alone,Chemistry,Year 3,3.50 - 4.00,,Yes,Yes,No,No,Yes,No
+2023-11-04 04:21:00,Female,22.0,Dhaka,University of Chittagong,With Roommates,Psychology,year 4,2.00 - 2.49,High,Yes,Yes,,Yes,Yes,
+2025-09-20 20:11:19,Female,18.0,Rangpur,Shahjalal University of Science and Technology,Alone,Textile Engineering,year 2,3.50 - 4.00,Low,Yes,No,No,No,Yes,No
+2023-01-30 10:10:18,Female,18.0,Barishal,Islamic University of Technology,Dormitory,International Relations,,2.00 - 2.49,Medium,Yes,Yes,No,No,No,No
+2025-07-13 18:44:32,Male,25.0,Chattogram,American International University-Bangladesh,With Family,Social Work,year 2,2.00 - 2.49,Medium,No,No,Yes,Yes,Yes,No
+2025-03-21 06:52:25,,22.0,Sylhet,University of Dhaka,With Family,Tourism,Year 2,2.50 - 2.99,Low,Yes,Yes,Yes,Yes,No,No
+2022-07-28 15:49:45,Male,22.0,Khulna,University of Asia Pacific,Alone,International Relations,year 2,2.00 - 2.49,High,Yes,No,No,Yes,Yes,Yes
+2022-05-31 19:13:59,Female,23.0,Rajshahi,Islamic University of Technology,With Roommates,Finance,year 4,0 - 1.99,High,Yes,Yes,No,No,,Yes
+2023-05-03 04:41:08,Female,21.0,Sylhet,Rajshahi University,With Family,Sociology,year 4,0 - 1.99,High,Yes,Yes,Yes,Yes,Yes,No
+2022-07-29 08:16:04,Female,23.0,Khulna,University of Dhaka,Dormitory,History,Year 2,3.00 - 3.49,Medium,No,Yes,No,No,Yes,Yes
+2024-10-22 12:11:52,Male,21.0,Dhaka,East West University,With Family,,Year 2,2.00 - 2.49,Medium,Yes,Yes,No,No,Yes,Yes
+,Female,18.0,Rajshahi,University of Asia Pacific,Dormitory,Islamic Studies,,2.50 - 2.99,,Yes,No,No,No,No,Yes
+2025-06-09 08:19:58,Male,25.0,Sylhet,American International University-Bangladesh,With Family,Business Administration,Year 1,,High,Yes,Yes,No,Yes,No,Yes
+2023-02-09 13:08:13,Female,19.0,Mymensingh,Daffodil International University,Dormitory,Management,year 3,0 - 1.99,Medium,No,Yes,No,Yes,No,Yes
+2024-10-21 17:29:51,Female,,Rangpur,Islamic University of Technology,Alone,Environmental Science,,0 - 1.99,Medium,Yes,No,Yes,No,No,Yes
+2025-05-02 00:49:33,Male,22.0,Barishal,University of Dhaka,With Roommates,Information Systems,Year 1,0 - 1.99,High,No,No,Yes,No,Yes,Yes
+2025-07-26 03:35:27,Male,22.0,Chattogram,United International University,Alone,Finance,Year 1,2.50 - 2.99,High,Yes,Yes,No,Yes,Yes,Yes
+2025-06-18 14:44:10,Male,18.0,Khulna,Military Institute of Science and Technology,,Computer Engineering,year 1,3.50 - 4.00,High,No,No,No,No,No,No
+2024-12-19 19:14:41,Female,21.0,Dhaka,Leading University,With Roommates,Accounting,year 2,2.00 - 2.49,Low,No,Yes,No,No,No,Yes
+2025-02-14 08:10:52,Female,20.0,Rangpur,East West University,With Roommates,Architecture,Year 4,0 - 1.99,Low,Yes,,No,Yes,Yes,Yes
+2023-09-02 07:57:29,Female,22.0,Khulna,Leading University,Dormitory,Genetics,Year 2,0 - 1.99,Low,No,Yes,Yes,Yes,Yes,No
+2023-11-11 18:08:17,Female,21.0,Chattogram,Khulna University,With Family,Biochemistry,,2.50 - 2.99,Medium,No,No,,Yes,No,No
+2022-01-31 07:17:00,Male,23.0,Chattogram,Islamic University of Technology,Alone,Agriculture,Year 1,3.00 - 3.49,Medium,No,,Yes,No,No,Yes
+2022-01-05 18:25:18,Male,22.0,Rajshahi,North South University,Alone,Physics,year 2,3.00 - 3.49,Medium,No,No,Yes,No,Yes,Yes
+2022-11-26 10:21:30,Male,23.0,Rajshahi,Southeast University,With Roommates,Social Work,Year 2,2.00 - 2.49,Low,Yes,No,No,No,Yes,No
+2023-08-20 13:46:05,Male,23.0,Khulna,University of Chittagong,With Roommates,Accounting,year 3,0 - 1.99,Low,Yes,Yes,No,No,No,No
+2022-06-06 19:12:27,Female,19.0,Chattogram,University of Dhaka,With Family,Public Health,year 4,0 - 1.99,Low,No,No,No,No,No,No
+2022-06-06 10:38:51,Female,23.0,Mymensingh,North South University,Dormitory,Anthropology,year 1,2.00 - 2.49,High,No,No,Yes,No,No,No
+2022-11-18 09:31:21,Male,19.0,Barishal,Jahangirnagar University,Alone,Physics,year 4,3.00 - 3.49,High,No,No,No,No,Yes,No
+2024-04-24 12:10:42,Female,20.0,Rangpur,Islamic University of Technology,With Family,Pharmacy,year 4,2.50 - 2.99,Low,Yes,Yes,No,No,No,Yes
+2023-07-13 14:34:56,Female,18.0,Sylhet,United International University,Dormitory,Anthropology,Year 2,2.00 - 2.49,Low,No,Yes,No,No,Yes,No
+2023-12-25 13:29:33,Female,20.0,Sylhet,Military Institute of Science and Technology,Alone,Agriculture,year 1,3.00 - 3.49,High,Yes,Yes,No,No,No,No
+2024-11-04 19:55:58,Female,19.0,Khulna,Bangladesh University of Engineering and Technology,Alone,Psychology,Year 3,0 - 1.99,Medium,Yes,Yes,Yes,Yes,Yes,No
+2022-03-17 12:28:09,Male,18.0,Khulna,BRAC University,With Roommates,Law,Year 2,2.50 - 2.99,High,No,No,No,Yes,No,Yes
+,Female,21.0,,,Alone,Textile Engineering,Year 1,2.00 - 2.49,High,Yes,Yes,Yes,No,Yes,
+2025-11-09 12:09:50,Female,18.0,Sylhet,East West University,Alone,Physics,Year 3,0 - 1.99,High,No,Yes,No,No,Yes,No
+2023-11-02 00:15:03,Female,18.0,Rangpur,University of Chittagong,With Family,Finance,Year 4,3.50 - 4.00,Low,No,No,,Yes,Yes,Yes
+2025-07-30 03:02:50,Male,22.0,Rangpur,Military Institute of Science and Technology,Dormitory,Chemistry,year 1,2.50 - 2.99,Low,No,Yes,Yes,No,No,No
+2024-01-02 23:02:19,Male,21.0,Chattogram,Military Institute of Science and Technology,With Family,,Year 2,2.00 - 2.49,Medium,No,No,Yes,,No,No
+2022-08-21 04:17:09,Female,18.0,Chattogram,University of Dhaka,Alone,Sociology,year 3,0 - 1.99,High,Yes,Yes,Yes,,Yes,Yes
+2022-04-14 10:27:28,Female,26.0,Khulna,Islamic University of Technology,With Family,,year 3,3.50 - 4.00,Low,Yes,,Yes,Yes,Yes,No
+2022-05-25 14:05:53,Female,18.0,Dhaka,BRAC University,Dormitory,Management,Year 1,0 - 1.99,High,Yes,No,No,Yes,Yes,Yes
+2023-09-22 12:19:36,Male,20.0,Rangpur,BRAC University,Dormitory,Political Science,year 4,2.00 - 2.49,High,Yes,No,Yes,No,Yes,Yes
+2023-09-29 10:33:56,Male,25.0,Dhaka,Shahjalal University of Science and Technology,Dormitory,Genetics,year 4,,Low,Yes,No,,Yes,No,No
+2023-02-12 04:48:05,Male,19.0,Khulna,,With Roommates,English,year 3,3.50 - 4.00,Medium,No,No,No,Yes,Yes,Yes
+2023-03-20 19:22:10,Female,20.0,,,Alone,Economics,Year 4,2.50 - 2.99,High,No,No,Yes,No,Yes,Yes
+2022-12-29 18:57:11,Male,19.0,Sylhet,Shahjalal University of Science and Technology,Dormitory,Anthropology,year 1,2.50 - 2.99,Medium,No,No,No,No,Yes,Yes
+2023-01-24 02:09:05,Male,23.0,Khulna,Ahsanullah University of Science and Technology,Dormitory,Statistics,year 1,2.00 - 2.49,High,Yes,Yes,No,No,Yes,Yes
+2023-03-25 14:53:03,Female,18.0,Barishal,North South University,Dormitory,Mathematics,Year 1,0 - 1.99,Low,No,No,No,No,No,Yes
+2023-07-31 00:56:19,Male,23.0,Khulna,BRAC University,Dormitory,Business Administration,Year 1,0 - 1.99,Low,No,Yes,Yes,Yes,No,Yes
+2025-06-29 11:58:26,,19.0,Barishal,Ahsanullah University of Science and Technology,Alone,English,year 2,3.00 - 3.49,Low,Yes,Yes,No,No,Yes,Yes
+2023-01-14 10:50:52,Male,25.0,Dhaka,Bangladesh University of Engineering and Technology,Dormitory,Anthropology,Year 4,3.50 - 4.00,Medium,No,Yes,No,No,No,Yes
+2022-12-08 04:03:11,Male,19.0,Dhaka,University of Asia Pacific,With Family,English,Year 1,3.00 - 3.49,Low,No,Yes,No,Yes,No,Yes
+2024-11-14 17:48:27,Male,25.0,Khulna,University of Asia Pacific,Alone,,year 1,2.50 - 2.99,High,Yes,No,No,Yes,Yes,Yes
+2023-03-31 22:58:44,Female,24.0,Rajshahi,United International University,With Roommates,Environmental Science,year 3,3.00 - 3.49,Medium,No,No,Yes,Yes,No,Yes
+2022-01-02 23:50:05,,18.0,Rajshahi,Southeast University,Dormitory,Information Systems,year 4,3.50 - 4.00,High,Yes,No,No,Yes,Yes,Yes
+2023-12-02 23:06:01,Male,,Rajshahi,American International University-Bangladesh,With Family,Mathematics,year 1,2.00 - 2.49,High,No,Yes,Yes,Yes,No,Yes
+2023-01-28 06:54:36,Female,24.0,Dhaka,Ahsanullah University of Science and Technology,With Family,Physics,year 1,3.00 - 3.49,Low,Yes,Yes,No,No,No,Yes
+2025-05-25 16:12:54,Female,18.0,Sylhet,BRAC University,With Family,Urban Planning,year 3,,Low,Yes,No,Yes,Yes,No,Yes
+2022-07-07 22:46:14,Male,24.0,Khulna,Southeast University,Alone,Software Engineering,year 2,2.00 - 2.49,Low,Yes,No,Yes,Yes,,No
+2025-10-24 17:12:03,Male,21.0,Rangpur,Bangladesh University of Engineering and Technology,Alone,Islamic Studies,year 2,,,No,No,Yes,Yes,No,Yes
+2023-08-28 02:39:57,Female,25.0,Barishal,Shahjalal University of Science and Technology,Dormitory,,,,Low,Yes,Yes,Yes,Yes,No,No
+2022-06-22 17:45:43,Female,21.0,Rangpur,Southeast University,Dormitory,Media Studies,Year 2,3.50 - 4.00,High,No,Yes,No,Yes,No,Yes
+2025-01-17 18:48:16,Female,18.0,Khulna,University of Asia Pacific,With Roommates,Agriculture,year 4,0 - 1.99,Low,Yes,Yes,Yes,Yes,Yes,No
+2024-09-08 14:41:09,Male,22.0,Barishal,University of Chittagong,With Roommates,Anthropology,Year 3,0 - 1.99,Low,No,No,No,Yes,No,No
+2022-10-07 05:32:10,Male,21.0,Khulna,Rajshahi University,Dormitory,International Relations,Year 1,,Medium,No,Yes,,Yes,No,Yes
+2024-12-01 03:43:06,Male,25.0,Khulna,Jahangirnagar University,With Family,Education,year 4,,Medium,No,Yes,Yes,No,Yes,Yes
+2023-04-27 06:14:19,Female,,Dhaka,Independent University Bangladesh,With Roommates,Anthropology,year 1,0 - 1.99,Medium,No,Yes,Yes,No,No,No
+2022-03-27 06:37:16,Male,20.0,Khulna,Jahangirnagar University,With Family,Textile Engineering,year 3,3.50 - 4.00,Low,No,Yes,Yes,Yes,No,Yes
+2022-02-06 11:37:42,Female,19.0,Mymensingh,American International University-Bangladesh,With Roommates,Architecture,year 3,0 - 1.99,Medium,No,Yes,Yes,Yes,Yes,No
+2025-09-08 15:09:01,Female,26.0,Dhaka,Independent University Bangladesh,,Civil,year 3,3.50 - 4.00,High,No,No,No,Yes,No,No
+2023-11-18 05:32:05,Male,26.0,Chattogram,Leading University,With Roommates,Agriculture,year 1,3.00 - 3.49,Medium,,,No,Yes,Yes,No
+2025-04-24 04:16:17,Male,21.0,Rajshahi,Rajshahi University,Dormitory,Business Administration,year 4,0 - 1.99,High,No,No,Yes,Yes,Yes,Yes
+2024-03-10 05:10:40,Male,21.0,Rangpur,BRAC University,Alone,Statistics,year 1,0 - 1.99,Medium,No,No,No,Yes,No,No
+2024-12-29 20:21:11,Male,21.0,Chattogram,American International University-Bangladesh,With Roommates,,Year 4,2.00 - 2.49,High,No,No,Yes,No,Yes,Yes
+2025-11-08 10:32:37,Female,18.0,Dhaka,Khulna University,Alone,Sociology,year 4,3.00 - 3.49,High,Yes,Yes,Yes,No,No,No
+2023-03-08 21:46:23,Male,21.0,Chattogram,Islamic University of Technology,Alone,Psychology,year 3,0 - 1.99,Medium,No,Yes,No,Yes,No,Yes
+2025-07-18 20:57:53,Female,19.0,Sylhet,Shahjalal University of Science and Technology,Dormitory,Computer Engineering,year 2,3.00 - 3.49,High,No,Yes,Yes,No,No,No
+2024-07-01 13:42:34,Female,20.0,Mymensingh,American International University-Bangladesh,Dormitory,Architecture,Year 1,2.50 - 2.99,,No,Yes,No,Yes,No,No
+2024-09-07 14:54:56,Female,24.0,Sylhet,Bangladesh University of Engineering and Technology,Alone,Education,year 1,2.50 - 2.99,High,No,No,No,No,Yes,Yes
+2022-07-21 21:48:51,Female,23.0,Mymensingh,University of Dhaka,With Roommates,Pharmacy,year 2,2.50 - 2.99,,No,No,Yes,Yes,Yes,Yes
+2022-03-11 05:23:58,Male,22.0,Barishal,North South University,,Statistics,year 1,3.00 - 3.49,Low,No,Yes,No,Yes,No,No
+2023-04-08 04:51:59,Female,21.0,Rangpur,,With Roommates,Management,Year 1,2.50 - 2.99,Low,No,Yes,No,No,No,No
+2025-01-18 02:31:56,Female,25.0,Sylhet,Independent University Bangladesh,With Family,Finance,year 4,0 - 1.99,Low,Yes,Yes,Yes,Yes,Yes,No
+2023-10-05 14:20:56,Female,18.0,Dhaka,Rajshahi University,Alone,Software Engineering,Year 4,0 - 1.99,Medium,Yes,Yes,No,No,Yes,
+2024-05-11 13:09:03,Male,21.0,Khulna,East West University,Dormitory,CSE,year 2,0 - 1.99,Medium,No,No,No,Yes,No,
+2022-10-21 22:11:21,Female,24.0,Dhaka,Shahjalal University of Science and Technology,,Education,Year 4,0 - 1.99,High,No,Yes,Yes,Yes,Yes,No
+2024-02-28 06:48:18,Male,26.0,Khulna,East West University,Alone,Business Administration,year 1,3.50 - 4.00,,No,No,No,No,Yes,Yes
+2022-06-02 08:18:06,Male,19.0,Chattogram,Islamic University of Technology,Dormitory,Agriculture,Year 2,2.50 - 2.99,High,Yes,No,No,Yes,Yes,No
+2022-06-21 17:20:11,Female,19.0,Rajshahi,Ahsanullah University of Science and Technology,,Tourism,year 2,2.00 - 2.49,Low,Yes,Yes,No,No,Yes,Yes
+2023-09-01 03:00:57,Female,19.0,Rajshahi,Khulna University,With Roommates,Economics,year 2,2.50 - 2.99,High,Yes,No,No,Yes,No,Yes
+2024-09-10 00:23:20,Female,25.0,Chattogram,United International University,With Roommates,Marketing,year 4,3.50 - 4.00,High,Yes,Yes,Yes,No,No,No
+2023-08-24 20:37:43,Male,25.0,Dhaka,University of Chittagong,,Architecture,Year 2,2.50 - 2.99,High,No,No,Yes,No,No,No
+2023-09-07 23:36:51,Female,23.0,Barishal,Daffodil International University,Alone,,Year 4,3.50 - 4.00,High,Yes,Yes,,Yes,Yes,No
+2023-01-28 16:34:35,Male,25.0,Rangpur,University of Dhaka,,Economics,Year 2,2.00 - 2.49,Medium,No,No,No,No,No,No
+2025-11-08 09:26:44,Male,20.0,Barishal,Daffodil International University,Dormitory,Management,year 3,2.50 - 2.99,High,Yes,No,Yes,Yes,No,Yes
+2022-02-15 06:03:15,Female,20.0,Chattogram,Shahjalal University of Science and Technology,Dormitory,Pharmacy,year 4,0 - 1.99,Medium,No,No,No,Yes,No,Yes
+2022-04-28 13:09:49,Female,19.0,Khulna,Khulna University,Alone,Civil,year 1,2.00 - 2.49,Low,No,No,Yes,No,Yes,Yes
+2023-02-28 04:06:33,Female,20.0,Dhaka,American International University-Bangladesh,Alone,Political Science,,3.00 - 3.49,Low,Yes,No,No,Yes,Yes,No
+2022-07-27 05:56:22,Male,18.0,Chattogram,East West University,With Family,Physics,Year 2,0 - 1.99,Low,No,No,No,No,Yes,Yes
+2025-04-05 21:59:47,Female,21.0,Dhaka,Daffodil International University,Dormitory,Psychology,Year 2,3.50 - 4.00,High,No,Yes,Yes,,No,
+2022-01-29 08:52:42,Female,25.0,Rajshahi,BRAC University,With Family,Accounting,year 1,2.50 - 2.99,Medium,Yes,Yes,Yes,Yes,No,No
+2023-07-10 23:57:20,Female,25.0,,Ahsanullah University of Science and Technology,Alone,EEE,year 4,3.00 - 3.49,High,No,Yes,No,No,Yes,No
+2024-11-01 18:34:14,Male,26.0,Dhaka,Independent University Bangladesh,Alone,,Year 1,0 - 1.99,,Yes,Yes,No,Yes,Yes,Yes
+2024-09-27 04:43:16,,20.0,Mymensingh,Southeast University,Dormitory,Public Health,year 4,0 - 1.99,High,No,,Yes,Yes,Yes,Yes
+2023-11-12 03:09:01,Male,21.0,Sylhet,Southeast University,Dormitory,Finance,year 3,3.00 - 3.49,High,Yes,Yes,Yes,Yes,No,Yes
+2024-10-30 17:03:29,Female,,,Khulna University,Alone,,year 4,2.50 - 2.99,Low,Yes,Yes,No,Yes,Yes,No
+2025-10-13 12:42:26,Male,25.0,Mymensingh,University of Dhaka,With Roommates,,year 1,3.50 - 4.00,Medium,Yes,No,Yes,No,Yes,No
+2023-09-13 04:16:33,Female,21.0,Mymensingh,United International University,With Roommates,Urban Planning,year 3,2.00 - 2.49,Medium,Yes,No,No,Yes,Yes,Yes
+2025-10-03 00:27:31,Male,25.0,Dhaka,North South University,Alone,Sociology,Year 3,0 - 1.99,Medium,No,No,Yes,No,Yes,Yes
+2024-07-22 16:33:49,Male,24.0,Mymensingh,BRAC University,With Family,Political Science,Year 4,2.00 - 2.49,Low,Yes,Yes,No,Yes,No,No
+2022-01-08 19:52:02,Female,24.0,Barishal,University of Asia Pacific,With Family,Finance,Year 2,2.50 - 2.99,High,Yes,Yes,No,No,Yes,No
+2023-04-28 11:18:27,Female,21.0,Mymensingh,American International University-Bangladesh,,Law,Year 3,2.00 - 2.49,Medium,Yes,No,No,Yes,No,Yes
+2023-12-03 10:00:32,Female,19.0,Barishal,Shahjalal University of Science and Technology,,Urban Planning,year 4,0 - 1.99,High,No,,No,No,No,Yes
+2025-04-30 08:03:10,,25.0,Chattogram,Southeast University,Alone,Sociology,Year 2,,Low,,Yes,No,No,Yes,No
+2025-09-05 12:13:57,Male,26.0,Rangpur,Ahsanullah University of Science and Technology,With Roommates,Pharmacy,Year 2,0 - 1.99,Medium,Yes,,Yes,No,Yes,No
+2023-05-03 06:40:36,Male,26.0,Rangpur,United International University,With Roommates,Chemistry,year 3,0 - 1.99,High,No,Yes,No,Yes,Yes,
+2023-04-29 16:56:36,Female,18.0,Khulna,Rajshahi University,With Roommates,Telecommunication,Year 2,2.50 - 2.99,Low,No,Yes,Yes,No,No,No
+2025-07-14 02:31:09,Female,21.0,Barishal,University of Asia Pacific,With Roommates,Agriculture,year 2,3.00 - 3.49,High,No,Yes,No,Yes,No,
+2023-02-19 02:29:59,Male,21.0,Sylhet,Independent University Bangladesh,Dormitory,Civil,year 4,3.50 - 4.00,Medium,No,No,Yes,No,Yes,Yes
+2023-01-06 10:50:51,Female,20.0,Barishal,United International University,With Roommates,Sociology,Year 1,3.50 - 4.00,High,Yes,Yes,No,Yes,No,No
+2024-08-08 18:58:16,Female,18.0,Rajshahi,,With Family,International Relations,Year 3,3.50 - 4.00,High,No,No,No,No,No,No
+2023-04-01 20:53:53,Female,18.0,Khulna,American International University-Bangladesh,Alone,Tourism,,2.50 - 2.99,Low,No,Yes,Yes,Yes,No,No
+2022-09-26 00:21:16,Male,18.0,Chattogram,American International University-Bangladesh,With Family,Environmental Science,year 1,0 - 1.99,Low,Yes,,Yes,Yes,Yes,Yes
+2024-01-06 11:53:02,,19.0,Sylhet,University of Chittagong,Dormitory,Telecommunication,year 2,2.50 - 2.99,Medium,Yes,,No,No,Yes,No
+2024-12-05 10:44:24,Male,23.0,Mymensingh,,With Roommates,Management,year 1,2.50 - 2.99,,No,Yes,Yes,Yes,Yes,Yes
+2022-03-05 01:20:34,Female,26.0,Mymensingh,University of Dhaka,With Roommates,History,year 2,2.00 - 2.49,,,No,No,No,No,No
+2025-04-29 17:30:26,Female,26.0,Dhaka,,With Family,English,year 4,2.00 - 2.49,Low,Yes,No,Yes,Yes,Yes,No
+2022-01-23 10:21:12,,25.0,Khulna,Daffodil International University,Alone,Economics,Year 1,3.50 - 4.00,Low,Yes,No,Yes,Yes,Yes,Yes
+2025-08-28 03:08:27,Female,19.0,Chattogram,East West University,With Roommates,Law,year 2,3.00 - 3.49,Medium,Yes,No,No,No,Yes,Yes
+2024-03-11 04:53:48,Female,22.0,Barishal,Daffodil International University,With Roommates,CSE,Year 3,0 - 1.99,Low,No,No,Yes,No,Yes,No
+2022-10-07 06:11:40,Male,21.0,Khulna,Daffodil International University,Dormitory,,Year 4,2.00 - 2.49,Low,No,No,Yes,Yes,No,
+2023-09-08 08:20:29,Male,20.0,,Rajshahi University,With Roommates,Mathematics,year 4,2.50 - 2.99,Low,No,No,No,No,No,No
+2023-11-19 02:49:48,Female,19.0,Mymensingh,Southeast University,With Roommates,Media Studies,year 1,,Low,,,Yes,No,Yes,Yes
+2023-09-06 20:35:20,Female,22.0,Sylhet,East West University,With Family,Environmental Science,year 2,3.50 - 4.00,Medium,Yes,Yes,Yes,Yes,Yes,No
+2023-10-20 03:25:59,Female,21.0,Rajshahi,Islamic University of Technology,With Roommates,Sociology,Year 3,2.00 - 2.49,,No,No,No,Yes,No,No
+2023-05-26 12:25:48,Female,22.0,Khulna,Ahsanullah University of Science and Technology,Dormitory,Architecture,year 4,3.50 - 4.00,Medium,No,No,No,Yes,Yes,No
+2022-08-08 22:33:01,Female,25.0,Rajshahi,University of Asia Pacific,With Family,Public Health,year 2,0 - 1.99,High,Yes,No,Yes,No,No,No
+2025-01-09 08:05:38,Female,20.0,Sylhet,Leading University,Alone,Social Work,year 3,0 - 1.99,Low,Yes,No,Yes,No,Yes,Yes
+2023-06-09 06:37:45,Male,19.0,Mymensingh,University of Chittagong,Dormitory,Information Systems,year 4,2.50 - 2.99,Medium,Yes,Yes,No,Yes,No,No
+2023-05-20 10:06:23,Female,,Rajshahi,University of Chittagong,Dormitory,Media Studies,Year 2,3.00 - 3.49,Medium,Yes,,No,No,Yes,No
+2024-09-07 19:53:20,Female,22.0,Sylhet,Islamic University of Technology,With Family,Biochemistry,year 2,0 - 1.99,High,Yes,No,No,,No,No
+2023-09-18 00:53:57,Male,22.0,Dhaka,North South University,Dormitory,Chemistry,Year 2,2.50 - 2.99,Low,Yes,Yes,No,Yes,Yes,Yes
+2025-02-19 03:41:31,Female,18.0,Barishal,Khulna University,Alone,Architecture,year 1,3.00 - 3.49,High,Yes,Yes,Yes,No,No,Yes
+2022-05-22 06:16:55,Female,19.0,Rajshahi,BRAC University,With Roommates,Islamic Studies,year 4,3.00 - 3.49,Low,Yes,No,Yes,Yes,No,Yes
+2022-11-07 16:56:32,Female,22.0,Rajshahi,United International University,With Roommates,Biochemistry,year 1,0 - 1.99,Medium,No,Yes,Yes,No,Yes,No
+2025-11-19 01:23:20,Female,26.0,Rangpur,Rajshahi University,Dormitory,Media Studies,Year 3,2.00 - 2.49,Low,Yes,Yes,Yes,No,No,No
+2025-06-16 20:44:46,Female,23.0,Mymensingh,Islamic University of Technology,With Family,English,year 1,3.50 - 4.00,Low,Yes,Yes,Yes,Yes,No,No
+,Female,19.0,Rangpur,Independent University Bangladesh,With Roommates,History,Year 1,2.50 - 2.99,High,No,No,No,No,Yes,Yes
+2025-11-05 07:49:50,Female,20.0,Chattogram,East West University,With Roommates,Telecommunication,year 4,2.50 - 2.99,Medium,Yes,Yes,No,No,No,Yes
+2023-05-23 14:48:33,Female,23.0,Rangpur,Jahangirnagar University,With Roommates,EEE,,3.50 - 4.00,Medium,No,Yes,No,Yes,Yes,Yes
+2025-05-26 09:00:32,Female,19.0,Rangpur,Daffodil International University,Alone,Media Studies,year 3,0 - 1.99,Medium,No,Yes,No,No,No,No
+2025-02-16 02:21:06,Male,25.0,Chattogram,BRAC University,With Family,Textile Engineering,Year 4,0 - 1.99,Medium,Yes,Yes,Yes,No,Yes,Yes
+2024-05-13 08:16:19,Female,23.0,Khulna,Bangladesh University of Engineering and Technology,With Family,Civil,year 3,3.50 - 4.00,Low,No,Yes,Yes,No,Yes,No
+2025-10-14 13:49:32,Male,19.0,Khulna,Shahjalal University of Science and Technology,Dormitory,Urban Planning,year 1,2.00 - 2.49,High,Yes,Yes,No,Yes,No,No
+2025-02-06 21:32:16,Female,21.0,Rajshahi,Independent University Bangladesh,,Mathematics,Year 3,0 - 1.99,High,No,No,,No,Yes,No
+2024-08-21 13:38:16,Male,21.0,Barishal,Bangladesh University of Engineering and Technology,Alone,Genetics,Year 3,,Medium,Yes,No,Yes,Yes,Yes,No
+2025-06-06 15:43:07,Female,19.0,Khulna,Southeast University,Alone,Psychology,year 4,2.50 - 2.99,Medium,Yes,No,Yes,Yes,Yes,Yes
+2023-04-30 12:51:49,Male,18.0,Rangpur,Independent University Bangladesh,Alone,Environmental Science,year 4,3.50 - 4.00,Low,Yes,No,No,No,No,No
+2022-01-19 14:14:42,Female,19.0,Rangpur,Khulna University,,Civil,Year 4,0 - 1.99,Medium,Yes,No,Yes,No,No,No
+2022-04-02 23:54:35,Male,,Rangpur,East West University,Dormitory,History,year 1,2.50 - 2.99,Low,Yes,No,No,No,No,No
+2022-06-18 01:26:04,Female,23.0,Sylhet,University of Asia Pacific,Alone,Statistics,Year 1,3.50 - 4.00,Low,No,No,No,No,No,
+2023-10-27 19:39:06,Male,23.0,Mymensingh,Bangladesh University of Engineering and Technology,With Roommates,Sociology,Year 1,2.00 - 2.49,High,No,Yes,,No,Yes,No
+2023-03-15 18:22:02,Male,21.0,Dhaka,North South University,With Family,Media Studies,Year 4,2.00 - 2.49,Low,No,No,Yes,Yes,Yes,No
+2024-02-06 04:09:46,Male,18.0,Khulna,East West University,Alone,Business Administration,Year 1,3.50 - 4.00,High,Yes,No,Yes,Yes,,No
+2024-01-28 05:05:16,Female,22.0,Barishal,Jahangirnagar University,Alone,Media Studies,,2.00 - 2.49,Low,No,No,Yes,Yes,No,Yes
+2024-05-11 08:22:27,Female,20.0,Rangpur,Leading University,Dormitory,,Year 2,3.50 - 4.00,Medium,Yes,No,Yes,No,Yes,No
+2023-12-04 20:18:31,Male,21.0,Mymensingh,American International University-Bangladesh,Dormitory,Anthropology,year 2,0 - 1.99,High,Yes,Yes,No,No,No,Yes
+2024-04-09 14:54:37,Female,24.0,Mymensingh,Military Institute of Science and Technology,With Family,Anthropology,year 2,2.00 - 2.49,High,No,No,,No,Yes,Yes
+2025-09-25 07:01:54,Male,25.0,Khulna,United International University,Dormitory,Chemistry,,3.00 - 3.49,Low,Yes,Yes,Yes,No,Yes,Yes
+2025-01-26 01:06:19,Male,20.0,Sylhet,Islamic University of Technology,Alone,Media Studies,year 3,0 - 1.99,Medium,Yes,Yes,No,Yes,No,Yes
+2022-06-20 23:16:40,Female,19.0,Rangpur,Southeast University,With Family,Telecommunication,Year 1,2.50 - 2.99,Medium,Yes,No,Yes,No,Yes,No
+2025-10-21 07:45:32,Male,24.0,Sylhet,Rajshahi University,With Family,,year 1,0 - 1.99,Low,Yes,No,Yes,Yes,Yes,
+2025-10-30 04:05:08,,19.0,Sylhet,Independent University Bangladesh,With Roommates,English,Year 1,2.00 - 2.49,High,Yes,No,No,No,No,Yes
+2024-07-24 10:00:49,,20.0,Chattogram,Shahjalal University of Science and Technology,Dormitory,Marketing,Year 2,2.00 - 2.49,High,Yes,Yes,No,No,No,Yes
+2023-06-08 02:19:43,Male,21.0,Khulna,Southeast University,With Roommates,Statistics,year 4,3.50 - 4.00,High,Yes,Yes,No,No,Yes,
+2023-03-04 18:41:41,Female,,Barishal,Rajshahi University,,Statistics,Year 1,2.00 - 2.49,High,No,Yes,Yes,Yes,No,Yes
+2022-06-14 17:35:03,Male,21.0,Rajshahi,Shahjalal University of Science and Technology,Alone,Social Work,Year 2,2.50 - 2.99,High,No,No,Yes,No,Yes,No
+2022-12-22 16:36:54,Male,21.0,Barishal,Ahsanullah University of Science and Technology,Alone,Business Administration,year 2,2.50 - 2.99,Medium,Yes,Yes,Yes,No,,Yes
+2024-04-05 06:32:48,Female,24.0,Barishal,East West University,With Family,Education,Year 3,,Medium,No,No,No,No,Yes,Yes
+2025-11-19 16:21:33,Female,20.0,Mymensingh,University of Dhaka,,Agriculture,year 2,3.00 - 3.49,Low,,No,Yes,No,,No
+2022-07-20 14:40:47,Male,21.0,Dhaka,BRAC University,With Family,Business Administration,Year 3,3.00 - 3.49,,No,Yes,No,No,No,Yes
+2022-05-01 23:43:07,Male,23.0,Mymensingh,Bangladesh University of Engineering and Technology,With Roommates,Statistics,year 2,3.00 - 3.49,Medium,No,,Yes,No,No,Yes
+2022-02-17 23:53:27,Male,,Rangpur,East West University,With Family,Economics,year 1,3.00 - 3.49,Medium,Yes,Yes,No,Yes,Yes,No
+2023-06-20 22:02:45,Male,18.0,Chattogram,Bangladesh University of Engineering and Technology,Dormitory,CSE,year 1,3.00 - 3.49,High,Yes,No,Yes,No,No,No
+2024-07-23 14:58:23,Male,21.0,Rangpur,North South University,Dormitory,Anthropology,year 1,3.50 - 4.00,High,No,Yes,No,No,Yes,No
+2025-04-13 16:34:31,Female,25.0,,Daffodil International University,With Roommates,English,year 2,3.50 - 4.00,Low,Yes,No,Yes,Yes,Yes,No
+2022-04-09 19:56:21,Female,,Khulna,Khulna University,Alone,Management,year 3,2.00 - 2.49,Medium,No,Yes,,No,Yes,Yes
+2022-05-04 07:04:19,Male,25.0,Sylhet,Shahjalal University of Science and Technology,Dormitory,Telecommunication,year 1,3.00 - 3.49,Low,Yes,Yes,No,No,No,No
+2022-03-31 08:17:59,Female,19.0,Rajshahi,Rajshahi University,Alone,Architecture,Year 4,0 - 1.99,High,,Yes,Yes,Yes,Yes,No
+2024-11-17 12:26:59,Male,20.0,Barishal,Independent University Bangladesh,Dormitory,Psychology,Year 1,,High,No,No,No,Yes,No,No
+2022-11-02 04:45:03,,18.0,Barishal,American International University-Bangladesh,Alone,Biochemistry,year 1,3.00 - 3.49,Medium,No,No,No,Yes,,Yes
+2025-12-20 09:45:05,Female,24.0,Barishal,East West University,With Roommates,Law,year 3,0 - 1.99,Low,Yes,No,No,Yes,Yes,Yes
+2022-06-30 10:24:43,Female,22.0,,,Dormitory,Political Science,year 1,2.50 - 2.99,Medium,Yes,Yes,Yes,No,Yes,No
+2023-02-18 23:42:43,,22.0,Rangpur,Jahangirnagar University,With Roommates,Anthropology,Year 3,3.00 - 3.49,Medium,Yes,No,Yes,No,Yes,Yes
+2024-06-25 07:55:54,Male,24.0,Sylhet,North South University,With Roommates,Economics,Year 3,2.50 - 2.99,Medium,Yes,Yes,No,Yes,Yes,Yes
+2022-09-25 07:33:17,Female,26.0,Mymensingh,East West University,Alone,Urban Planning,year 3,2.50 - 2.99,Low,No,Yes,No,Yes,Yes,No
+2025-01-16 14:21:17,Male,21.0,Rangpur,Shahjalal University of Science and Technology,Dormitory,Anthropology,year 1,2.00 - 2.49,High,No,Yes,,No,No,No
+2024-06-10 00:30:16,Female,19.0,Barishal,Military Institute of Science and Technology,Alone,Textile Engineering,year 1,2.50 - 2.99,High,No,No,,No,No,Yes
+2023-02-02 05:01:38,Male,23.0,Dhaka,Southeast University,Dormitory,Media Studies,Year 1,,High,No,No,Yes,Yes,Yes,Yes
+,Female,23.0,Khulna,University of Dhaka,With Family,Genetics,year 1,2.50 - 2.99,High,Yes,No,Yes,No,,No
+2024-01-31 19:52:03,Male,21.0,Khulna,,Alone,Computer Engineering,year 1,2.00 - 2.49,,No,Yes,No,No,,No
+2023-01-19 07:18:39,Male,19.0,Rajshahi,Rajshahi University,With Family,Accounting,Year 4,3.00 - 3.49,High,Yes,No,Yes,Yes,No,Yes
+2022-08-18 19:13:47,Female,25.0,Mymensingh,,Dormitory,,year 3,0 - 1.99,Medium,Yes,Yes,Yes,No,Yes,Yes
+2023-04-23 02:27:42,Female,26.0,Sylhet,Independent University Bangladesh,With Roommates,Telecommunication,Year 3,2.50 - 2.99,High,Yes,No,No,No,No,Yes
+2025-03-15 12:08:21,Female,26.0,Dhaka,North South University,Alone,Islamic Studies,,3.00 - 3.49,Medium,Yes,Yes,Yes,Yes,No,Yes
+2023-08-07 06:39:32,Male,,Rajshahi,Khulna University,With Family,Agriculture,Year 1,2.00 - 2.49,Low,No,Yes,Yes,No,No,Yes
+2022-08-30 02:30:57,Female,25.0,,Rajshahi University,Dormitory,English,Year 1,3.00 - 3.49,Medium,Yes,No,No,Yes,Yes,No
+2023-08-07 14:55:46,Female,21.0,Sylhet,Bangladesh University of Engineering and Technology,With Roommates,Telecommunication,Year 1,,High,Yes,Yes,Yes,Yes,,Yes
+2025-12-31 12:52:53,Female,24.0,Dhaka,University of Dhaka,With Family,Political Science,year 4,3.50 - 4.00,Medium,Yes,No,No,No,Yes,Yes
+2023-02-01 18:01:39,Female,18.0,,Bangladesh University of Engineering and Technology,Alone,Sociology,Year 2,3.00 - 3.49,Medium,Yes,No,Yes,No,No,Yes
+2022-01-19 10:08:04,Male,21.0,Mymensingh,University of Chittagong,With Roommates,Statistics,Year 2,3.50 - 4.00,High,No,No,No,No,Yes,Yes
+2024-09-04 06:25:00,Female,19.0,Barishal,East West University,With Family,Urban Planning,year 4,2.00 - 2.49,Medium,No,No,Yes,No,Yes,Yes
+2023-07-17 12:26:35,Male,22.0,Rajshahi,Shahjalal University of Science and Technology,With Roommates,Physics,year 3,,Low,No,Yes,No,Yes,No,Yes
+2024-04-30 01:37:23,Male,25.0,Mymensingh,Southeast University,With Roommates,Computer Engineering,Year 2,2.00 - 2.49,Medium,No,No,Yes,Yes,Yes,No
+2024-02-29 21:16:46,Male,25.0,Barishal,Islamic University of Technology,With Roommates,Media Studies,year 3,0 - 1.99,High,Yes,Yes,,Yes,No,No
+2025-10-16 01:12:25,Female,21.0,Mymensingh,American International University-Bangladesh,Dormitory,Genetics,year 2,3.50 - 4.00,Low,Yes,No,Yes,No,,Yes
+2025-01-21 00:59:31,Female,21.0,Sylhet,Ahsanullah University of Science and Technology,Dormitory,Biochemistry,Year 1,0 - 1.99,High,Yes,Yes,Yes,Yes,Yes,Yes
+2022-08-13 14:27:40,Male,19.0,,Ahsanullah University of Science and Technology,With Family,Architecture,year 1,3.00 - 3.49,,No,No,No,Yes,No,
+2024-02-05 11:35:05,Male,19.0,Sylhet,University of Asia Pacific,With Family,Biochemistry,year 2,0 - 1.99,Medium,No,Yes,No,Yes,Yes,No
+2022-11-22 07:19:41,Male,,Barishal,Ahsanullah University of Science and Technology,With Roommates,Pharmacy,Year 1,2.00 - 2.49,Low,Yes,Yes,Yes,No,Yes,Yes
+2023-09-14 17:25:28,Male,26.0,Rajshahi,Daffodil International University,With Family,Law,Year 1,2.00 - 2.49,Medium,Yes,Yes,No,No,No,No
+2024-07-03 05:38:40,Male,25.0,Khulna,Leading University,Dormitory,Statistics,year 3,0 - 1.99,High,No,Yes,No,Yes,Yes,Yes
+2023-08-25 23:48:00,Female,26.0,Rajshahi,University of Dhaka,Alone,Tourism,Year 4,2.00 - 2.49,,No,Yes,Yes,Yes,Yes,No
+2025-05-21 00:59:22,Female,25.0,Mymensingh,Leading University,With Roommates,Statistics,Year 4,2.00 - 2.49,Low,Yes,No,Yes,Yes,No,No
+2022-09-11 21:04:49,Female,22.0,Rangpur,Khulna University,With Family,Sociology,Year 3,3.00 - 3.49,,No,No,No,Yes,No,No
+2022-03-01 22:56:29,Female,23.0,Dhaka,,Dormitory,Finance,year 2,2.00 - 2.49,High,No,Yes,Yes,Yes,No,No
+2025-12-20 08:39:19,Male,19.0,Mymensingh,,With Family,Finance,year 3,2.00 - 2.49,Low,No,No,No,No,,Yes
+2024-05-17 17:31:04,Male,26.0,Mymensingh,Rajshahi University,With Roommates,Management,Year 4,2.50 - 2.99,High,Yes,Yes,No,No,Yes,No
+,Male,25.0,Khulna,Southeast University,Dormitory,Chemistry,,3.00 - 3.49,Medium,No,No,Yes,No,No,Yes
+2025-03-26 11:37:33,Female,,Khulna,American International University-Bangladesh,Dormitory,Genetics,year 1,3.50 - 4.00,High,Yes,No,No,,Yes,No
+2022-06-06 10:03:05,Male,25.0,Barishal,University of Asia Pacific,With Family,,year 2,2.50 - 2.99,Medium,,Yes,No,Yes,No,No
+2023-02-09 04:05:45,Male,22.0,Rangpur,Southeast University,Dormitory,Law,Year 1,0 - 1.99,Low,Yes,Yes,Yes,No,No,Yes
+2024-04-21 11:15:22,Male,21.0,Khulna,Ahsanullah University of Science and Technology,Dormitory,Mathematics,Year 3,3.50 - 4.00,Low,Yes,No,No,Yes,Yes,Yes
+2022-05-04 08:08:25,Male,26.0,Barishal,Islamic University of Technology,Dormitory,International Relations,year 1,3.50 - 4.00,Medium,No,,Yes,No,Yes,No
+2023-12-02 14:38:50,Female,25.0,Mymensingh,Bangladesh University of Engineering and Technology,With Roommates,Business Administration,year 1,2.00 - 2.49,Low,Yes,Yes,No,No,Yes,Yes
+2023-03-27 03:08:03,Female,21.0,Chattogram,Independent University Bangladesh,,International Relations,year 2,3.00 - 3.49,Low,Yes,Yes,No,Yes,Yes,No
+2023-03-18 22:06:12,Female,22.0,Chattogram,Southeast University,With Roommates,History,year 4,3.00 - 3.49,Medium,,No,No,No,No,Yes
+2025-05-10 09:24:59,Female,20.0,Dhaka,Islamic University of Technology,With Family,Environmental Science,Year 2,,Medium,Yes,No,Yes,Yes,No,No
+2023-01-10 06:18:23,Male,19.0,Rajshahi,University of Asia Pacific,Alone,Genetics,Year 3,3.00 - 3.49,,No,Yes,No,No,No,Yes
+2022-04-22 11:41:32,Female,21.0,Dhaka,North South University,Dormitory,Statistics,Year 4,,Low,No,Yes,Yes,No,Yes,Yes
+2024-06-05 18:34:21,Male,25.0,Sylhet,BRAC University,With Roommates,Islamic Studies,year 2,0 - 1.99,High,Yes,No,No,Yes,,No
+2025-04-09 10:19:43,Female,19.0,Rangpur,United International University,Dormitory,Islamic Studies,Year 3,2.50 - 2.99,Medium,No,No,Yes,Yes,Yes,No
+2023-06-29 17:47:41,Female,23.0,Khulna,Shahjalal University of Science and Technology,Dormitory,Genetics,year 1,2.50 - 2.99,Medium,Yes,No,No,No,,No
+2023-10-10 12:10:43,Female,20.0,Mymensingh,University of Dhaka,Dormitory,Telecommunication,Year 3,2.00 - 2.49,High,No,Yes,No,Yes,No,No
+2024-07-14 19:04:55,Female,26.0,Chattogram,American International University-Bangladesh,With Family,Biochemistry,Year 4,2.00 - 2.49,Medium,Yes,No,No,No,No,Yes
+2024-05-07 01:13:54,Male,19.0,Chattogram,University of Dhaka,Alone,Sociology,Year 2,0 - 1.99,Low,No,No,No,No,Yes,No
+2022-07-31 15:21:03,Male,21.0,Barishal,Independent University Bangladesh,Dormitory,Islamic Studies,Year 2,2.50 - 2.99,Medium,No,No,No,Yes,Yes,Yes
+2025-09-28 11:05:15,Male,18.0,Barishal,,,Information Systems,year 1,0 - 1.99,High,No,Yes,No,Yes,Yes,No
+2024-09-16 01:19:13,Male,26.0,Chattogram,Jahangirnagar University,Alone,Social Work,Year 3,3.50 - 4.00,Low,Yes,Yes,No,Yes,No,Yes
+2024-03-29 11:28:40,,23.0,Mymensingh,University of Chittagong,With Family,Environmental Science,year 2,3.50 - 4.00,High,No,No,No,No,No,No
+2023-08-11 17:59:39,Female,22.0,Sylhet,,,Political Science,year 4,2.00 - 2.49,High,Yes,Yes,Yes,Yes,No,No
+2025-10-03 15:34:20,Male,25.0,Sylhet,University of Chittagong,Alone,Political Science,year 2,2.00 - 2.49,Low,Yes,No,No,No,No,Yes
+2023-03-17 15:37:36,Male,26.0,Rajshahi,North South University,Dormitory,Telecommunication,Year 1,0 - 1.99,Medium,No,No,Yes,No,No,No
+,Female,18.0,Barishal,American International University-Bangladesh,With Family,Mathematics,Year 1,,High,Yes,Yes,,,Yes,Yes
+2025-09-09 16:46:01,Male,25.0,Rangpur,,Dormitory,Statistics,year 3,2.00 - 2.49,Low,No,Yes,No,No,No,Yes
+2024-04-01 13:04:03,Female,23.0,Khulna,North South University,Alone,Education,Year 4,0 - 1.99,Medium,No,No,Yes,No,Yes,Yes
+2022-11-27 04:56:55,Male,24.0,Barishal,East West University,With Family,Software Engineering,Year 4,3.00 - 3.49,High,No,,,No,Yes,No
+2023-10-02 18:33:43,Female,21.0,Chattogram,Islamic University of Technology,Alone,Civil,year 3,0 - 1.99,Medium,Yes,No,No,No,No,Yes
+2024-06-09 13:07:16,Male,26.0,Mymensingh,Independent University Bangladesh,With Family,Agriculture,year 3,3.00 - 3.49,High,Yes,No,No,No,No,Yes
+,Male,26.0,Barishal,American International University-Bangladesh,Alone,Microbiology,year 3,0 - 1.99,,Yes,No,No,Yes,No,Yes
+,Female,22.0,Chattogram,Ahsanullah University of Science and Technology,With Roommates,Mathematics,Year 4,3.50 - 4.00,Medium,No,No,Yes,No,Yes,Yes
+2025-12-23 04:13:36,Male,23.0,Rajshahi,Bangladesh University of Engineering and Technology,Alone,Biochemistry,year 4,2.00 - 2.49,Low,No,No,No,Yes,Yes,No
+2023-01-30 20:38:23,Female,,Dhaka,,With Roommates,Social Work,year 3,2.50 - 2.99,High,Yes,,Yes,No,Yes,Yes
+2024-03-15 20:11:27,Female,24.0,Chattogram,American International University-Bangladesh,Dormitory,English,,0 - 1.99,High,Yes,No,No,No,No,Yes
+2024-11-10 08:17:48,Female,26.0,Rangpur,University of Chittagong,Dormitory,Computer Engineering,Year 3,3.00 - 3.49,High,Yes,Yes,Yes,Yes,No,No
+2024-08-26 20:30:10,Female,22.0,Rajshahi,Daffodil International University,Alone,Genetics,Year 3,2.50 - 2.99,High,,No,No,No,Yes,Yes
+2025-03-06 20:28:27,Male,24.0,Mymensingh,Rajshahi University,With Roommates,Textile Engineering,Year 4,2.50 - 2.99,High,Yes,Yes,No,Yes,No,No
+2024-07-25 06:54:59,Female,26.0,Sylhet,Leading University,Alone,Social Work,Year 1,2.50 - 2.99,Low,Yes,Yes,Yes,No,Yes,No
+,Female,20.0,Sylhet,,Dormitory,Software Engineering,Year 4,0 - 1.99,Medium,No,No,No,Yes,No,Yes
+2024-09-17 02:58:49,,26.0,Chattogram,East West University,,Management,year 3,2.00 - 2.49,Medium,No,Yes,Yes,No,No,Yes
+2024-06-23 18:19:22,Male,22.0,Barishal,Southeast University,With Roommates,Information Systems,Year 3,0 - 1.99,High,Yes,Yes,No,Yes,No,
+2025-04-05 13:31:02,Male,21.0,Rajshahi,Shahjalal University of Science and Technology,Dormitory,Urban Planning,Year 3,3.00 - 3.49,Low,No,Yes,No,Yes,No,No
+2023-06-25 10:07:51,Female,25.0,Dhaka,Daffodil International University,With Roommates,Anthropology,year 4,2.50 - 2.99,High,No,No,Yes,Yes,No,No
+2022-06-03 02:34:11,Male,21.0,Mymensingh,University of Chittagong,With Roommates,Textile Engineering,year 2,3.00 - 3.49,Low,No,Yes,No,Yes,Yes,No
+2023-08-27 06:08:54,Male,18.0,Rangpur,Shahjalal University of Science and Technology,With Family,Microbiology,Year 1,3.50 - 4.00,High,No,Yes,No,Yes,Yes,No
+2022-03-07 12:14:00,Female,21.0,Rajshahi,Khulna University,Dormitory,Anthropology,year 2,2.50 - 2.99,Medium,No,Yes,No,Yes,Yes,No
+2023-05-09 17:36:28,Female,26.0,Rajshahi,Daffodil International University,With Roommates,Marketing,year 1,3.50 - 4.00,High,No,No,Yes,No,,Yes
+2022-03-14 03:37:31,Male,20.0,Barishal,Southeast University,Alone,Education,Year 2,2.50 - 2.99,High,,Yes,No,Yes,No,Yes
+2022-03-24 11:31:01,Male,22.0,Rangpur,Khulna University,With Family,Education,Year 4,2.00 - 2.49,Medium,Yes,No,No,Yes,Yes,No
+2025-05-14 07:29:20,Female,24.0,Sylhet,East West University,Dormitory,Sociology,Year 1,0 - 1.99,Medium,,No,No,Yes,Yes,No
+2022-02-19 13:00:20,Female,20.0,Rangpur,Military Institute of Science and Technology,With Roommates,Agriculture,Year 3,2.50 - 2.99,High,No,No,No,No,No,No
+2023-08-22 16:05:57,Male,,Barishal,University of Asia Pacific,With Family,International Relations,Year 1,2.50 - 2.99,High,No,No,Yes,No,Yes,
+2022-09-04 14:26:52,Female,22.0,Barishal,North South University,Dormitory,Urban Planning,year 1,0 - 1.99,Low,,No,Yes,Yes,No,
+2025-11-06 05:54:22,Male,21.0,Rangpur,Jahangirnagar University,With Family,Public Health,Year 3,2.00 - 2.49,Low,No,Yes,Yes,Yes,Yes,No
+2022-03-20 06:05:06,Female,24.0,Dhaka,Independent University Bangladesh,Alone,Mathematics,Year 1,2.00 - 2.49,High,Yes,Yes,No,,Yes,Yes
+2023-06-13 12:16:48,Female,26.0,Barishal,East West University,With Family,Genetics,year 2,2.00 - 2.49,Medium,Yes,Yes,Yes,Yes,Yes,No
+2025-11-06 02:24:55,Male,22.0,Chattogram,Leading University,Alone,Telecommunication,year 1,3.00 - 3.49,Low,No,No,No,No,No,No
+,Female,22.0,Dhaka,Islamic University of Technology,With Roommates,Telecommunication,Year 3,0 - 1.99,High,No,No,No,No,Yes,Yes
+2024-02-14 09:27:31,Female,,Barishal,Islamic University of Technology,With Family,Islamic Studies,year 4,2.00 - 2.49,Low,Yes,No,Yes,Yes,No,No
+2023-03-06 09:35:21,Female,23.0,Barishal,University of Chittagong,With Roommates,English,Year 4,0 - 1.99,High,Yes,No,No,No,No,Yes
+2024-12-08 14:26:58,Female,24.0,Barishal,American International University-Bangladesh,Dormitory,Environmental Science,,3.00 - 3.49,Medium,Yes,Yes,Yes,Yes,No,Yes
+2024-10-02 01:06:24,Male,25.0,Rangpur,Khulna University,Alone,Chemistry,Year 1,2.50 - 2.99,High,No,Yes,Yes,No,Yes,No
+2024-02-06 02:32:49,Male,22.0,Rajshahi,Shahjalal University of Science and Technology,With Roommates,Information Systems,year 4,2.50 - 2.99,Medium,,Yes,Yes,No,Yes,Yes
+2024-05-02 02:28:44,Male,18.0,Dhaka,BRAC University,With Family,Social Work,Year 2,3.50 - 4.00,High,Yes,No,Yes,Yes,No,
+2024-06-20 08:40:37,Male,25.0,Mymensingh,American International University-Bangladesh,,Marketing,Year 1,3.50 - 4.00,High,No,Yes,Yes,No,Yes,No
+2024-01-11 20:22:03,Male,26.0,,University of Asia Pacific,With Family,Pharmacy,Year 2,0 - 1.99,High,Yes,No,Yes,Yes,No,No
+2025-06-08 05:40:04,Female,20.0,Rajshahi,,Alone,Mathematics,Year 4,2.50 - 2.99,Low,No,No,Yes,Yes,Yes,Yes
+2022-04-05 04:54:53,,24.0,Mymensingh,Khulna University,With Family,Education,,2.00 - 2.49,Low,Yes,Yes,No,Yes,No,No
+2022-06-30 17:48:57,Male,21.0,Rajshahi,North South University,Dormitory,Chemistry,Year 4,2.50 - 2.99,High,Yes,No,No,No,Yes,No
+2022-04-16 03:31:51,Female,25.0,Mymensingh,University of Dhaka,Alone,Physics,year 3,,Medium,Yes,Yes,No,Yes,No,Yes
+2022-12-14 00:01:33,Female,19.0,Chattogram,BRAC University,Alone,Media Studies,year 2,2.00 - 2.49,High,Yes,No,No,Yes,Yes,No
+2023-03-21 13:48:02,Male,24.0,Rajshahi,Daffodil International University,Alone,Business Administration,Year 1,0 - 1.99,Low,Yes,No,Yes,Yes,No,Yes
+,Male,22.0,Khulna,Daffodil International University,Dormitory,Management,Year 2,2.00 - 2.49,Low,No,Yes,,Yes,No,No
+2024-08-14 15:20:44,Female,20.0,Mymensingh,Independent University Bangladesh,Alone,Islamic Studies,Year 1,2.50 - 2.99,Low,Yes,Yes,Yes,No,Yes,Yes
+2022-10-07 16:42:17,Female,19.0,Sylhet,BRAC University,Alone,Agriculture,Year 2,2.00 - 2.49,High,Yes,Yes,Yes,Yes,Yes,No
+2023-02-27 14:36:46,Male,18.0,Sylhet,University of Dhaka,,Social Work,year 2,2.50 - 2.99,High,No,No,Yes,No,No,No
+2024-05-01 12:15:52,Female,26.0,Chattogram,Islamic University of Technology,Dormitory,Islamic Studies,year 3,2.00 - 2.49,Low,No,Yes,Yes,,No,Yes
+2024-01-07 18:18:07,Female,21.0,Dhaka,Rajshahi University,Dormitory,,Year 1,2.50 - 2.99,Medium,Yes,No,Yes,Yes,Yes,No
+,Male,24.0,Mymensingh,Rajshahi University,With Roommates,,year 3,3.50 - 4.00,High,Yes,,No,No,Yes,No
+2024-06-09 05:59:53,Female,,Sylhet,Military Institute of Science and Technology,,Mathematics,year 4,2.00 - 2.49,High,Yes,Yes,No,Yes,No,Yes
+2022-06-17 20:40:19,Male,24.0,Rangpur,Leading University,With Family,EEE,Year 3,0 - 1.99,Low,Yes,No,No,No,Yes,
+2025-05-31 00:54:24,Female,23.0,Mymensingh,,Dormitory,Political Science,year 3,3.50 - 4.00,High,Yes,No,Yes,Yes,Yes,Yes
+2024-02-15 05:31:37,Female,20.0,,University of Dhaka,Dormitory,Textile Engineering,Year 2,2.00 - 2.49,Low,No,No,Yes,No,Yes,No
+2022-05-25 03:20:35,Female,19.0,Chattogram,Ahsanullah University of Science and Technology,Alone,English,year 3,3.50 - 4.00,Low,No,No,No,Yes,No,Yes
+2024-08-23 23:27:24,Male,26.0,Dhaka,Rajshahi University,Alone,Social Work,Year 3,3.00 - 3.49,,No,No,No,No,No,Yes
+2022-07-10 21:50:44,Male,25.0,Mymensingh,North South University,Dormitory,Finance,year 2,0 - 1.99,High,Yes,No,No,No,No,No
+2022-08-05 15:34:19,Male,23.0,Rangpur,Leading University,With Roommates,Physics,year 2,0 - 1.99,Low,No,,Yes,Yes,Yes,Yes
+2023-08-28 19:15:48,Female,18.0,,BRAC University,Dormitory,Business Administration,Year 2,3.00 - 3.49,High,No,No,No,Yes,Yes,No
+2025-05-07 17:59:52,Male,24.0,Rajshahi,United International University,With Roommates,Genetics,Year 1,3.50 - 4.00,High,Yes,Yes,No,,,Yes
+2022-01-05 18:35:27,Male,26.0,Barishal,BRAC University,With Roommates,Pharmacy,year 1,3.50 - 4.00,Medium,No,Yes,Yes,Yes,Yes,Yes
+2025-09-07 15:15:54,Male,24.0,Sylhet,BRAC University,With Family,Social Work,Year 3,0 - 1.99,Medium,,Yes,Yes,Yes,No,Yes
+2023-11-12 16:19:13,Female,23.0,Sylhet,East West University,Alone,,Year 1,,High,No,No,Yes,Yes,No,Yes
+2022-01-07 10:28:40,Female,,Sylhet,Independent University Bangladesh,Alone,Pharmacy,Year 2,2.50 - 2.99,Low,Yes,Yes,Yes,Yes,No,No
+2022-11-09 01:03:40,Female,18.0,Mymensingh,Bangladesh University of Engineering and Technology,Alone,Physics,year 3,2.00 - 2.49,High,Yes,Yes,No,No,Yes,Yes
+2024-01-13 14:26:41,Female,18.0,,Shahjalal University of Science and Technology,With Roommates,Tourism,Year 4,3.00 - 3.49,Medium,No,Yes,Yes,Yes,No,No
+,Male,26.0,Chattogram,Military Institute of Science and Technology,With Roommates,Microbiology,year 1,2.00 - 2.49,Low,Yes,No,No,No,Yes,Yes
+2024-01-21 11:04:53,Male,18.0,Rajshahi,Islamic University of Technology,With Family,Islamic Studies,year 2,3.50 - 4.00,High,No,No,Yes,Yes,No,No
+2025-04-24 04:09:26,Male,22.0,,Jahangirnagar University,With Family,Civil,year 1,2.50 - 2.99,Medium,Yes,Yes,No,No,No,No
+2024-07-08 18:32:37,Female,19.0,Mymensingh,Southeast University,Dormitory,Accounting,Year 4,3.50 - 4.00,Low,Yes,Yes,Yes,No,Yes,No
+2025-04-03 04:11:10,Male,22.0,Sylhet,Jahangirnagar University,,Mathematics,Year 3,2.00 - 2.49,High,Yes,No,,No,Yes,No
+2024-03-08 22:57:50,,22.0,Sylhet,Daffodil International University,With Family,Tourism,Year 3,3.00 - 3.49,High,No,Yes,Yes,No,No,
+2023-06-01 22:11:51,Male,23.0,Sylhet,Bangladesh University of Engineering and Technology,With Roommates,Psychology,Year 3,0 - 1.99,Medium,Yes,No,No,Yes,,No
+2023-05-30 08:49:48,Male,24.0,Mymensingh,Daffodil International University,With Roommates,English,year 3,3.50 - 4.00,Low,No,,Yes,No,No,No
+2024-04-02 23:37:19,Female,21.0,Rajshahi,Military Institute of Science and Technology,,Chemistry,year 3,2.50 - 2.99,Low,Yes,Yes,Yes,Yes,No,Yes
+2024-03-05 09:49:19,Male,,Khulna,Leading University,Dormitory,Telecommunication,Year 1,2.00 - 2.49,Medium,No,Yes,No,Yes,Yes,
+2024-04-23 15:21:26,Male,23.0,Barishal,University of Asia Pacific,With Family,English,year 4,0 - 1.99,High,No,Yes,No,No,,Yes
+2023-06-25 21:59:25,Male,20.0,Rangpur,,Alone,Public Health,year 4,,Medium,Yes,Yes,,No,No,No
+2022-01-07 22:01:23,Male,24.0,Mymensingh,United International University,With Roommates,Finance,Year 1,3.00 - 3.49,Low,Yes,Yes,No,Yes,No,Yes
+2025-01-03 02:06:23,Male,18.0,Rangpur,United International University,Dormitory,Architecture,Year 4,2.00 - 2.49,High,Yes,No,Yes,No,No,No
+2024-03-28 08:22:39,Female,22.0,Barishal,Southeast University,Alone,Economics,year 3,2.50 - 2.99,Low,No,Yes,Yes,No,Yes,No
+2024-08-30 21:54:29,Female,20.0,Barishal,Independent University Bangladesh,With Roommates,Environmental Science,year 3,0 - 1.99,Low,No,No,Yes,Yes,Yes,Yes
+2025-03-21 08:15:20,Female,26.0,Mymensingh,East West University,Alone,Software Engineering,year 4,2.50 - 2.99,Low,No,Yes,Yes,Yes,,Yes
+2023-09-30 10:51:25,Female,24.0,Sylhet,University of Chittagong,With Family,International Relations,,0 - 1.99,Medium,,Yes,No,Yes,No,Yes
+2024-11-02 04:11:06,Female,18.0,Barishal,Daffodil International University,With Family,CSE,year 2,2.00 - 2.49,Medium,Yes,Yes,,Yes,Yes,No
+2024-08-26 19:49:34,Male,19.0,Dhaka,Military Institute of Science and Technology,With Roommates,Biochemistry,year 3,3.50 - 4.00,Medium,No,Yes,Yes,No,No,No
+2023-09-30 08:35:11,Male,25.0,Rangpur,BRAC University,Dormitory,Environmental Science,year 3,3.00 - 3.49,Low,Yes,No,No,Yes,No,No
+,Female,26.0,Rangpur,Islamic University of Technology,With Family,Pharmacy,year 4,3.00 - 3.49,Low,Yes,Yes,Yes,Yes,Yes,Yes
+,Female,22.0,Dhaka,Military Institute of Science and Technology,With Roommates,Environmental Science,year 1,0 - 1.99,High,Yes,,,Yes,,Yes
+2025-10-28 00:58:27,,22.0,Barishal,University of Dhaka,With Family,Law,Year 2,0 - 1.99,Low,No,No,Yes,Yes,Yes,Yes
+2024-12-28 01:24:01,Male,22.0,Chattogram,Leading University,With Roommates,EEE,year 4,3.00 - 3.49,Low,No,Yes,No,No,Yes,Yes
+2024-06-08 17:25:47,Male,19.0,Khulna,Khulna University,With Roommates,Information Systems,year 4,3.00 - 3.49,High,Yes,No,Yes,Yes,Yes,Yes
+2023-04-28 15:20:52,Female,22.0,Sylhet,East West University,Dormitory,Economics,Year 1,0 - 1.99,High,No,Yes,No,Yes,Yes,No
+2025-06-08 07:09:01,Male,21.0,Mymensingh,University of Asia Pacific,With Family,English,year 3,2.00 - 2.49,High,No,Yes,No,No,No,No
+2023-06-27 22:05:10,Male,26.0,Khulna,Daffodil International University,Alone,Islamic Studies,Year 1,2.50 - 2.99,High,No,Yes,No,,Yes,No
+2025-09-15 22:01:29,Female,21.0,Rangpur,Southeast University,With Family,Statistics,year 4,2.00 - 2.49,Low,No,Yes,No,Yes,Yes,Yes
+2024-10-05 07:59:48,Male,25.0,Rangpur,Daffodil International University,With Roommates,History,Year 2,3.50 - 4.00,Low,No,No,Yes,No,,No
+2024-11-08 21:17:44,,21.0,Mymensingh,North South University,With Family,Anthropology,year 3,3.00 - 3.49,Medium,Yes,No,Yes,No,Yes,No
+2025-06-28 18:46:41,Male,18.0,Barishal,Rajshahi University,Alone,Public Health,Year 3,2.00 - 2.49,Low,Yes,No,No,No,No,Yes
+2023-05-06 17:14:05,Female,24.0,Dhaka,Southeast University,With Roommates,Statistics,year 4,3.00 - 3.49,Low,Yes,Yes,,No,No,Yes
+2025-02-08 01:07:00,Female,25.0,Chattogram,BRAC University,Dormitory,Microbiology,Year 1,2.00 - 2.49,High,Yes,No,Yes,Yes,,No
+2022-06-15 02:38:42,Male,22.0,Barishal,BRAC University,With Roommates,Civil,Year 4,2.50 - 2.99,,Yes,No,Yes,Yes,No,Yes
+2023-07-30 21:29:23,Male,26.0,Rangpur,Shahjalal University of Science and Technology,Dormitory,CSE,Year 4,0 - 1.99,High,Yes,Yes,No,Yes,Yes,No
+2024-05-04 14:16:14,Male,22.0,,Bangladesh University of Engineering and Technology,Alone,Anthropology,,3.00 - 3.49,High,No,Yes,No,Yes,No,Yes
+,Female,25.0,Dhaka,University of Asia Pacific,With Family,Islamic Studies,year 4,2.00 - 2.49,Medium,,No,,Yes,Yes,No
+2023-03-04 23:28:16,Female,23.0,Dhaka,Daffodil International University,With Roommates,Chemistry,year 4,2.50 - 2.99,Low,No,No,Yes,Yes,Yes,No
+2024-08-13 06:19:56,Male,24.0,Rangpur,Jahangirnagar University,With Roommates,Biochemistry,,3.00 - 3.49,,Yes,No,Yes,No,Yes,No
+2025-11-03 04:09:20,Female,23.0,Mymensingh,Military Institute of Science and Technology,With Family,EEE,,0 - 1.99,Low,Yes,Yes,Yes,Yes,Yes,Yes
+2025-09-08 01:19:40,Male,23.0,Dhaka,East West University,Dormitory,Chemistry,year 2,2.50 - 2.99,Medium,Yes,No,No,Yes,Yes,Yes
+2024-04-01 09:36:00,Female,21.0,Khulna,BRAC University,Alone,Islamic Studies,year 3,2.50 - 2.99,Medium,No,Yes,Yes,,Yes,No
+2025-09-09 07:59:34,Male,21.0,Barishal,,Alone,Accounting,,2.00 - 2.49,Medium,,Yes,No,No,No,Yes
+2024-08-04 22:09:16,Male,23.0,Mymensingh,Independent University Bangladesh,With Roommates,Tourism,Year 4,3.50 - 4.00,Low,No,Yes,Yes,No,No,Yes
+2024-03-22 08:11:55,Female,24.0,Dhaka,Rajshahi University,Dormitory,EEE,Year 1,2.50 - 2.99,Low,Yes,Yes,No,Yes,,No
+2024-01-20 13:07:21,Female,,Dhaka,University of Dhaka,With Family,Sociology,year 4,2.50 - 2.99,Low,Yes,No,No,Yes,Yes,Yes
+2025-10-14 00:14:33,Female,26.0,Rangpur,Bangladesh University of Engineering and Technology,Dormitory,CSE,Year 3,2.50 - 2.99,,No,No,No,Yes,No,No
+2025-04-09 04:16:16,Female,23.0,Dhaka,Southeast University,Dormitory,Chemistry,Year 4,2.00 - 2.49,Low,Yes,Yes,No,Yes,Yes,No
+2024-09-02 22:45:39,Male,19.0,Khulna,American International University-Bangladesh,Alone,Architecture,year 2,3.50 - 4.00,High,Yes,Yes,Yes,No,Yes,No
+2023-12-23 10:44:06,Female,25.0,Mymensingh,University of Asia Pacific,Dormitory,Information Systems,Year 4,2.50 - 2.99,Low,Yes,No,Yes,No,Yes,Yes
+2022-03-20 16:54:48,Male,23.0,Rajshahi,Shahjalal University of Science and Technology,With Family,Computer Engineering,Year 3,2.00 - 2.49,High,No,Yes,Yes,Yes,Yes,Yes
+2022-11-09 14:20:47,Female,23.0,Chattogram,University of Chittagong,With Family,Political Science,Year 2,2.50 - 2.99,Medium,Yes,No,Yes,No,No,Yes
+2025-06-23 00:15:04,Male,19.0,Dhaka,Rajshahi University,With Family,Genetics,year 2,2.00 - 2.49,High,No,Yes,Yes,No,No,No
+2024-04-29 16:22:10,Female,20.0,Barishal,Southeast University,With Family,Software Engineering,Year 1,0 - 1.99,Low,No,,No,Yes,No,Yes
+,Male,23.0,Mymensingh,Bangladesh University of Engineering and Technology,Alone,Agriculture,Year 4,0 - 1.99,,Yes,,No,Yes,Yes,Yes
+2024-11-05 02:25:40,Female,19.0,,University of Chittagong,Dormitory,,year 2,3.50 - 4.00,Medium,Yes,Yes,Yes,Yes,No,No
+2025-03-17 12:11:16,Female,21.0,Barishal,Khulna University,With Family,History,,2.00 - 2.49,High,No,No,No,No,No,Yes
+2024-01-22 20:25:30,Female,24.0,Sylhet,Islamic University of Technology,With Roommates,Management,year 4,0 - 1.99,Medium,Yes,Yes,Yes,Yes,No,Yes
+2022-10-25 13:21:34,Female,18.0,,North South University,Dormitory,Mathematics,year 3,3.00 - 3.49,Medium,No,No,No,No,No,Yes
+2023-09-18 14:11:30,Male,,Rajshahi,BRAC University,With Family,Computer Engineering,Year 2,0 - 1.99,High,Yes,Yes,No,No,No,No
+2024-04-16 10:46:55,Male,25.0,Rajshahi,Islamic University of Technology,Dormitory,Finance,Year 3,0 - 1.99,High,Yes,No,Yes,No,Yes,Yes
+2024-11-21 00:29:07,Male,25.0,Rangpur,Islamic University of Technology,With Roommates,Agriculture,Year 2,0 - 1.99,Medium,Yes,Yes,Yes,No,No,Yes
+2025-10-17 01:40:58,,21.0,Khulna,University of Asia Pacific,With Family,Civil,year 1,0 - 1.99,Medium,No,Yes,Yes,No,No,Yes
+2023-12-08 16:31:34,Female,23.0,,Leading University,With Family,Pharmacy,year 2,3.00 - 3.49,Low,No,Yes,Yes,Yes,Yes,Yes
+2023-11-20 12:35:37,Female,24.0,Chattogram,Ahsanullah University of Science and Technology,With Family,Sociology,Year 3,2.00 - 2.49,Low,Yes,Yes,No,No,Yes,No
+2024-02-23 02:51:26,Female,20.0,Chattogram,Rajshahi University,Dormitory,EEE,Year 3,3.50 - 4.00,High,Yes,Yes,Yes,No,No,No
