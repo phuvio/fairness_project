@@ -114,6 +114,16 @@ if __name__ == "__main__":
     X_train_final = X_train[selected_features]
     X_test_final = X_test[selected_features]
 
+    correlations = pd.concat([X, pd.Series(y, name='Do you have Panic attack?')], axis=1) \
+                   .corr()['Do you have Panic attack?'] \
+                   .abs() \
+                   .sort_values(ascending=False)
+    print("\nTop positive correlations:")
+    print(correlations[correlations > 0].head(15))
+
+    print("\nTop negative correlations:")
+    print(correlations[correlations < 0].head(15))
+
     # Convert numpy arrays to torch tensors
     X_train = torch.from_numpy(X_train_final.values)
     y_train = torch.from_numpy(y_train).view(-1, 1)
