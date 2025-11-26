@@ -1,7 +1,13 @@
 # Fairness project
+
 Fairness project for the University of Helsinki
 
 Dataset: Bangladeshi University Students Mental Health
+
+Dataset: Medical Insurance Cost Prediction
+[https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction?resource=download](https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction?resource=download)
+
+This dataset was created by Mohan Krishna Thalla and it provides information about 100,000 individuals including their demographics, socioeconomic status, health conditions, lifestyle factors, insurance plans, and medical expenditures. It consists of 100,000 rows and 54 features. Columns person_id and risk_score dropped. Target feature is is_high_risk.
 
 - analyze data
   - value counts
@@ -22,6 +28,7 @@ Dataset: Bangladeshi University Students Mental Health
 - mitigate fairness issues
 
   ## Report 1
+
   - explain data
     - which dataset and what is it about
     - value counts
