@@ -114,6 +114,9 @@ if __name__ == "__main__":
     X_train_final = pd.DataFrame(X_train, columns=feature_names)[selected_features]
     X_test_final = pd.DataFrame(X_test, columns=feature_names)[selected_features]
 
+    print(f"Selected {len(selected_features)} features out of {len(feature_names)}")
+    print(f"Selected features: {selected_features.tolist()}")
+
     correlations = pd.concat([X, pd.Series(y, name='is_high_risk')], axis=1) \
                    .corr()['is_high_risk'] \
                    .abs() \
