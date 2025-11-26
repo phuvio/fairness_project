@@ -1,10 +1,13 @@
 import sys
 import glob
+from pathlib import Path
 import pandas as pd
 
 def find_bangladesh_csv():
-    matches = glob.glob("../data/bangladesh_renowned_university_student_Mental_health.csv", recursive=True)
-    return matches[0] if matches else None
+    # Resolve path relative to this script so behavior doesn't depend on cwd
+    script_dir = Path(__file__).resolve().parent
+    data_file = script_dir.parent / "data" / "bangladesh_renowned_university_student_Mental_health.csv"
+    return str(data_file) if data_file.exists() else None
 
 def load_csv(path):
     try:
@@ -13,19 +16,26 @@ def load_csv(path):
         return pd.read_csv(path, encoding="latin1")
 
 def find_panic_column(df):
-    keys = [c for c in df.columns if "do you have panic attack?" in c.lower()]
-    return keys[0] if keys else None
+    for c in df.columns:
+        lc = c.lower()
+        if "panic" in lc:
+            return c
+    return None
 
 def find_depression_column(df):
-    keys = [c for c in df.columns if "do you have depression?" in c.lower()]
-
-    print(df.value_counts())
-
-    return keys[0] if keys else None
+    for c in df.columns:
+        lc = c.lower()
+        if "depress" in lc:
+            return c
+    return None
 
 def find_treatment_column(df):
-    keys = [c for c in df.columns if "did you seek any specialist for a treatment?" in c.lower()]
-    return keys[0] if keys else None
+    for c in df.columns:
+        lc = c.lower()
+        # match on common keywords around seeking treatment
+        if "treat" in lc or "specialist" in lc or "seek" in lc:
+            return c
+    return None
 
 
 
