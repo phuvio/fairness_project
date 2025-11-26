@@ -1,0 +1,142 @@
+import numpy as np
+import numpy.random as npr
+import pandas as pd
+import sys
+from pathlib import Path
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import DataLoader, TensorDataset
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+
+np.random.seed(42)
+
+def load_csv(path):
+    try:
+        return pd.read_csv(path)
+    except Exception:
+        return pd.read_csv(path, encoding="latin1")
+    
+def load_data():
+    script_dir = Path(__file__).resolve().parent
+    data_file = script_dir.parent / "data" / "bangladesh_renowned_university_student_Mental_health.csv"
+    if not data_file.exists():
+        print(f"CSV not found at: {data_file}")
+        sys.exit(1)
+
+    df = load_csv(str(data_file))
+    # drop the timestamp column
+    if 'Timestamp' in df.columns:
+        df = df.drop(columns=['Timestamp'])
+    return df
+class LogisticRegressionModel(nn.Module):
+    def __init__(self, input_dim, output_dim=1):
+        super(LogisticRegressionModel, self).__init__()
+        self.net = nn.Sequential(
+            nn.Linear(input_dim, 64),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(64, 32),
+            nn.ReLU(),
+            nn.Dropout(0.2),
+            nn.Linear(32, 1)
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+if __name__ == "__main__":
+    df = load_data()
+    # Create target (be permissive about capitalization/whitespace)
+    df['Do you have Panic attack?'] = df['Do you have Panic attack?'].apply(lambda x: 1 if str(x).strip().lower() == 'yes' else 0).values
+
+    # Build feature matrix with one-hot encoding
+    X_df = pd.get_dummies(df.drop(columns=['Do you have Panic attack?']), drop_first=True)
+
+    # Detect any non-numeric columns left after get_dummies (object dtype)
+    obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
+    if obj_cols:
+        print('Found non-numeric columns in feature matrix after get_dummies:', obj_cols)
+        # Try to coerce them to numeric; if coercion fails values become NaN
+        for c in obj_cols:
+            X_df[c] = pd.to_numeric(X_df[c], errors='coerce')
+
+    # Fill NaNs introduced by coercion (or existing) with 0 and ensure float32 dtype
+    X_df = X_df.fillna(0)
+    try:
+        X = X_df.values.astype(np.float32)
+    except Exception as e:
+        print('Failed to cast feature matrix to float32:', e)
+        print('Dtypes of X_df:')
+        print(X_df.dtypes.value_counts())
+        raise
+
+    # Standardize features
+    scaler = StandardScaler()
+    X = scaler.fit_transform(X)
+
+    y = df['Do you have Panic attack?'].values.astype(np.float32)
+
+    X = pd.DataFrame(X, columns=X_df.columns)
+
+    # Split into train/test
+    X_train, X_test, y_train, y_test = train_test_split(
+        X,
+        y,
+        test_size=0.2,
+        random_state=42
+    )
+
+    from sklearn.linear_model import RidgeCV
+
+    model_feature_selection = RidgeCV()
+    model_feature_selection.fit(X_train, y_train)
+
+    print(f"model score on training data: {model_feature_selection.score(X_train, y_train)}")
+
+    coefs = pd.DataFrame(
+        model_feature_selection.coef_.T, columns=["Coefficients"]
+    )
+
+    coefs.plot(kind="barh", figsize=(12, 16))
+    plt.title("Ridge model")
+    plt.axvline(x=0, color=".5")
+    plt.subplots_adjust(left=0.3)
+    plt.show()
+
+    # select features with coefficients more than |0.025|
+    abs_coefs = np.abs(model_feature_selection.coef_).ravel()
+    mask = abs_coefs >= 0.025
+    selected_features = X_train.columns[mask]
+    X_train_final = X_train[selected_features]
+    X_test_final = X_test[selected_features]
+
+    # Convert numpy arrays to torch tensors
+    X_train = torch.from_numpy(X_train_final.values)
+    y_train = torch.from_numpy(y_train).view(-1, 1)
+    X_test = torch.from_numpy(X_test_final.values)
+    y_test = torch.from_numpy(y_test).view(-1, 1)
+
+    train_dataset = TensorDataset(X_train, y_train)
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+    model = LogisticRegressionModel(input_dim=X_train.shape[1])
+    criterion = nn.BCEWithLogitsLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    num_epochs = 100
+    for epoch in range(num_epochs):
+        for inputs, labels in train_loader:
+            optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+        if (epoch+1) % 10 == 0:
+            print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+    with torch.no_grad():
+        y_pred = model(X_test)
+        y_pred_cls = (y_pred >= 0.5).float()
+        accuracy = (y_pred_cls.eq(y_test).sum().item()) / y_test.size(0)
+        print(f'Accuracy on test set: {accuracy * 100:.2f}%')
