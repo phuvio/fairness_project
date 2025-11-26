@@ -1,14 +1,14 @@
 import numpy as np
-import numpy.random as npr
 import pandas as pd
 import sys
 from pathlib import Path
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 
 np.random.seed(42)
@@ -72,13 +72,8 @@ if __name__ == "__main__":
         print(X_df.dtypes.value_counts())
         raise
 
-    # Standardize features
-    scaler = StandardScaler()
-    X = scaler.fit_transform(X)
-
-    y = df['is_high_risk'].values.astype(np.float32)
-
     X = pd.DataFrame(X, columns=X_df.columns)
+    y = df['is_high_risk'].values.astype(np.float32)
 
     # Split into train/test
     X_train, X_test, y_train, y_test = train_test_split(
@@ -87,6 +82,13 @@ if __name__ == "__main__":
         test_size=0.2,
         random_state=42
     )
+
+    feature_names = X_train.columns
+
+    # Standardize features
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
 
     from sklearn.linear_model import RidgeCV
 
@@ -108,9 +110,9 @@ if __name__ == "__main__":
     # select features with coefficients more than |0.005|
     abs_coefs = np.abs(model_feature_selection.coef_).ravel()
     mask = abs_coefs >= 0.005
-    selected_features = X_train.columns[mask]
-    X_train_final = X_train[selected_features]
-    X_test_final = X_test[selected_features]
+    selected_features = feature_names[mask]
+    X_train_final = pd.DataFrame(X_train, columns=feature_names)[selected_features]
+    X_test_final = pd.DataFrame(X_test, columns=feature_names)[selected_features]
 
     correlations = pd.concat([X, pd.Series(y, name='is_high_risk')], axis=1) \
                    .corr()['is_high_risk'] \
@@ -120,10 +122,10 @@ if __name__ == "__main__":
     print(correlations[correlations > 0].head(15))
 
     # Convert numpy arrays to torch tensors
-    X_train = torch.from_numpy(X_train_final.values)
-    y_train = torch.from_numpy(y_train).view(-1, 1)
-    X_test = torch.from_numpy(X_test_final.values)
-    y_test = torch.from_numpy(y_test).view(-1, 1)
+    X_train = torch.from_numpy(X_train_final.values.astype(np.float32))
+    y_train = torch.from_numpy(y_train).float().view(-1, 1)
+    X_test = torch.from_numpy(X_test_final.values.astype(np.float32))
+    y_test = torch.from_numpy(y_test).float().view(-1, 1)
 
     train_dataset = TensorDataset(X_train, y_train)
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
@@ -142,6 +144,14 @@ if __name__ == "__main__":
             print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
     with torch.no_grad():
         y_pred = model(X_test)
-        y_pred_cls = (y_pred >= 0.5).float()
+        y_pred_cls = (torch.sigmoid(y_pred) >= 0.5).float()
         accuracy = (y_pred_cls.eq(y_test).sum().item()) / y_test.size(0)
-        print(f'Accuracy on test set: {accuracy * 100:.2f}%')
+        print(f'Accuracy on test set using NN: {accuracy * 100:.2f}%')
+
+    # Random Forest Classifier
+    classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+    classifier.fit(X_train_final.values, y_train.numpy().ravel())
+    y_pred = classifier.predict(X_test_final.values)
+
+    accuracy = accuracy_score(y_test.numpy(), y_pred)
+    print(f'Accuracy on test set using Random Forest: {accuracy * 100:.2f}%')
