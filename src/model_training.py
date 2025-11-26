@@ -21,15 +21,15 @@ def load_csv(path):
     
 def load_data():
     script_dir = Path(__file__).resolve().parent
-    data_file = script_dir.parent / "data" / "bangladesh_renowned_university_student_Mental_health.csv"
+    data_file = script_dir.parent / "data" / "medical_insurance.csv"
     if not data_file.exists():
         print(f"CSV not found at: {data_file}")
         sys.exit(1)
 
     df = load_csv(str(data_file))
     # drop the timestamp column
-    if 'Timestamp' in df.columns:
-        df = df.drop(columns=['Timestamp'])
+    if 'person_id' in df.columns:
+        df = df.drop(columns=['person_id'])
     return df
 class LogisticRegressionModel(nn.Module):
     def __init__(self, input_dim, output_dim=1):
@@ -50,11 +50,9 @@ class LogisticRegressionModel(nn.Module):
 
 if __name__ == "__main__":
     df = load_data()
-    # Create target (be permissive about capitalization/whitespace)
-    df['Do you have Panic attack?'] = df['Do you have Panic attack?'].apply(lambda x: 1 if str(x).strip().lower() == 'yes' else 0).values
 
     # Build feature matrix with one-hot encoding
-    X_df = pd.get_dummies(df.drop(columns=['Do you have Panic attack?']), drop_first=True)
+    X_df = pd.get_dummies(df.drop(columns=['is_high_risk', 'risk_score']), drop_first=True)
 
     # Detect any non-numeric columns left after get_dummies (object dtype)
     obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
@@ -78,7 +76,7 @@ if __name__ == "__main__":
     scaler = StandardScaler()
     X = scaler.fit_transform(X)
 
-    y = df['Do you have Panic attack?'].values.astype(np.float32)
+    y = df['is_high_risk'].values.astype(np.float32)
 
     X = pd.DataFrame(X, columns=X_df.columns)
 
@@ -107,22 +105,19 @@ if __name__ == "__main__":
     plt.subplots_adjust(left=0.3)
     plt.show()
 
-    # select features with coefficients more than |0.025|
+    # select features with coefficients more than |0.005|
     abs_coefs = np.abs(model_feature_selection.coef_).ravel()
-    mask = abs_coefs >= 0.025
+    mask = abs_coefs >= 0.005
     selected_features = X_train.columns[mask]
     X_train_final = X_train[selected_features]
     X_test_final = X_test[selected_features]
 
-    correlations = pd.concat([X, pd.Series(y, name='Do you have Panic attack?')], axis=1) \
-                   .corr()['Do you have Panic attack?'] \
+    correlations = pd.concat([X, pd.Series(y, name='is_high_risk')], axis=1) \
+                   .corr()['is_high_risk'] \
                    .abs() \
                    .sort_values(ascending=False)
     print("\nTop positive correlations:")
     print(correlations[correlations > 0].head(15))
-
-    print("\nTop negative correlations:")
-    print(correlations[correlations < 0].head(15))
 
     # Convert numpy arrays to torch tensors
     X_train = torch.from_numpy(X_train_final.values)
