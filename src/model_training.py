@@ -111,8 +111,8 @@ if __name__ == "__main__":
     abs_coefs = np.abs(model_feature_selection.coef_).ravel()
     mask = abs_coefs >= 0.005
     selected_features = feature_names[mask]
-    X_train_final = pd.DataFrame(X_train, columns=feature_names)[selected_features]
-    X_test_final = pd.DataFrame(X_test, columns=feature_names)[selected_features]
+    X_train_final = pd.DataFrame(X_train, columns=feature_names) # [selected_features]
+    X_test_final = pd.DataFrame(X_test, columns=feature_names) # [selected_features]
 
     print(f"Selected {len(selected_features)} features out of {len(feature_names)}")
     print(f"Selected features: {selected_features.tolist()}")
@@ -135,7 +135,7 @@ if __name__ == "__main__":
     model = LogisticRegressionModel(input_dim=X_train.shape[1])
     criterion = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    num_epochs = 100
+    num_epochs = 10
     for epoch in range(num_epochs):
         for inputs, labels in train_loader:
             optimizer.zero_grad()
