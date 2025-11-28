@@ -7,10 +7,20 @@ Dataset: Bangladeshi University Students Mental Health
 Dataset: Medical Insurance Cost Prediction
 [https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction?resource=download](https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction?resource=download)
 
-This dataset was created by Mohan Krishna Thalla and it provides information about 100,000 individuals including their demographics, socioeconomic status, health conditions, lifestyle factors, insurance plans, and medical expenditures. It consists of 100,000 rows and 54 features. Columns person_id and risk_score dropped. Target feature is is_high_risk.
+Dataset: Realistic Loan Approval Dataset | US & Canada
+[https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?select=Loan_approval_data_2025.csv](https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?select=Loan_approval_data_2025.csv)
 
-Used RidgeCV to select most important features. 20 features out of 70 selected. Selected features:
-'age', 'bmi', 'annual_medical_cost', 'avg_claim_amount', 'total_claims_paid', 'chronic_count', 'hypertension', 'diabetes', 'asthma', 'copd', 'cardiovascular_disease', 'cancer_history', 'kidney_disease', 'liver_disease', 'arthritis', 'mental_health', 'proc_surgery_count', 'had_major_procedure', 'smoker_Former', 'smoker_Never'
+Unlike most loan datasets available online, this one is built on real banking criteria from US and Canadian financial institutions. Drawing from 3 years of hands-on finance industry experience, the dataset incorporates realistic correlations and business logic that reflect how actual lending decisions are made. This makes it perfect for data scientists looking to build portfolio projects that showcase not just coding ability, but genuine understanding of credit risk modelling.
+
+Target feature is 'loan_status'.
+
+Total Records: 50,000
+Features:  20 (customer_id + 18 predictors + 1 target)
+Target Distribution: 55% Approved, 45% Rejected
+Missing Values: 0 (Complete dataset)
+Product Types: Credit Card, Personal Loan, Line of Credit
+Market:  United States & Canada
+Use Case: Binary Classification (Approved/Rejected)
 
 - analyze data
   - value counts
