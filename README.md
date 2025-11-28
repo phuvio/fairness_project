@@ -14,13 +14,13 @@ Unlike most loan datasets available online, this one is built on real banking cr
 
 Target feature is 'loan_status'.
 
-Total Records: 50,000
-Features:  20 (customer_id + 18 predictors + 1 target)
-Target Distribution: 55% Approved, 45% Rejected
-Missing Values: 0 (Complete dataset)
-Product Types: Credit Card, Personal Loan, Line of Credit
-Market:  United States & Canada
-Use Case: Binary Classification (Approved/Rejected)
+- Total Records: 50,000
+- Features:  20 (customer_id + 18 predictors + 1 target)
+- Target Distribution: 55% Approved, 45% Rejected
+- Missing Values: 0 (Complete dataset)
+- Product Types: Credit Card, Personal Loan, Line of Credit
+- Market:  United States & Canada
+- Use Case: Binary Classification (Approved/Rejected)
 
 Result:
 Accuracy on test set using NeuralNetwork: 90.79%
