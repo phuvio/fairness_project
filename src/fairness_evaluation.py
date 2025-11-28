@@ -15,15 +15,15 @@ def load_csv(path):
     
 def load_data():
     script_dir = Path(__file__).resolve().parent
-    data_file = script_dir.parent / "data" / "medical_insurance.csv"
+    data_file = script_dir.parent / "data" / "Loan_approval_data_2025.csv"
     if not data_file.exists():
         print(f"CSV not found at: {data_file}")
         sys.exit(1)
 
     df = load_csv(str(data_file))
     
-    if 'person_id' in df.columns:
-        df = df.drop(columns=['person_id'])
+    if 'customer_id' in df.columns:
+        df = df.drop(columns=['customer_id'])
     
     # Fill missing numeric values with median
     for col in df.select_dtypes(include=[np.number]).columns:
@@ -38,37 +38,31 @@ def load_data():
 if __name__ == "__main__":
     df = load_data()
 
-    categorical_cols = ['education', 'urban_rural']
-    df = pd.get_dummies(df, columns=categorical_cols, drop_first=False)
-
     # Prepare label and protected attribute columns
-    df['is_high_risk'] = df['is_high_risk'].astype(int)
-
-    # Convert sex to binary: Male=1 (privileged), Female/Other=0
-    df['sex'] = df['sex'].replace({'Male': 1, 'Female': 0, 'Other':0}).astype(int)
+    df['loan_status'] = df['loan_status'].astype(int)
 
     # Discretize income: top 20% = privileged
-    df['income_top20'] = (df['income'] >= df['income'].quantile(0.80)).astype(int)
+    df['income_top20'] = (df['annual_income'] >= df['annual_income'].quantile(0.80)).astype(int)
 
     # Discretize age: >40 = privileged
     df['age>40'] = (df['age'] > 40).astype(int)
 
+    # Discretize years employed: top 20% = privileged
+    df['years_employed_top20'] = (df['years_employed'] >= df['years_employed'].quantile(0.80)).astype(int)
+
     # Define protected attributes and privileged groups
     protected_attributes = {
-        'sex': 1,
         'age>40': 1,
         'income_top20': 1,
-        'education_Doctorate': 1,
-        'education_Masters': 1,
-        'urban_rural_Urban': 1
+        'years_employed_top20': 1,
     }
 
     # Loop over each protected attribute and compute dataset fairness metrics
     for attr, privileged in protected_attributes.items():
         # Select only protected + label
         dataset = BinaryLabelDataset(
-            df=df[[attr, 'is_high_risk']],
-            label_names=['is_high_risk'],
+            df=df[[attr, 'loan_status']],
+            label_names=['loan_status'],
             protected_attribute_names=[attr]
         )
 

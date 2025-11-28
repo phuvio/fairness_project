@@ -21,19 +21,19 @@ def load_csv(path):
     
 def load_data():
     script_dir = Path(__file__).resolve().parent
-    data_file = script_dir.parent / "data" / "medical_insurance.csv"
+    data_file = script_dir.parent / "data" / "Loan_approval_data_2025.csv"
     if not data_file.exists():
         print(f"CSV not found at: {data_file}")
         sys.exit(1)
 
     df = load_csv(str(data_file))
     # drop the timestamp column
-    if 'person_id' in df.columns:
-        df = df.drop(columns=['person_id'])
+    if 'customer_id' in df.columns:
+        df = df.drop(columns=['customer_id'])
     return df
-class LogisticRegressionModel(nn.Module):
+class NeuralNetwork(nn.Module):
     def __init__(self, input_dim, output_dim=1):
-        super(LogisticRegressionModel, self).__init__()
+        super(NeuralNetwork, self).__init__()
         self.net = nn.Sequential(
             nn.Linear(input_dim, 64),
             nn.ReLU(),
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     df = load_data()
 
     # Build feature matrix with one-hot encoding
-    X_df = pd.get_dummies(df.drop(columns=['is_high_risk', 'risk_score']), drop_first=True)
+    X_df = pd.get_dummies(df.drop(columns=['loan_status']), drop_first=True)
 
     # Detect any non-numeric columns left after get_dummies (object dtype)
     obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
@@ -73,7 +73,7 @@ if __name__ == "__main__":
         raise
 
     X = pd.DataFrame(X, columns=X_df.columns)
-    y = df['is_high_risk'].values.astype(np.float32)
+    y = df['loan_status'].values.astype(np.float32)
 
     # Split into train/test
     X_train, X_test, y_train, y_test = train_test_split(
@@ -90,39 +90,8 @@ if __name__ == "__main__":
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
 
-    from sklearn.linear_model import RidgeCV
-
-    model_feature_selection = RidgeCV()
-    model_feature_selection.fit(X_train, y_train)
-
-    print(f"model score on training data: {model_feature_selection.score(X_train, y_train)}")
-
-    coefs = pd.DataFrame(
-        model_feature_selection.coef_.T, columns=["Coefficients"]
-    )
-
-    coefs.plot(kind="barh", figsize=(12, 16))
-    plt.title("Ridge model")
-    plt.axvline(x=0, color=".5")
-    plt.subplots_adjust(left=0.3)
-    plt.show()
-
-    # select features with coefficients more than |0.005|
-    abs_coefs = np.abs(model_feature_selection.coef_).ravel()
-    mask = abs_coefs >= 0.005
-    selected_features = feature_names[mask]
-    X_train_final = pd.DataFrame(X_train, columns=feature_names) # [selected_features]
-    X_test_final = pd.DataFrame(X_test, columns=feature_names) # [selected_features]
-
-    print(f"Selected {len(selected_features)} features out of {len(feature_names)}")
-    print(f"Selected features: {selected_features.tolist()}")
-
-    correlations = pd.concat([X, pd.Series(y, name='is_high_risk')], axis=1) \
-                   .corr()['is_high_risk'] \
-                   .abs() \
-                   .sort_values(ascending=False)
-    print("\nTop positive correlations:")
-    print(correlations[correlations > 0].head(15))
+    X_train_final = pd.DataFrame(X_train, columns=feature_names)
+    X_test_final = pd.DataFrame(X_test, columns=feature_names)
 
     # Convert numpy arrays to torch tensors
     X_train = torch.from_numpy(X_train_final.values.astype(np.float32))
@@ -132,7 +101,7 @@ if __name__ == "__main__":
 
     train_dataset = TensorDataset(X_train, y_train)
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-    model = LogisticRegressionModel(input_dim=X_train.shape[1])
+    model = NeuralNetwork(input_dim=X_train.shape[1])
     criterion = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
     num_epochs = 10
