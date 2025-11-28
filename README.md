@@ -22,6 +22,37 @@ Product Types: Credit Card, Personal Loan, Line of Credit
 Market:  United States & Canada
 Use Case: Binary Classification (Approved/Rejected)
 
+Result:
+Accuracy on test set using NeuralNetwork: 90.79%
+Accuracy on test set using Random Forest: 91.42%
+
+For AIF360 to work properly, need to install: aif360, 'aif360[Reductions]', 'aif360[inFariness]'.
+
+Results for measuring fairness:
+====== AGE>40 ======
+SPD: -0.2549
+DI: 0.6492
+Mean Diff: -0.2549
+
+Strong unfairness
+Younger applicants have 25% lower change of getting loan.
+
+====== INCOME_TOP20 ======
+SPD: -0.1535
+DI: 0.7719
+Mean Diff: -0.1535
+
+Moderate unfairness
+People outside the top 20% have 15% lower change of getting loan.
+
+====== YEARS_EMPLOYED_TOP20 ======
+SPD: -0.199
+DI: 0.7196
+Mean Diff: -0.19
+
+Strong unfairness
+People outside the top 20% have 20% lower change of getting loan.
+
 - analyze data
   - value counts
   - unique values of different columns
