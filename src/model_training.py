@@ -7,11 +7,13 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import recall_score
 import matplotlib.pyplot as plt
 
 np.random.seed(42)
+torch.manual_seed(42)
 
 def load_csv(path):
     try:
@@ -31,6 +33,16 @@ def load_data():
     if 'customer_id' in df.columns:
         df = df.drop(columns=['customer_id'])
     return df
+
+def equal_opportunity(df, protected_col, y_pred):
+    # True Positive Rate for privileged vs unprivileged
+    priv = df[df[protected_col] == 1]
+    unpriv = df[df[protected_col] == 0]
+
+    tpr_priv = recall_score(priv['y_true'], priv['y_pred'])
+    tpr_unpriv = recall_score(unpriv['y_true'], unpriv['y_pred'])
+
+    return tpr_priv, tpr_unpriv, tpr_priv - tpr_unpriv
 class NeuralNetwork(nn.Module):
     def __init__(self, input_dim, output_dim=1):
         super(NeuralNetwork, self).__init__()
@@ -51,8 +63,17 @@ class NeuralNetwork(nn.Module):
 if __name__ == "__main__":
     df = load_data()
 
+    # Discretize income: top 20% = privileged
+    df['income_top20'] = (df['annual_income'] >= df['annual_income'].quantile(0.80)).astype(int)
+
+    # Discretize age: >40 = privileged
+    df['age>40'] = (df['age'] > 40).astype(int)
+
+    # Discretize years employed: top 20% = privileged
+    df['years_employed_top20'] = (df['years_employed'] >= df['years_employed'].quantile(0.80)).astype(int)
+
     # Build feature matrix with one-hot encoding
-    X_df = pd.get_dummies(df.drop(columns=['loan_status']), drop_first=True)
+    X_df = pd.get_dummies(df.drop(columns=['loan_status', 'income_top20', 'age>40', 'years_employed_top20']), drop_first=True)
 
     # Detect any non-numeric columns left after get_dummies (object dtype)
     obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
@@ -73,22 +94,24 @@ if __name__ == "__main__":
         raise
 
     X = pd.DataFrame(X, columns=X_df.columns)
+
+    protected_attributes = ['age>40', 'income_top20', 'years_employed_top20']
+
+    # Save the protected columns for train/test split
+    X_protected = df[protected_attributes]
     y = df['loan_status'].values.astype(np.float32)
 
-    # Split into train/test
-    X_train, X_test, y_train, y_test = train_test_split(
-        X,
-        y,
-        test_size=0.2,
-        random_state=42
+    # Split both features and protected columns
+    X_train_full, X_test_full, X_protected_train, X_protected_test, y_train, y_test = train_test_split(
+        X, X_protected, y, test_size=0.25, random_state=42
     )
 
-    feature_names = X_train.columns
+    feature_names = X_train_full.columns
 
     # Standardize features
     scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
+    X_train = scaler.fit_transform(X_train_full)
+    X_test = scaler.transform(X_test_full)
 
     X_train_final = pd.DataFrame(X_train, columns=feature_names)
     X_test_final = pd.DataFrame(X_test, columns=feature_names)
@@ -127,3 +150,16 @@ if __name__ == "__main__":
 
     accuracy = accuracy_score(y_test.numpy(), y_pred)
     print(f'Accuracy on test set using Random Forest: {accuracy * 100:.2f}%')
+
+    # Fairness evaluation
+    for attr in protected_attributes:
+        df_eval = X_protected_test.copy()
+        df_eval['y_true'] = y_test.numpy()
+        df_eval['y_pred'] = y_pred
+
+        tpr_priv, tpr_unpriv, diff = equal_opportunity(df_eval, attr, y_pred)
+        print(f'Equal Opportunity for {attr}:')
+        print(f'  TPR Privileged: {tpr_priv:.4f}')
+        print(f'  TPR Unprivileged: {tpr_unpriv:.4f}')
+        print(f'  Difference (Priv - Unpriv): {diff:.4f}')
+        print('-----------------------------------')
