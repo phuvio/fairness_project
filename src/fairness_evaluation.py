@@ -21,10 +21,10 @@ def load_data():
         sys.exit(1)
 
     df = load_csv(str(data_file))
-    
+
     if 'customer_id' in df.columns:
         df = df.drop(columns=['customer_id'])
-    
+   
     # Fill missing numeric values with median
     for col in df.select_dtypes(include=[np.number]).columns:
         df[col] = df[col].fillna(df[col].median())

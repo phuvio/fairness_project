@@ -72,8 +72,11 @@ if __name__ == "__main__":
     # Discretize years employed: top 20% = privileged
     df['years_employed_top20'] = (df['years_employed'] >= df['years_employed'].quantile(0.80)).astype(int)
 
+    # Discretize occupation status
+    df['student'] = (df['occupation_status'] == 'Student').astype(int)
+
     # Build feature matrix with one-hot encoding
-    X_df = pd.get_dummies(df.drop(columns=['loan_status', 'income_top20', 'age>40', 'years_employed_top20']), drop_first=True)
+    X_df = pd.get_dummies(df.drop(columns=['loan_status', 'income_top20', 'age>40', 'years_employed_top20', 'student']), drop_first=True)
 
     # Detect any non-numeric columns left after get_dummies (object dtype)
     obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
@@ -95,7 +98,7 @@ if __name__ == "__main__":
 
     X = pd.DataFrame(X, columns=X_df.columns)
 
-    protected_attributes = ['age>40', 'income_top20', 'years_employed_top20']
+    protected_attributes = ['age>40', 'income_top20', 'years_employed_top20', 'student']
 
     # Save the protected columns for train/test split
     X_protected = df[protected_attributes]
