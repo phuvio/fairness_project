@@ -23,39 +23,34 @@ Target feature is 'loan_status'.
 - Use Case: Binary Classification (Approved/Rejected)
 
 Result:
-Accuracy on test set using NeuralNetwork: 90.79%
-Accuracy on test set using Random Forest: 91.42%
+Accuracy on test set using NeuralNetwork: 90.69%
+Accuracy on test set using Random Forest: 91.26%
 
-For AIF360 to work properly, need to install: aif360, 'aif360[Reductions]', 'aif360[inFariness]'.
+Equal Opportunity is the best fairness measure in this case. It shows if all applicants have the same opportunity to receive a loan. It is defined by calculating True Positive Rate (TPR). TPR is the fraction of positive cases which were correctly predicted out of all the positive cases. It is usually referred to as sensitivity or recall, and it represents the probability of the positive subjects to be classified correctly as such. It is given by the formula: TPR = P(prediction = +| actual = +) = TP/(TP + FN).
 
-Results for measuring fairness:
+We tested following priviledges feature:
 
-====== AGE>40 ======
-- SPD: -0.2549
-- DI: 0.6492
-- Mean Diff: -0.2549
+- whose annual income was in the top 20%
+- who are over 40 years old
+- top 20% with the longest working career
 
-Strong unfairness
+Equal opportunity for age>40:
 
-Younger applicants have 25% lower change of getting loan.
+- TPR Privileged: 0.9628
+- TPR Unprivileged: 0.8991
+- Difference (Priv - Unpriv): 0.0638
 
-====== INCOME_TOP20 ======
-- SPD: -0.1535
-- DI: 0.7719
-- Mean Diff: -0.1535
+Equal Opportunity for income_top20:
 
-Moderate unfairness
+- TPR Privileged: 0.9478
+- TPR Unprivileged: 0.9178
+- Difference (Priv - Unpriv): 0.0299
 
-People outside the top 20% have 15% lower change of getting loan.
+Equal Opportunity for years_employed_top20:
 
-====== YEARS_EMPLOYED_TOP20 ======
-- SPD: -0.199
-- DI: 0.7196
-- Mean Diff: -0.19
-
-Strong unfairness
-
-People outside the top 20% have 20% lower change of getting loan.
+- TPR Privileged: 0.9559
+- TPR Unprivileged: 0.9143
+- Difference (Priv - Unpriv): 0.0416
 
 - analyze data
   - value counts
