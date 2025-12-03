@@ -1,0 +1,33 @@
+2025-12-03 17:50:02,228 - INFO - Data loaded from /Users/luca/Uni/Msc/helsinki/trustworthy_ml/project3/fairness_project/data/Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-03 17:50:02,288 - INFO - Accuracy on test set using NN: 90.82%
+2025-12-03 17:50:02,288 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-03 17:50:02,292 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 17:50:02,292 - INFO - Percentage: -3.8844199527660503
+2025-12-03 17:50:02,292 - INFO - Equal Opportunity for age>40:
+2025-12-03 17:50:02,292 - INFO -   TPR Privileged: 0.9543
+2025-12-03 17:50:02,292 - INFO -   TPR Unprivileged: 0.9076
+2025-12-03 17:50:02,292 - INFO -   Difference (Priv - Unpriv): 0.0466
+2025-12-03 17:50:02,292 - INFO - -----------------------------------
+2025-12-03 17:50:02,295 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 17:50:02,295 - INFO - Percentage: -1.354583348608985
+2025-12-03 17:50:02,295 - INFO - Equal Opportunity for income_top20:
+2025-12-03 17:50:02,295 - INFO -   TPR Privileged: 0.9435
+2025-12-03 17:50:02,295 - INFO -   TPR Unprivileged: 0.9213
+2025-12-03 17:50:02,295 - INFO -   Difference (Priv - Unpriv): 0.0222
+2025-12-03 17:50:02,295 - INFO - -----------------------------------
+2025-12-03 17:50:02,298 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 17:50:02,298 - INFO - Percentage: -3.4310860572064126
+2025-12-03 17:50:02,298 - INFO - Equal Opportunity for years_employed_top20:
+2025-12-03 17:50:02,298 - INFO -   TPR Privileged: 0.9581
+2025-12-03 17:50:02,298 - INFO -   TPR Unprivileged: 0.9157
+2025-12-03 17:50:02,298 - INFO -   Difference (Priv - Unpriv): 0.0425
+2025-12-03 17:50:02,298 - INFO - -----------------------------------
+2025-12-03 17:50:02,301 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 17:50:02,301 - INFO - Percentage: -0.5688720482023633
+2025-12-03 17:50:02,301 - INFO - Equal Opportunity for student:
+2025-12-03 17:50:02,301 - INFO -   TPR Privileged: 0.9399
+2025-12-03 17:50:02,301 - INFO -   TPR Unprivileged: 0.9251
+2025-12-03 17:50:02,301 - INFO -   Difference (Priv - Unpriv): 0.0147
+2025-12-03 17:50:02,301 - INFO - -----------------------------------

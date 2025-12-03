@@ -13,9 +13,18 @@ from sklearn.metrics import recall_score
 import matplotlib.pyplot as plt
 import pickle
 import os.path
+import logging
 
 np.random.seed(42)
 torch.manual_seed(42)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    filename='model_training.log'
+)
+logger = logging.getLogger(__name__)
 
 def load_csv(path):
     try:
@@ -27,14 +36,14 @@ def load_data():
     script_dir = Path(__file__).resolve().parent
     data_file = script_dir.parent / "data" / "Loan_approval_data_2025.csv"
     if not data_file.exists():
-        print(f"CSV not found at: {data_file}")
+        logger.error(f"CSV not found at: {data_file}")
         sys.exit(1)
 
     df = load_csv(str(data_file))
     # drop the timestamp column
     if 'customer_id' in df.columns:
         df = df.drop(columns=['customer_id'])
-    print(f"Data loaded from {data_file}, shape: {df.shape}")
+    logger.info(f"Data loaded from {data_file}, shape: {df.shape}")
     return df
 
 def equal_opportunity(df, protected_col, y_pred):
@@ -86,7 +95,7 @@ if __name__ == "__main__":
     # Detect any non-numeric columns left after get_dummies (object dtype)
     obj_cols = X_df.select_dtypes(include=['object']).columns.tolist()
     if obj_cols:
-        print('Found non-numeric columns in feature matrix after get_dummies:', obj_cols)
+        logger.warning(f'Found non-numeric columns in feature matrix after get_dummies: {obj_cols}')
         # Try to coerce them to numeric; if coercion fails values become NaN
         for c in obj_cols:
             X_df[c] = pd.to_numeric(X_df[c], errors='coerce')
@@ -96,9 +105,9 @@ if __name__ == "__main__":
     try:
         X = X_df.values.astype(np.float32)
     except Exception as e:
-        print('Failed to cast feature matrix to float32:', e)
-        print('Dtypes of X_df:')
-        print(X_df.dtypes.value_counts())
+        logger.error(f'Failed to cast feature matrix to float32: {e}')
+        logger.error('Dtypes of X_df:')
+        logger.error(X_df.dtypes.value_counts())
         raise
 
     X = pd.DataFrame(X, columns=X_df.columns)
@@ -134,7 +143,7 @@ if __name__ == "__main__":
     filename_nn = 'saved_model_nn.pth'
     filename_rf = 'saved_model_rf.pkl'
     if not os.path.isfile(filename_rf) or not os.path.isfile(filename_nn):
-        print("Models need to be  trained and saved.")
+        logger.info("Models need to be trained and saved.")
 
 
 
@@ -157,12 +166,12 @@ if __name__ == "__main__":
                 
                 optimizer.step()
             if (epoch+1) % 10 == 0:
-                print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+                logger.info(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
         with torch.no_grad():
             y_pred_nn = model(X_test)
             y_pred_cls = (torch.sigmoid(y_pred_nn) >= 0.5).float()
             accuracy_nn = (y_pred_cls.eq(y_test).sum().item()) / y_test.size(0)
-            print(f'Accuracy on test set using NN: {accuracy_nn * 100:.2f}%')
+            logger.info(f'Accuracy on test set using NN: {accuracy_nn * 100:.2f}%')
 
         # model saving
         torch.save(model.state_dict(), 'saved_model_nn.pth')
@@ -176,7 +185,7 @@ if __name__ == "__main__":
         pickle.dump(classifier, open('saved_model_rf.pkl', 'wb'))
 
         accuracy_rf = accuracy_score(y_test.numpy(), y_pred_rf)
-        print(f'Accuracy on test set using Random Forest: {accuracy_rf * 100:.2f}%')
+        logger.info(f'Accuracy on test set using Random Forest: {accuracy_rf * 100:.2f}%')
 
     else:
         # load models
@@ -189,14 +198,14 @@ if __name__ == "__main__":
             y_pred_nn = model(X_test)
             y_pred_cls = (torch.sigmoid(y_pred_nn) >= 0.5).float()
             accuracy_nn = (y_pred_cls.eq(y_test).sum().item()) / y_test.size(0)
-            print(f'Accuracy on test set using NN: {accuracy_nn * 100:.2f}%')
+            logger.info(f'Accuracy on test set using NN: {accuracy_nn * 100:.2f}%')
 
         y_pred_rf = classifier.predict(X_test_final.values)
         accuracy_rf = accuracy_score(y_test.numpy(), y_pred_rf)
-        print(f'Accuracy on test set using Random Forest: {accuracy_rf * 100:.2f}%')
+        logger.info(f'Accuracy on test set using Random Forest: {accuracy_rf * 100:.2f}%')
 
 
-    print("\nFairness Evaluation Results:\n")
+    logger.info("\nFairness Evaluation Results:\n")
 
 
     # Fairness evaluation
@@ -209,23 +218,23 @@ if __name__ == "__main__":
         tpr_per_dif = (1- (tpr_unpriv/tpr_priv)) * 100
         
     
-        print("Neural Network Equal Opportunity Results:")
-        print(f"Percentage: {1 - tpr_per_dif}")
-        print(f'Equal Opportunity for {attr}:')
-        print(f'  TPR Privileged: {tpr_priv:.4f}')
-        print(f'  TPR Unprivileged: {tpr_unpriv:.4f}')
-        print(f'  Difference (Priv - Unpriv): {diff:.4f}')
-        print('-----------------------------------')
+        logger.info("Neural Network Equal Opportunity Results:")
+        logger.info(f"Percentage: {1 - tpr_per_dif}")
+        logger.info(f'Equal Opportunity for {attr}:')
+        logger.info(f'  TPR Privileged: {tpr_priv:.4f}')
+        logger.info(f'  TPR Unprivileged: {tpr_unpriv:.4f}')
+        logger.info(f'  Difference (Priv - Unpriv): {diff:.4f}')
+        logger.info('-----------------------------------')
         
         df_eval['y_pred'] = y_pred_rf
 
         tpr_priv, tpr_unpriv, diff = equal_opportunity(df_eval, attr, y_pred_rf)
         tpr_per_dif = (1- (tpr_unpriv/tpr_priv)) * 100
 
-        print("Random Forest Equal Opportunity Results:")
-        print(f"Percentage: {1 - tpr_per_dif}")
-        print(f'Equal Opportunity for {attr}:')
-        print(f'  TPR Privileged: {tpr_priv:.4f}')
-        print(f'  TPR Unprivileged: {tpr_unpriv:.4f}')
-        print(f'  Difference (Priv - Unpriv): {diff:.4f}')
-        print('-----------------------------------')
+        logger.info("Random Forest Equal Opportunity Results:")
+        logger.info(f"Percentage: {1 - tpr_per_dif}")
+        logger.info(f'Equal Opportunity for {attr}:')
+        logger.info(f'  TPR Privileged: {tpr_priv:.4f}')
+        logger.info(f'  TPR Unprivileged: {tpr_unpriv:.4f}')
+        logger.info(f'  Difference (Priv - Unpriv): {diff:.4f}')
+        logger.info('-----------------------------------')
