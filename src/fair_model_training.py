@@ -23,6 +23,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+logger.info("\n\nFair Model Training Script Started:\n")
+
+
 np.random.seed(42)
 torch.manual_seed(42)
 
@@ -74,7 +77,7 @@ class NeuralNetwork(nn.Module):
 
 
 
-def EO_loss_fn(actual_loss, y_pred_probs, sensitive_attr, labels, lambda_coef=0.05, epsilon=1e-7):
+def EO_loss_fn(actual_loss, y_pred_probs, sensitive_attr, labels, lambda_coef=0.1, epsilon=1e-7):
     """
     Computes Equal Opportunity loss using a soft differentiable approximation.
     """
@@ -110,6 +113,10 @@ if __name__ == "__main__":
 
     # sensitive attribute to make fair with respect to
     sensitive_attribute = 'age>40'
+    lambda_coef = 10
+
+
+
 
 
 
@@ -179,12 +186,19 @@ if __name__ == "__main__":
 
     # when there is no model saved, train a new model
     filename_nn = 'fair_saved_model_nn.pth'
+    
+    
+    os.remove(filename_nn) if os.path.isfile(filename_nn) else None
+    
+
     if not os.path.isfile(filename_nn):
         logger.info("Model need to be trained and saved.")
+        logger.info(f"Training with Fairness Constraint on: {sensitive_attribute}")
+        logger.info(f"Lambda Coefficient: {lambda_coef}")
 
 
 
-    # 1. Prepare the sensitive attribute tensor for training
+        # 1. Prepare the sensitive attribute tensor for training
         # We explicitly grab the column defined in 'sensitive_attribute' variable
         sensitive_train = X_protected_train[sensitive_attribute].values.astype(np.float32)
         sensitive_train = torch.from_numpy(sensitive_train)
@@ -198,7 +212,7 @@ if __name__ == "__main__":
         optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
         
         # Increase epochs slightly to allow fairness constraint to converge
-        num_epochs = 10 
+        num_epochs = 20
 
         logger.info(f"Training with Fairness Constraint on: {sensitive_attribute}")
 
@@ -219,7 +233,7 @@ if __name__ == "__main__":
                     torch.sigmoid(outputs), # Pass probabilities, not logits
                     sens_batch, 
                     labels,
-                    lambda_coef=0.1 # Increased slightly to force effect
+                    lambda_coef=lambda_coef # Increased slightly to force effect
                 )
 
                 loss.backward()
