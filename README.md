@@ -78,7 +78,7 @@ Equal Opportunity for years_employed_top20:
     - plots of distributions
     - target value
   - fairness issue
- 
+
   ## Report 2
 
   - explain the research problem and data
@@ -86,7 +86,8 @@ Equal Opportunity for years_employed_top20:
   - new loss function - explain how and why
   - no random forest
   - results - figure accuracy vs fairness with different grid search values for lambda and epoch
- 
+
   ## Final report
+
   5 pages
   - conlusions
