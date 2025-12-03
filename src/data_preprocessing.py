@@ -1,5 +1,5 @@
 import sys
-import glob
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -10,16 +10,19 @@ def load_csv(path):
         return pd.read_csv(path, encoding="latin1")
 
 def main():
-    path = "../data/bangladesh_renowned_university_student_Mental_health.csv"
-    if not path:
-        print("No CSV found in the current directory tree.")
+    # Resolve data and image paths relative to this script's location so the
+    # script works regardless of the current working directory.
+    script_dir = Path(__file__).resolve().parent
+    data_file = script_dir.parent / "data" / "Loan_approval_data_2025.csv"
+    if not data_file.exists():
+        print(f"CSV not found at: {data_file}")
         sys.exit(1)
 
-    df = load_csv(path)
+    df = load_csv(str(data_file))
     # drop the timestamp column
-    if 'Timestamp' in df.columns:
-        df = df.drop(columns=['Timestamp'])
-
+    if 'customer_id' in df.columns:
+        df = df.drop(columns=['customer_id'])
+    
     numerical_cols = df.select_dtypes(include=['number']).columns
     print("Numerical columns and their basic statistics:")
     print(df[numerical_cols].describe().to_string())
@@ -61,9 +64,11 @@ def main():
         axes[i].axis('off')
     
     plt.tight_layout()
+    # ensure images directory exists (relative to project root)
+    images_dir = script_dir.parent / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
     # plt.show()
-    plt.savefig("../images/data_overview.pdf")
-
+    plt.savefig(str(images_dir / "data_overview.pdf"))
 
 if __name__ == "__main__":
     main()
