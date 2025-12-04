@@ -1,0 +1,101 @@
+2025-12-04 16:22:12,058 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-04 16:22:12,123 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-04 16:22:12,197 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:12,197 - INFO - Lambda Coefficient: 0.01
+2025-12-04 16:22:13,068 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:20,915 - INFO - Epoch [5/10], Loss: 0.2291
+2025-12-04 16:22:28,732 - INFO - Epoch [10/10], Loss: 0.2167
+2025-12-04 16:22:28,746 - INFO - Accuracy on test set using NN: 90.73%
+2025-12-04 16:22:28,746 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:22:28,754 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:22:28,754 - INFO - Percentage: -9.856449710497639
+2025-12-04 16:22:28,754 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:22:28,754 - INFO -   TPR Privileged: 0.9372
+2025-12-04 16:22:28,754 - INFO -   TPR Unprivileged: 0.8354
+2025-12-04 16:22:28,755 - INFO -   Difference (Priv - Unpriv): 0.1017
+2025-12-04 16:22:28,755 - INFO - -----------------------------------
+2025-12-04 16:22:28,755 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:28,755 - INFO - Lambda Coefficient: 0.1
+2025-12-04 16:22:28,755 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:36,653 - INFO - Epoch [5/10], Loss: 0.2480
+2025-12-04 16:22:44,357 - INFO - Epoch [10/10], Loss: 0.2395
+2025-12-04 16:22:44,371 - INFO - Accuracy on test set using NN: 90.50%
+2025-12-04 16:22:44,371 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:22:44,378 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:22:44,378 - INFO - Percentage: -4.956855839545961
+2025-12-04 16:22:44,378 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:22:44,378 - INFO -   TPR Privileged: 0.9330
+2025-12-04 16:22:44,378 - INFO -   TPR Unprivileged: 0.8774
+2025-12-04 16:22:44,378 - INFO -   Difference (Priv - Unpriv): 0.0556
+2025-12-04 16:22:44,378 - INFO - -----------------------------------
+2025-12-04 16:22:44,378 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:44,378 - INFO - Lambda Coefficient: 0.25
+2025-12-04 16:22:44,378 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:52,006 - INFO - Epoch [5/10], Loss: 0.2845
+2025-12-04 16:22:59,667 - INFO - Epoch [10/10], Loss: 0.2704
+2025-12-04 16:22:59,680 - INFO - Accuracy on test set using NN: 90.28%
+2025-12-04 16:22:59,680 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:22:59,687 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:22:59,687 - INFO - Percentage: -1.6199715836376702
+2025-12-04 16:22:59,687 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:22:59,687 - INFO -   TPR Privileged: 0.9337
+2025-12-04 16:22:59,687 - INFO -   TPR Unprivileged: 0.9092
+2025-12-04 16:22:59,687 - INFO -   Difference (Priv - Unpriv): 0.0245
+2025-12-04 16:22:59,687 - INFO - -----------------------------------
+2025-12-04 16:22:59,687 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:22:59,687 - INFO - Lambda Coefficient: 0.5
+2025-12-04 16:22:59,688 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:23:07,429 - INFO - Epoch [5/10], Loss: 0.3269
+2025-12-04 16:23:15,058 - INFO - Epoch [10/10], Loss: 0.3163
+2025-12-04 16:23:15,072 - INFO - Accuracy on test set using NN: 90.24%
+2025-12-04 16:23:15,072 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:23:15,079 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:23:15,079 - INFO - Percentage: -1.2259434323492422
+2025-12-04 16:23:15,079 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:23:15,079 - INFO -   TPR Privileged: 0.9438
+2025-12-04 16:23:15,079 - INFO -   TPR Unprivileged: 0.9228
+2025-12-04 16:23:15,079 - INFO -   Difference (Priv - Unpriv): 0.0210
+2025-12-04 16:23:15,079 - INFO - -----------------------------------
+2025-12-04 16:23:15,079 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:23:15,079 - INFO - Lambda Coefficient: 0.75
+2025-12-04 16:23:15,080 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:23:22,804 - INFO - Epoch [5/10], Loss: 0.3768
+2025-12-04 16:23:30,463 - INFO - Epoch [10/10], Loss: 0.3607
+2025-12-04 16:23:30,477 - INFO - Accuracy on test set using NN: 89.58%
+2025-12-04 16:23:30,477 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:23:30,483 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:23:30,483 - INFO - Percentage: 0.30240257283390326
+2025-12-04 16:23:30,483 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:23:30,483 - INFO -   TPR Privileged: 0.9522
+2025-12-04 16:23:30,483 - INFO -   TPR Unprivileged: 0.9455
+2025-12-04 16:23:30,483 - INFO -   Difference (Priv - Unpriv): 0.0066
+2025-12-04 16:23:30,483 - INFO - -----------------------------------
+2025-12-04 16:23:30,483 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:23:30,483 - INFO - Lambda Coefficient: 1
+2025-12-04 16:23:30,484 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:23:38,060 - INFO - Epoch [5/10], Loss: 0.4046
+2025-12-04 16:23:45,581 - INFO - Epoch [10/10], Loss: 0.4003
+2025-12-04 16:23:45,595 - INFO - Accuracy on test set using NN: 88.90%
+2025-12-04 16:23:45,595 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:23:45,601 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:23:45,601 - INFO - Percentage: 1.031172592720985
+2025-12-04 16:23:45,601 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:23:45,601 - INFO -   TPR Privileged: 0.9475
+2025-12-04 16:23:45,601 - INFO -   TPR Unprivileged: 0.9478
+2025-12-04 16:23:45,601 - INFO -   Difference (Priv - Unpriv): -0.0003
+2025-12-04 16:23:45,601 - INFO - -----------------------------------

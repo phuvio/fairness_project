@@ -78,3 +78,15 @@ Equal Opportunity for years_employed_top20:
     - plots of distributions
     - target value
   - fairness issue
+
+## Final values
+
+- priviledged feature: age>25
+- lambda: 0.5
+- epochs: 30
+- Neural Network Equal Opportunity Results:
+  - Percentage: 0.3298610688068795
+  - Equal Opportunity for age>25:
+  - TPR Privileged: 0.9473
+  - TPR Unprivileged: 0.9410
+  - Difference (Priv - Unpriv): 0.0063
