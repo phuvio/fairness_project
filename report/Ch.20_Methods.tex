@@ -67,7 +67,7 @@ to $\delta = (1 - \frac{TPR_{unpriviledged}}{TPR_{priviledged}}) * 100 $ for the
 \section{Unfairness Mitigation}
 
 For mitigating the unfairness in our models, we could in principle choose between Preprocessing, Learning with Fairness Constraints, and Postprocessing methods. 
-For that we have trained the random forest with scikit-learn, we decided to implement a Learning with Fairness Constraints method ourselves for the Neural Network. 
+We decided to go with Learning with Fairness Constraints. It seemed to be the most interesting approach and also a good fit for our Neural Network model.
 This means we modified the loss function of the Neural Network to include a penalty for unfairness according to the Equal Opportunity metric. 
 The idea behind this was to directly optimize the model for both accuracy and fairness during training and search for a local minimum of both objectives.
 
