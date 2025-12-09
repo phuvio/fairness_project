@@ -1,6 +1,6 @@
 # Fairness project
 
-Fairness project for the University of Helsinki
+This is a project work for the University of Helsinki course Thrustworthy Machine Learning.
 
 Dataset: Bangladeshi University Students Mental Health
 
