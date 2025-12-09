@@ -18,10 +18,12 @@ After running the experiment then also with the joined $\lambda = 0.5$ and $e = 
 
 \begin{figure}[htbp]
     \centering
-    \begin{tabular}{c|c|c|c|c}
-        & Unfair & Fair & Best $\lambda = 0.5$ & Increased Epochs \\
-        Accuracy & $90.69\%$ & $90.42\%$& $90.24\%$ & $90.13\%$ \\
-        Fairness ($\delta$) & \textcolor{red}{-} & $11.2\%$ & $1.2\%$ & $0.3\%$ \\
+    \begin{tabular}{c|c c|c|c|c}
+        & Unfair && Fair & Best $\lambda = 0.5$ & Increased Epochs \\
+        & RF & NN & NN & NN & NN \\
+        \hline
+        Accuracy & $91.26\%$ & $90.69\%$ & $90.42\%$& $90.24\%$ & $90.13\%$ \\
+        Fairness ($\delta$) & $12.81\%$ & $9.71\%$ & $11.2\%$ & $1.2\%$ & $0.3\%$ \\
     \end{tabular}
     \caption{Neural Network Results Summary}
     \label{fig:nn_results_summary}
@@ -31,7 +33,7 @@ Finally after concluding our experiments were a success, we plotted the ROC curv
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/roc_by_group_nn.png}
+    \includegraphics[width=0.6\textwidth]{figures/roc_by_group_nn.png}
     \caption{ROC by Group for Neural Network}
     \label{fig:roc_by_group_nn}
 \end{figure}
