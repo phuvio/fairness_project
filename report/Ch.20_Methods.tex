@@ -12,10 +12,12 @@ How we trained it and what results.
 How we trained it and what results.
 
 \section{Equal Opportunity}
-As a Fairness Metric, we chose Equal Opportunity because..
+As a Fairness Metric, we chose Equal Opportunity because it seemed to be the best choice in our case. It shows if all applicants have the same opportunity to recieve a loan. It is defined by calculating True Positive Rates (TPR). TPR is the fraction of positive cases which were correctly predicted out of all the ground truths. It is usually referred to as sensitivity or recall, and it represents the probability of the positive subjects to be classified correctly as such. It is given by the formula: $TPR = P(prediction = 1 | actual = 1) = \frac{TP}{TP + FN}$. 
 
+To now evaluate the fairness of trained models we are usually speaking of Equal Opportunity in the case of difference of two TPR. These two TPR are from a binary classification, which in our case is called a priviledged and unpriviledged group. Both of these groups together build the whole of one feature in the data. We are talking about two different versions of difference, the absolute and the relative difference of TPR. We refer to $\Delta = TPR_{priviledged} - TPR_{unpriviledged}$ for the absolute difference and to $\delta = (1 - \frac{TPR_{unpriviledged}}{TPR_{priviledged}}) * 100 $ for the relative difference in percent. In both cases, a lower value means a fairer model, with $0$ being perfectly fair.
 
 \subsection{Chosen Subsets}
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/fairness_results.png}
@@ -31,8 +33,14 @@ As a Fairness Metric, we chose Equal Opportunity because..
 \end{figure}
 
 
-\section{Implementation}
+\section{Unfairness Mitigation}
 
+For mitigating the unfairness in our models, we could in principle choose between Preprocessing, Learning with Fairness Constraints, and Postprocessing methods. For that we have trained the random forest with scikit-learn, we decided to implement a Learning with Fairness Constraints method ourselves for the Neural Network. This means we modified the loss function of the Neural Network to include a penalty for unfairness according to the Equal Opportunity metric. The idea behind this was to directly optimize the model for both accuracy and fairness during training and search for a local minimum of both objectives.
+
+\subsection{Equal Opportunity Loss Function}
+To implement our own loss function, which can be seen in Figure~\ref{fig:eo_loss}, we took the Binary Cross Entropy Loss as the actual loss, lable prediction probabilities, current sensitive attribute values as well as the labels.
+
+We at first we created a mask for positive labels, with what we filtered the predicted probabilities and sensitive attribute values to only include positive samples. Then we created two masks for the priviledged and unpriviledged group within these positive samples. Using these we then calculated the TPR for both the groups. The penalty for the unfairness was then $|\Delta|$ between these two TPR, returning the actual loss plus the penalty multiplied with a $\lambda$ coefficient to weight the importance of fairness. This loss was then used during training of the Neural Network to optimize the model.
 
 
 \begin{figure}[htbp]
