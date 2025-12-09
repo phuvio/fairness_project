@@ -1,24 +1,27 @@
 \chapter{Methods\label{methods}}
 \section{Data}
-\citet{patel2025loan} provides a dataset of loan applications from the US and Canada, which we use to evaluate fairness in machine learning models. The dataset includes features such as applicant income, credit score, and loan amount, along with a binary target variable indicating whether the loan was approved.
+\citet{patel2025loan} provides a dataset of loan applications from the US and Canada, which we use to evaluate fairness in machine learning models. The dataset is synthetic but is built on real banking data criteria.
+The dataset incorporates realistic correlations and business logic that reflect actual lending decision processes. The target variable is loan approval status, making it suitable for binary classification tasks.
+There are 18 predictive features in total, including both numerical and categorical variables. Categorical features were one-hot encoded for model training.
+For numerical features, we applied standard scaling to normalize the data.
+There were no missing values in the dataset, so no imputation was necessary.
+The dataset includes features such as applicant income, credit score, and loan amount. Gender or race was not included in the dataset, so we selected age as a sensitive attribute for our fairness analysis.
+Age was a numerical feature. We wanted to keep things simple and therefore created a binary sensitive attribute by creating a threshold. 
+Applicants older than the threshold were assigned to the privileged group, while applicants younger than the threshold were assigned to the unprivileged group.
 
 \section{Base Model Training}
-We trained two base models being a Random Forest and a Neural Network.
+We then trained two base models using selected threshold. We decided to use a Random Forest classifier and a Neural Network.
+For Random Forest we used the implementation from scikit-learn and for the Neural Network we used PyTorch.
 
-You can also reference Figure~\ref{fig:fairness_results} which shows the fairness results of different models and then the unfair solution.
-
-\subsection{Random Forest}
-How we trained it and what results.
-
-\subsection{Neural Network}
-How we trained it and what results.
-
-\section{Equal Opportunity}
-As a Fairness Metric, we chose Equal Opportunity because it seemed to be the best choice in our case. It shows if all applicants have the same opportunity to recieve a loan. It is defined by calculating True Positive Rates (TPR). TPR is the fraction of positive cases which were correctly predicted out of all the ground truths. It is usually referred to as sensitivity or recall, and it represents the probability of the positive subjects to be classified correctly as such. It is given by the formula: $TPR = P(prediction = 1 | actual = 1) = \frac{TP}{TP + FN}$. 
-
-To now evaluate the fairness of trained models we are usually speaking of Equal Opportunity in the case of difference of two TPR. These two TPR are from a binary classification, which in our case is called a priviledged and unpriviledged group. Both of these groups together build the whole of one feature in the data. We are talking about two different versions of difference, the absolute and the relative difference of TPR. We refer to $\Delta = TPR_{priviledged} - TPR_{unpriviledged}$ for the absolute difference and to $\delta = (1 - \frac{TPR_{unpriviledged}}{TPR_{priviledged}}) * 100 $ for the relative difference in percent. In both cases, a lower value means a fairer model, with $0$ being perfectly fair.
-
-\subsection{Chosen Subsets}
+We were not sure which threshold to choose for age, so we decided to run a grid search over possible thresholds. 
+For this, we trained a Neural Network for each threshold and evaluated the fairness of the model using Equal Opportunity metric, which will be explained in the next section.
+The results of this grid search can be seen in Figure~\ref{fig:fairness_results}. 
+In the figure, on the left you can see the True Positive Rates difference for both groups over all thresholds and on the right accuracies of Neural Network with the same threshold.  
+It is visible that there is a strong bias in the data for younger applicants. Now we had several options for the threshold. 
+We wanted to choose a threshold that shows a high unfairness while still having a decent amount of samples in both groups. So we checked the distribution of samples over thresholds from 19 to 30.
+This distribution can be seen in Figure~\ref{fig:age_threshold_distribution}.
+To keep at least 20 \% of samples in the unpriviledged group, the highest threshold we could choose was 25 years.
+Therefore we chose 25 years as the threshold for our binary sensitive attribute.
 
 \begin{figure}[htbp]
     \centering
@@ -33,16 +36,50 @@ To now evaluate the fairness of trained models we are usually speaking of Equal 
     \caption{Age Threshold Distribution}
     \label{fig:age_threshold_distribution}
 \end{figure}
+\subsection{Random Forest}
+For the Random Forest, we used mainly the default parameters of the scikit-learn implementation, only setting the n\_estimators to 100 and the random state for reproducibility.
+The accuracy of the trained Random Forest on the test set was 91.26 \%. 
+True Positive Rate for the priviledged group was 94.17 \% and 81.16 \% for the unpriviledged group. So, the difference was 13.01 \%. 
+This shows that the model is quite unfair regarding the Equal Opportunity metric.
+
+
+\subsection{Neural Network}
+For the Neural Network, we created a simple feedforward architecture with 3 hidden layers, 
+two first layers with 64 neurons and third with 32 neurons. We used ReLU as activation functions. The output layer used a sigmoid activation function for binary classification. 
+We trained the model using the Adam optimizer with a learning rate of 0.001 and a batch size of 32 for 10 epochs.
+The accuracy of the trained Neural Network on the test set was 90.42 \%.
+True Positive Rate for the priviledged group was 93.98 \% and 82.52 \% for the unpriviledged group. The difference was 11.46 \%.
+
+\section{Equal Opportunity}
+As a Fairness Metric, we chose Equal Opportunity because it seemed to be the best choice in our case. It shows if all applicants have the same opportunity to recieve a loan. 
+It is defined by calculating True Positive Rates (TPR). TPR is the fraction of positive cases which were correctly predicted out of all the ground truths. 
+It is usually referred to as sensitivity or recall, and it represents the probability of the positive subjects to be classified correctly as such. 
+It is given by the formula: $TPR = P(prediction = 1 | actual = 1) = \frac{TP}{TP + FN}$. 
+
+To now evaluate the fairness of trained models we are usually speaking of Equal Opportunity in the case of difference of two TPR. 
+These two TPR are from a binary classification, which in our case is called a priviledged and unpriviledged group. 
+Both of these groups together build the whole of one feature in the data. 
+We are talking about two different versions of difference, the absolute and the relative difference of TPR. 
+We refer to $\Delta = TPR_{priviledged} - TPR_{unpriviledged}$ for the absolute difference and 
+to $\delta = (1 - \frac{TPR_{unpriviledged}}{TPR_{priviledged}}) * 100 $ for the relative difference in percent. In both cases, a lower value means a fairer model, with $0$ being perfectly fair.
 
 
 \section{Unfairness Mitigation}
 
-For mitigating the unfairness in our models, we could in principle choose between Preprocessing, Learning with Fairness Constraints, and Postprocessing methods. For that we have trained the random forest with scikit-learn, we decided to implement a Learning with Fairness Constraints method ourselves for the Neural Network. This means we modified the loss function of the Neural Network to include a penalty for unfairness according to the Equal Opportunity metric. The idea behind this was to directly optimize the model for both accuracy and fairness during training and search for a local minimum of both objectives.
+For mitigating the unfairness in our models, we could in principle choose between Preprocessing, Learning with Fairness Constraints, and Postprocessing methods. 
+For that we have trained the random forest with scikit-learn, we decided to implement a Learning with Fairness Constraints method ourselves for the Neural Network. 
+This means we modified the loss function of the Neural Network to include a penalty for unfairness according to the Equal Opportunity metric. 
+The idea behind this was to directly optimize the model for both accuracy and fairness during training and search for a local minimum of both objectives.
 
 \subsection{Equal Opportunity Loss Function}
-To implement our own loss function, which can be seen in Figure~\ref{fig:eo_loss}, we took the Binary Cross Entropy Loss as the actual loss, lable prediction probabilities, current sensitive attribute values as well as the labels.
+To implement our own loss function, which can be seen in Figure~\ref{fig:eo_loss}, we took the Binary Cross Entropy Loss as the actual loss, 
+lable prediction probabilities, current sensitive attribute values as well as the labels.
 
-We at first we created a mask for positive labels, with what we filtered the predicted probabilities and sensitive attribute values to only include positive samples. Then we created two masks for the priviledged and unpriviledged group within these positive samples. Using these we then calculated the TPR for both the groups. The penalty for the unfairness was then $|\Delta|$ between these two TPR, returning the actual loss plus the penalty multiplied with a $\lambda$ coefficient to weight the importance of fairness. This loss was then used during training of the Neural Network to optimize the model.
+We at first we created a mask for positive labels, with what we filtered the predicted probabilities and sensitive attribute values 
+to only include positive samples. Then we created two masks for the priviledged and unpriviledged group within these positive samples. 
+Using these we then calculated the TPR for both the groups. The penalty for the unfairness was then $|\Delta|$ between these two TPR, 
+returning the actual loss plus the penalty multiplied with a $\lambda$ coefficient to weight the importance of fairness. 
+This loss was then used during training of the Neural Network to optimize the model.
 
 
 \begin{figure}[htbp]

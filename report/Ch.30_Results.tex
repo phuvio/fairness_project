@@ -1,8 +1,13 @@
 \chapter{Results\label{results}}
 
-After having implemented our own Equal Opportunity loss function as described in Chapter~\ref{methods}, we started \emph{Learning with Fairness Constraints}. We experimented with different hyperparameters and then decided that our $\lambda$ coefficient and the number of training epochs $e$ were the most interesting to analyze. For this we then set up two different Grid Searches, one for $\lambda \in \{0\ldots1\}$ and one for $e \in \{10,20,30\}$.
+After having implemented our own Equal Opportunity loss function as described in Chapter~\ref{methods}, we started \emph{Learning with Fairness Constraints}. 
+We experimented with different hyperparameters and then decided that our $\lambda$ coefficient and the number of training epochs $e$ were the most interesting to analyze.
+For this we then set up two different Grid Searches, one for $\lambda \in \{0\ldots1\}$ and one for $e \in \{10,20,30\}$.
 
-The results from these these two experiments can be seen in Figure~\ref{fig:fairness_accuracy_tradeoff}. As we can see, the with introducing a higher $\lambda$, and therefore fairness, we loose accuracy as expected. However, the fairness is increasing exponentially faster than the accuracy is decreasing, until a $\lambda$ of about $0.5$. After which the accuracy starts to drop faster than the fairness increases. This means that a $\lambda$ of about $0.5$ is a good trade-off between fairness and accuracy.
+The results from these these two experiments can be seen in Figure~\ref{fig:fairness_accuracy_tradeoff}. 
+As we can see, the with introducing a higher $\lambda$, and therefore fairness, we loose accuracy as expected. 
+However, the fairness is increasing exponentially faster than the accuracy is decreasing, until a $\lambda$ of about $0.5$. 
+After which the accuracy starts to drop faster than the fairness increases. This means that a $\lambda$ of about $0.5$ is a good trade-off between fairness and accuracy.
 
 
 \begin{figure}[htbp]
@@ -14,7 +19,9 @@ The results from these these two experiments can be seen in Figure~\ref{fig:fair
     \label{fig:fairness_accuracy_tradeoff}
 \end{figure}
 
-After running the experiment then also with the joined $\lambda = 0.5$ and $e = 30$ we had all our results to be summarized in Figure~\ref{fig:nn_results_summary}. Here we can see that the accuracy only drops slightly in each step of more fairness, while the relative fairness $\delta$ improves drastically from no fairness with $\delta = WRONG\%$ to $0.3\%$ with $\lambda = 0.5$ and $e = 30$. 
+After running the experiment then also with the joined $\lambda = 0.5$ and $e = 30$ we had all our results to be 
+summarized in Figure~\ref{fig:nn_results_summary}. Here we can see that the accuracy only drops slightly in each step of more fairness, 
+while the relative fairness $\delta$ improves drastically from no fairness with $\delta = WRONG\%$ to $0.3\%$ with $\lambda = 0.5$ and $e = 30$. 
 
 \begin{figure}[htbp]
     \centering
