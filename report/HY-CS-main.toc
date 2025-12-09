@@ -2,7 +2,7 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Project Idea}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Methods}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Data}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Base Model Training}{2}{section.2.2}%
@@ -10,9 +10,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Neural Network}{2}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Equal Opportunity}{2}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Chosen Subsets}{2}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Implementation}{2}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Implementation}{2}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Results}{5}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Discussion}{8}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusions}{9}{chapter.5}%
-\contentsline {chapter}{Bibliography}{10}{chapter*.8}%
+\contentsline {chapter}{Bibliography}{7}{chapter*.7}%
 \contentsfinish 

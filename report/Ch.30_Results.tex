@@ -1,23 +1,33 @@
 \chapter{Results\label{results}}
 
+After having implemented our own Equal Opportunity loss function as described in Chapter~\ref{methods}, we started \emph{Learning with Fairness Constraints}. We experimented with different hyperparameters and then decided that our $\lambda$ coefficient and the number of training epochs $e$ were the most interesting to analyze. For this we then set up two different Grid Searches, one for $\lambda \in \{0\ldots1\}$ and one for $e \in \{10,20,30\}$.
 
+The results from these these two experiments can be seen in Figure~\ref{fig:fairness_accuracy_tradeoff}. As we can see, the with introducing a higher $\lambda$, and therefore fairness, we loose accuracy as expected. However, the fairness is increasing exponentially faster than the accuracy is decreasing, until a $\lambda$ of about $0.5$. After which the accuracy starts to drop faster than the fairness increases. This means that a $\lambda$ of about $0.5$ is a good trade-off between fairness and accuracy.
 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/fairness_accuracy_tradeoff_epochs.png}
-    \caption{Fairness-Accuracy Tradeoff over Epochs}
-    \label{fig:fairness_accuracy_tradeoff_epochs}
+    \includegraphics[width=0.6\textwidth]{figures/fairness_accuracy_tradeoff_lambda.png}
+    \qquad
+    \includegraphics[width=0.6\textwidth]{figures/fairness_accuracy_tradeoff_epochs.png}
+    \caption{Fairness-Accuracy Tradeoff from Grid Searches}
+    \label{fig:fairness_accuracy_tradeoff}
 \end{figure}
+
+After running the experiment then also with the joined $\lambda = 0.5$ and $e = 30$ we had all our results to be summarized in Figure~\ref{fig:nn_results_summary}. Here we can see that the accuracy only drops slightly in each step of more fairness, while the relative fairness $\delta$ improves drastically from no fairness with $\delta = WRONG\%$ to $0.3\%$ with $\lambda = 0.5$ and $e = 30$. 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/fairness_accuracy_tradeoff_lambda.png}
-    \caption{Fairness-Accuracy Tradeoff over Lambda}
-    \label{fig:fairness_accuracy_tradeoff_lambda}
+    \begin{tabular}{c|c|c|c|c}
+        & Unfair & Fair & Best $\lambda = 0.5$ & Increased Epochs \\
+        Accuracy & $90.69\%$ & $90.42\%$& $90.24\%$ & $90.13\%$ \\
+        Fairness ($\delta$) & \textcolor{red}{-} & $11.2\%$ & $1.2\%$ & $0.3\%$ \\
+    \end{tabular}
+    \caption{Neural Network Results Summary}
+    \label{fig:nn_results_summary}
 \end{figure}
 
-
+Finally after concluding our experiments were a success, we plotted the ROC curves by sensitive attribute groups for the Fair Neural Network in Figure~\ref{fig:roc_by_group_nn}. That has been done to be sure not to only rely on the fairness metric and accuracy, but also see that the smaller class is not being ignored by the model to accieve this success. As we can see the two ROC curves are quite close to each other, which indicates that the model is treating both groups fairly equally. This backes up the conclusion of our model now being much fairer than in the beginning, while only loosing a small amount of accuracy.
 
 \begin{figure}[htbp]
     \centering
@@ -26,15 +36,3 @@
     \label{fig:roc_by_group_nn}
 \end{figure}
 
-
-
-\begin{figure}[htbp]
-    \centering
-    \begin{tabular}{c|c|c|c|c}
-        & Unfair & Fair & Best $\lambda = 0.5$ & Increased Epochs \\
-         Accuracy & $90.69\%$ & $90.42\%$& $90.24\%$ & $90.13\%$ \\
-         Fairness ($\delta$) & \textcolor{red}{-} & $11.2\%$ & $1.2\%$ & $0.3\%$ \\
-    \end{tabular}
-    \caption{Neural Network Results Summary}
-    \label{fig:nn_results_summary}
-\end{figure}
