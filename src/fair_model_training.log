@@ -1,0 +1,131 @@
+2025-12-03 18:09:00,536 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-03 18:09:00,590 - INFO - Data loaded from /Users/luca/Uni/Msc/helsinki/trustworthy_ml/project3/fairness_project/data/Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-03 18:09:00,646 - INFO - Model need to be trained and saved.
+2025-12-03 18:09:00,646 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:09:00,646 - INFO - Lambda Coefficient: 1
+2025-12-03 18:09:01,171 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:09:03,737 - INFO - Epoch [5/10], Loss: 0.3125
+2025-12-03 18:09:06,235 - INFO - Epoch [10/10], Loss: 0.2954
+2025-12-03 18:09:06,240 - INFO - Accuracy on test set using NN: 89.75%
+2025-12-03 18:09:06,242 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-03 18:09:06,246 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:09:06,246 - INFO - Percentage: -2.3194108831926084
+2025-12-03 18:09:06,246 - INFO - Equal Opportunity for age>40:
+2025-12-03 18:09:06,246 - INFO -   TPR Privileged: 0.9761
+2025-12-03 18:09:06,246 - INFO -   TPR Unprivileged: 0.9437
+2025-12-03 18:09:06,246 - INFO -   Difference (Priv - Unpriv): 0.0324
+2025-12-03 18:09:06,246 - INFO - -----------------------------------
+2025-12-03 18:09:06,250 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:09:06,250 - INFO - Percentage: -0.8965003541396519
+2025-12-03 18:09:06,250 - INFO - Equal Opportunity for income_top20:
+2025-12-03 18:09:06,250 - INFO -   TPR Privileged: 0.9708
+2025-12-03 18:09:06,250 - INFO -   TPR Unprivileged: 0.9524
+2025-12-03 18:09:06,250 - INFO -   Difference (Priv - Unpriv): 0.0184
+2025-12-03 18:09:06,250 - INFO - -----------------------------------
+2025-12-03 18:09:06,253 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:09:06,253 - INFO - Percentage: -1.828946415116207
+2025-12-03 18:09:06,253 - INFO - Equal Opportunity for years_employed_top20:
+2025-12-03 18:09:06,253 - INFO -   TPR Privileged: 0.9774
+2025-12-03 18:09:06,253 - INFO -   TPR Unprivileged: 0.9497
+2025-12-03 18:09:06,253 - INFO -   Difference (Priv - Unpriv): 0.0276
+2025-12-03 18:09:06,253 - INFO - -----------------------------------
+2025-12-03 18:09:06,257 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:09:06,257 - INFO - Percentage: 0.7554207582005859
+2025-12-03 18:09:06,257 - INFO - Equal Opportunity for student:
+2025-12-03 18:09:06,257 - INFO -   TPR Privileged: 0.9589
+2025-12-03 18:09:06,257 - INFO -   TPR Unprivileged: 0.9566
+2025-12-03 18:09:06,257 - INFO -   Difference (Priv - Unpriv): 0.0023
+2025-12-03 18:09:06,257 - INFO - -----------------------------------
+2025-12-03 18:10:02,165 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-03 18:10:02,212 - INFO - Data loaded from /Users/luca/Uni/Msc/helsinki/trustworthy_ml/project3/fairness_project/data/Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-03 18:10:02,264 - INFO - Model need to be trained and saved.
+2025-12-03 18:10:02,264 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:10:02,264 - INFO - Lambda Coefficient: 10
+2025-12-03 18:10:02,628 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:10:05,153 - INFO - Epoch [5/10], Loss: 0.4985
+2025-12-03 18:10:07,778 - INFO - Epoch [10/10], Loss: 0.4757
+2025-12-03 18:10:07,783 - INFO - Accuracy on test set using NN: 80.46%
+2025-12-03 18:10:07,784 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-03 18:10:07,788 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:10:07,788 - INFO - Percentage: 0.37161183221595584
+2025-12-03 18:10:07,788 - INFO - Equal Opportunity for age>40:
+2025-12-03 18:10:07,788 - INFO -   TPR Privileged: 0.9989
+2025-12-03 18:10:07,788 - INFO -   TPR Unprivileged: 0.9927
+2025-12-03 18:10:07,788 - INFO -   Difference (Priv - Unpriv): 0.0063
+2025-12-03 18:10:07,788 - INFO - -----------------------------------
+2025-12-03 18:10:07,791 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:10:07,791 - INFO - Percentage: 0.36950706916316545
+2025-12-03 18:10:07,791 - INFO - Equal Opportunity for income_top20:
+2025-12-03 18:10:07,791 - INFO -   TPR Privileged: 1.0000
+2025-12-03 18:10:07,791 - INFO -   TPR Unprivileged: 0.9937
+2025-12-03 18:10:07,791 - INFO -   Difference (Priv - Unpriv): 0.0063
+2025-12-03 18:10:07,791 - INFO - -----------------------------------
+2025-12-03 18:10:07,794 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:10:07,794 - INFO - Percentage: 0.4302607444959019
+2025-12-03 18:10:07,794 - INFO - Equal Opportunity for years_employed_top20:
+2025-12-03 18:10:07,794 - INFO -   TPR Privileged: 0.9994
+2025-12-03 18:10:07,794 - INFO -   TPR Unprivileged: 0.9937
+2025-12-03 18:10:07,794 - INFO -   Difference (Priv - Unpriv): 0.0057
+2025-12-03 18:10:07,794 - INFO - -----------------------------------
+2025-12-03 18:10:07,797 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:10:07,797 - INFO - Percentage: 1.119317202903968
+2025-12-03 18:10:07,797 - INFO - Equal Opportunity for student:
+2025-12-03 18:10:07,797 - INFO -   TPR Privileged: 0.9941
+2025-12-03 18:10:07,797 - INFO -   TPR Unprivileged: 0.9953
+2025-12-03 18:10:07,797 - INFO -   Difference (Priv - Unpriv): -0.0012
+2025-12-03 18:10:07,797 - INFO - -----------------------------------
+2025-12-03 18:12:59,528 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-03 18:12:59,576 - INFO - Data loaded from /Users/luca/Uni/Msc/helsinki/trustworthy_ml/project3/fairness_project/data/Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-03 18:12:59,625 - INFO - Model need to be trained and saved.
+2025-12-03 18:12:59,625 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:12:59,625 - INFO - Lambda Coefficient: 10
+2025-12-03 18:12:59,995 - INFO - Training with Fairness Constraint on: age>40
+2025-12-03 18:13:02,474 - INFO - Epoch [5/20], Loss: 0.4985
+2025-12-03 18:13:04,835 - INFO - Epoch [10/20], Loss: 0.4757
+2025-12-03 18:13:07,157 - INFO - Epoch [15/20], Loss: 0.4622
+2025-12-03 18:13:09,494 - INFO - Epoch [20/20], Loss: 0.4524
+2025-12-03 18:13:09,498 - INFO - Accuracy on test set using NN: 81.79%
+2025-12-03 18:13:09,499 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-03 18:13:09,503 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:13:09,503 - INFO - Percentage: 0.29803956284363187
+2025-12-03 18:13:09,503 - INFO - Equal Opportunity for age>40:
+2025-12-03 18:13:09,503 - INFO -   TPR Privileged: 0.9989
+2025-12-03 18:13:09,503 - INFO -   TPR Unprivileged: 0.9919
+2025-12-03 18:13:09,503 - INFO -   Difference (Priv - Unpriv): 0.0070
+2025-12-03 18:13:09,503 - INFO - -----------------------------------
+2025-12-03 18:13:09,506 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:13:09,506 - INFO - Percentage: 0.4712654578383648
+2025-12-03 18:13:09,506 - INFO - Equal Opportunity for income_top20:
+2025-12-03 18:13:09,506 - INFO -   TPR Privileged: 0.9988
+2025-12-03 18:13:09,506 - INFO -   TPR Unprivileged: 0.9935
+2025-12-03 18:13:09,506 - INFO -   Difference (Priv - Unpriv): 0.0053
+2025-12-03 18:13:09,506 - INFO - -----------------------------------
+2025-12-03 18:13:09,508 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:13:09,508 - INFO - Percentage: 0.3715420865759258
+2025-12-03 18:13:09,508 - INFO - Equal Opportunity for years_employed_top20:
+2025-12-03 18:13:09,508 - INFO -   TPR Privileged: 0.9994
+2025-12-03 18:13:09,508 - INFO -   TPR Unprivileged: 0.9932
+2025-12-03 18:13:09,508 - INFO -   Difference (Priv - Unpriv): 0.0063
+2025-12-03 18:13:09,509 - INFO - -----------------------------------
+2025-12-03 18:13:09,511 - INFO - Neural Network Equal Opportunity Results:
+2025-12-03 18:13:09,511 - INFO - Percentage: 1.234697141070428
+2025-12-03 18:13:09,511 - INFO - Equal Opportunity for student:
+2025-12-03 18:13:09,511 - INFO -   TPR Privileged: 0.9927
+2025-12-03 18:13:09,511 - INFO -   TPR Unprivileged: 0.9950
+2025-12-03 18:13:09,511 - INFO -   Difference (Priv - Unpriv): -0.0023
+2025-12-03 18:13:09,511 - INFO - -----------------------------------

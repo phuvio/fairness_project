@@ -1,0 +1,23 @@
+2025-12-04 13:40:24,793 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-04 13:40:24,797 - INFO - Filtered data for age > 25, new shape: (38594, 19)
+2025-12-04 13:40:24,858 - INFO - Training Neural Network...
+2025-12-04 13:40:34,489 - INFO - NN Epoch [10/10], Loss: 0.0958
+2025-12-04 13:40:34,502 - INFO - Neural Network Accuracy: 90.61%
+2025-12-04 13:40:34,509 - INFO - NN model saved to saved_model_nn.pth
+2025-12-04 13:40:34,509 - INFO - Training Random Forest...
+2025-12-04 13:40:38,641 - INFO - Random Forest Accuracy: 91.79%
+2025-12-04 13:40:38,667 - INFO - RF model saved to saved_model_rf.pkl
+2025-12-04 13:40:38,667 - INFO - \nFairness Evaluation Results (Age Threshold > 25):\n
+2025-12-04 13:40:38,678 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 13:40:38,678 - INFO - Equal Opportunity for age>threshold:
+2025-12-04 13:40:38,678 - INFO -   TPR Privileged: 0.9451
+2025-12-04 13:40:38,678 - INFO -   TPR Unprivileged: 0.0000
+2025-12-04 13:40:38,678 - INFO -   Difference (Priv - Unpriv): 0.9451
+2025-12-04 13:40:38,678 - INFO - -----------------------------------
+2025-12-04 13:40:38,684 - INFO - Random Forest Equal Opportunity Results:
+2025-12-04 13:40:38,684 - INFO - Equal Opportunity for age>threshold:
+2025-12-04 13:40:38,684 - INFO -   TPR Privileged: 0.9441
+2025-12-04 13:40:38,684 - INFO -   TPR Unprivileged: 0.0000
+2025-12-04 13:40:38,684 - INFO -   Difference (Priv - Unpriv): 0.9441
+2025-12-04 13:40:38,684 - INFO - -----------------------------------
+2025-12-04 13:40:38,684 - INFO - Training complete.

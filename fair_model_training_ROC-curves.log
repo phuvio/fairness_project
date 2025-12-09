@@ -1,0 +1,25 @@
+2025-12-09 09:42:46,761 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-09 09:42:46,825 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-09 09:42:46,899 - INFO - Training with Fairness Constraint on: age>25
+2025-12-09 09:42:47,755 - INFO - Training with Fairness Constraint on: age>25
+2025-12-09 09:42:55,553 - INFO - Epoch [5/30], Loss: 0.3271
+2025-12-09 09:43:03,231 - INFO - Epoch [10/30], Loss: 0.3168
+2025-12-09 09:43:10,838 - INFO - Epoch [15/30], Loss: 0.3130
+2025-12-09 09:43:18,448 - INFO - Epoch [20/30], Loss: 0.3060
+2025-12-09 09:43:25,974 - INFO - Epoch [25/30], Loss: 0.3075
+2025-12-09 09:43:33,676 - INFO - Epoch [30/30], Loss: 0.2954
+2025-12-09 09:43:33,696 - INFO - Accuracy on test set using NN: 89.86%
+2025-12-09 09:43:33,696 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-09 09:43:33,706 - INFO - Neural Network Equal Opportunity Results:
+2025-12-09 09:43:33,706 - INFO - Percentage: -0.20717194786577053
+2025-12-09 09:43:33,706 - INFO - Equal Opportunity for age>25:
+2025-12-09 09:43:33,706 - INFO -   TPR Privileged: 0.9513
+2025-12-09 09:43:33,706 - INFO -   TPR Unprivileged: 0.9398
+2025-12-09 09:43:33,706 - INFO -   Difference (Priv - Unpriv): 0.0115
+2025-12-09 09:43:33,706 - INFO - -----------------------------------
+2025-12-09 09:43:33,935 - INFO - Saved ROC plot to D:\fairness_project\images\roc_by_group_nn.png

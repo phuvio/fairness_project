@@ -79,15 +79,14 @@ Equal Opportunity for years_employed_top20:
     - target value
   - fairness issue
 
-  ## Report 2
+## Final values
 
-  - explain the research problem and data
-  - why we had age>40? as target variable
-  - new loss function - explain how and why
-  - no random forest
-  - results - figure accuracy vs fairness with different grid search values for lambda and epoch
-
-  ## Final report
-
-  5 pages
-  - conlusions
+- priviledged feature: age>25
+- lambda: 0.5
+- epochs: 30
+- Neural Network Equal Opportunity Results:
+  - Percentage: 0.3298610688068795
+  - Equal Opportunity for age>25:
+  - TPR Privileged: 0.9473
+  - TPR Unprivileged: 0.9410
+  - Difference (Priv - Unpriv): 0.0063

@@ -1,0 +1,59 @@
+2025-12-04 16:19:26,103 - INFO - 
+
+Fair Model Training Script Started:
+
+2025-12-04 16:19:26,171 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-04 16:19:26,245 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:19:26,245 - INFO - Number of epochs: 10
+2025-12-04 16:19:27,104 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:19:34,771 - INFO - Epoch [5/10], Loss: 0.3271
+2025-12-04 16:19:42,310 - INFO - Epoch [10/10], Loss: 0.3168
+2025-12-04 16:19:42,324 - INFO - Accuracy on test set using NN: 89.60%
+2025-12-04 16:19:42,324 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:19:42,335 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:19:42,335 - INFO - Percentage: 1.1262706965626137
+2025-12-04 16:19:42,335 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:19:42,335 - INFO -   TPR Privileged: 0.9443
+2025-12-04 16:19:42,335 - INFO -   TPR Unprivileged: 0.9455
+2025-12-04 16:19:42,335 - INFO -   Difference (Priv - Unpriv): -0.0012
+2025-12-04 16:19:42,335 - INFO - -----------------------------------
+2025-12-04 16:19:42,335 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:19:42,335 - INFO - Number of epochs: 20
+2025-12-04 16:19:42,336 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:19:49,844 - INFO - Epoch [5/20], Loss: 0.3267
+2025-12-04 16:19:57,425 - INFO - Epoch [10/20], Loss: 0.3215
+2025-12-04 16:20:05,164 - INFO - Epoch [15/20], Loss: 0.3077
+2025-12-04 16:20:12,785 - INFO - Epoch [20/20], Loss: 0.3042
+2025-12-04 16:20:12,804 - INFO - Accuracy on test set using NN: 90.14%
+2025-12-04 16:20:12,804 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:20:12,811 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:20:12,811 - INFO - Percentage: -1.397517362135082
+2025-12-04 16:20:12,811 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:20:12,811 - INFO -   TPR Privileged: 0.9432
+2025-12-04 16:20:12,811 - INFO -   TPR Unprivileged: 0.9205
+2025-12-04 16:20:12,811 - INFO -   Difference (Priv - Unpriv): 0.0226
+2025-12-04 16:20:12,811 - INFO - -----------------------------------
+2025-12-04 16:20:12,811 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:20:12,811 - INFO - Number of epochs: 30
+2025-12-04 16:20:12,812 - INFO - Training with Fairness Constraint on: age>25
+2025-12-04 16:20:20,354 - INFO - Epoch [5/30], Loss: 0.3323
+2025-12-04 16:20:28,097 - INFO - Epoch [10/30], Loss: 0.3155
+2025-12-04 16:20:35,657 - INFO - Epoch [15/30], Loss: 0.3109
+2025-12-04 16:20:43,435 - INFO - Epoch [20/30], Loss: 0.3057
+2025-12-04 16:20:51,022 - INFO - Epoch [25/30], Loss: 0.3030
+2025-12-04 16:20:58,790 - INFO - Epoch [30/30], Loss: 0.3002
+2025-12-04 16:20:58,804 - INFO - Accuracy on test set using NN: 90.13%
+2025-12-04 16:20:58,804 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 16:20:58,811 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 16:20:58,811 - INFO - Percentage: 0.3298610688068795
+2025-12-04 16:20:58,811 - INFO - Equal Opportunity for age>25:
+2025-12-04 16:20:58,812 - INFO -   TPR Privileged: 0.9473
+2025-12-04 16:20:58,812 - INFO -   TPR Unprivileged: 0.9410
+2025-12-04 16:20:58,812 - INFO -   Difference (Priv - Unpriv): 0.0063
+2025-12-04 16:20:58,812 - INFO - -----------------------------------

@@ -1,0 +1,31 @@
+2025-12-04 13:47:44,286 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-04 13:47:44,376 - INFO - Models need to be trained and saved.
+2025-12-04 13:47:56,515 - INFO - Epoch [10/10], Loss: 0.2810
+2025-12-04 13:47:56,541 - INFO - Accuracy on test set using NN: 90.69%
+2025-12-04 13:48:01,931 - INFO - Accuracy on test set using Random Forest: 91.26%
+2025-12-04 13:48:01,931 - INFO - 
+Fairness Evaluation Results:
+
+2025-12-04 13:48:47,438 - INFO - Data loaded from D:\fairness_project\data\Loan_approval_data_2025.csv, shape: (50000, 19)
+2025-12-04 13:48:47,515 - INFO - Models need to be trained and saved.
+2025-12-04 13:48:59,348 - INFO - Epoch [10/10], Loss: 0.2810
+2025-12-04 13:48:59,371 - INFO - Accuracy on test set using NN: 90.69%
+2025-12-04 13:49:04,583 - INFO - Accuracy on test set using Random Forest: 91.26%
+2025-12-04 13:49:04,583 - INFO - 
+ Fairness Evaluation Results: 
+
+2025-12-04 13:49:04,583 - INFO - Threshold Age: 25
+2025-12-04 13:49:04,589 - INFO - Neural Network Equal Opportunity Results:
+2025-12-04 13:49:04,589 - INFO - Percentage: -9.713515102871495
+2025-12-04 13:49:04,589 - INFO - Equal Opportunity for age>25:
+2025-12-04 13:49:04,589 - INFO -   TPR Privileged: 0.9357
+2025-12-04 13:49:04,590 - INFO -   TPR Unprivileged: 0.8354
+2025-12-04 13:49:04,590 - INFO -   Difference (Priv - Unpriv): 0.1002
+2025-12-04 13:49:04,590 - INFO - -----------------------------------
+2025-12-04 13:49:04,595 - INFO - Random Forest Equal Opportunity Results:
+2025-12-04 13:49:04,595 - INFO - Percentage: -12.813861965463946
+2025-12-04 13:49:04,595 - INFO - Equal Opportunity for age>25:
+2025-12-04 13:49:04,595 - INFO -   TPR Privileged: 0.9417
+2025-12-04 13:49:04,595 - INFO -   TPR Unprivileged: 0.8116
+2025-12-04 13:49:04,595 - INFO -   Difference (Priv - Unpriv): 0.1301
+2025-12-04 13:49:04,595 - INFO - -----------------------------------
