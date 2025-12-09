@@ -1,0 +1,6 @@
+# LaTeX auxiliary files in report folder
+report/*.aux
+report/*.log
+report/*.bcf
+report/*.out
+report/*.xml
