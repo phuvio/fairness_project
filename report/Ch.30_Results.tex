@@ -1,2 +1,40 @@
 \chapter{Results\label{results}}
 
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/fairness_accuracy_tradeoff_epochs.png}
+    \caption{Fairness-Accuracy Tradeoff over Epochs}
+    \label{fig:fairness_accuracy_tradeoff_epochs}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/fairness_accuracy_tradeoff_lambda.png}
+    \caption{Fairness-Accuracy Tradeoff over Lambda}
+    \label{fig:fairness_accuracy_tradeoff_lambda}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/roc_by_group_nn.png}
+    \caption{ROC by Group for Neural Network}
+    \label{fig:roc_by_group_nn}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+        & Unfair & Fair & Best $\lambda = 0.5$ & Increased Epochs \\
+         Accuracy & $90.69\%$ & $90.42\%$& $90.24\%$ & $90.13\%$ \\
+         Fairness ($\delta$) & \textcolor{red}{-} & $11.2\%$ & $1.2\%$ & $0.3\%$ \\
+    \end{tabular}
+    \caption{Neural Network Results Summary}
+    \label{fig:nn_results_summary}
+\end{figure}

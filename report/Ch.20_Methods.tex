@@ -14,3 +14,42 @@ How we trained it and what results.
 
 \section{Equal Opportunity}
 As a Fairness Metric, we chose Equal Opportunity because..
+
+
+\subsection{Chosen Subsets}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/fairness_results.png}
+    \caption{Fairness Results}
+    \label{fig:fairness_results}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/age_threshold_distribution.png}
+    \caption{Age Threshold Distribution}
+    \label{fig:age_threshold_distribution}
+\end{figure}
+
+\subsection{Implementation}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{lstlisting}
+    def EO_loss_fn(actual_loss, y_pred_probs, sensitive_attr, labels, lambda_coef=0.1, epsilon=1e-7):
+        pos_mask = (labels == 1).squeeze()
+
+        y_pred_pos = y_pred_probs[pos_mask]
+        sens_attr_pos = sensitive_attr[pos_mask]
+        
+        priv_mask = (sens_attr_pos == 1)
+        tpr_priv = (y_pred_pos[priv_mask].sum()) / (priv_mask.sum() + epsilon)
+        unpriv_mask = (sens_attr_pos == 0)
+        tpr_unpriv = (y_pred_pos[unpriv_mask].sum()) / (unpriv_mask.sum() + epsilon)
+        eo_penalty = torch.abs(tpr_priv - tpr_unpriv)
+
+        return actual_loss + (eo_penalty * lambda_coef)
+    \end{lstlisting}
+    \caption{Equal Opportunity Loss Function Implementation}
+    \label{fig:eo_loss}
+\end{figure}

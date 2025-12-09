@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{patel2025loan}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6750d9d40665cc45eb6bd2881f2f126}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Parth},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \strng{fullhash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \strng{bibnamehash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \strng{authorbibnamehash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \strng{authornamehash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \strng{authorfullhash}{d6750d9d40665cc45eb6bd2881f2f126}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada}}
+      \field{note}{Accessed: 2025-12-09}
+      \field{title}{Realistic Loan Approval Dataset (US and Canada)}
+      \field{year}{2025}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

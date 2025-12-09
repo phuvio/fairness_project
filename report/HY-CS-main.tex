@@ -88,6 +88,15 @@
 \usetikzlibrary{calc}
 %\usepackage{wrapfig}        % For nice text-wrapping figures (use at own discretion)
 \usepackage{amsmath, amssymb} % For better math
+\usepackage{listings}        % For including source code listings
+\lstset{
+    basicstyle=\ttfamily\small, % Smaller font
+    breaklines=true,            % WRAP LINES AUTOMATICALLY
+    breakatwhitespace=true,     % Break at spaces, not in middle of words
+    frame=single,               % Optional: adds a frame around code
+    columns=fullflexible,       % Helps copy-pasting from PDF
+    keepspaces=true
+}
 
 
 
@@ -163,6 +172,23 @@
 }
 
 %%-----------------------------------------------------------------------------------
+
+% --- Add this block to HY-CS-main.tex before \begin{document} ---
+
+% We use \newcommand (or \renewcommand) to define these variables directly
+% so the title page can read them without crashing.
+
+\makeatletter
+\providecommand{\level}{Master's Thesis}       % Defines \level
+\providecommand{\programme}{Master's Programme in Computer Science} % Defines \programme
+\providecommand{\department}{Department of Computer Science} % Defines \department
+\providecommand{\university}{University of Helsinki}
+\makeatother
+
+% ----------------------------------------------------------------
+
+
+
 
 \begin{document}
 
