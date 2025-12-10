@@ -16,7 +16,7 @@ For Random Forest we used the implementation from scikit-learn and for the Neura
 We were not sure which threshold to choose for age, so we decided to run a grid search over possible thresholds. 
 For this, we trained a Neural Network for each threshold and evaluated the fairness of the model using Equal Opportunity metric, which will be explained in the next section.
 The results of this grid search can be seen in Figure~\ref{fig:fairness_results}. 
-In the figure, on the left you can see the True Positive Rates difference for both groups over all thresholds and on the right accuracies of Neural Network with the same threshold.  
+In the figure, on the left you can see the True Positive Rates difference for unpriviledged group over all thresholds and on the right accuracies of Neural Network with the same threshold.  
 It is visible that there is a strong bias in the data for younger applicants. Now we had several options for the threshold. 
 We wanted to choose a threshold that shows a high unfairness while still having a decent amount of samples in both groups. So we checked the distribution of samples over thresholds from 19 to 30.
 This distribution can be seen in Figure~\ref{fig:age_threshold_distribution}.
