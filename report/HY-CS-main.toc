@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {2.4}Unfairness Mitigation}{5}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Equal Opportunity Loss Function}{5}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Results}{7}{chapter.3}%
-\contentsline {chapter}{Bibliography}{10}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{11}{chapter*.7}%
 \contentsfinish 
