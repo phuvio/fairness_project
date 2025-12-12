@@ -11,10 +11,10 @@ Applicants older than the threshold were assigned to the privileged group, while
 
 \section{Base Model Training}
 We then trained two base models using selected threshold. We decided to use a Random Forest classifier and a Neural Network.
-For Random Forest we used the implementation from scikit-learn and for the Neural Network we used PyTorch.
+For Random Forest we used the implementation from scikit-learn~\citep{scikit-learn} and for the Neural Network we used PyTorch~\citep{pytorch}.
 
 We were not sure which threshold to choose for age, so we decided to run a grid search over possible thresholds. 
-For this, we trained a Neural Network for each threshold and evaluated the fairness of the model using Equal Opportunity metric, which will be explained in the next section.
+For this, we trained a Neural Network for each threshold and evaluated the fairness of the model using Equal Opportunity metric from \citet{eo}, which will be explained in the next section.
 The results of this grid search can be seen in Figure~\ref{fig:fairness_results}. 
 In the figure, on the left you can see the True Positive Rates difference for unpriviledged group over all thresholds and on the right accuracies of Neural Network with the same threshold.  
 It is visible that there is a strong bias in the data for younger applicants. Now we had several options for the threshold. 
@@ -51,7 +51,7 @@ The accuracy of the trained Neural Network on the test set was 90.42 \%.
 True Positive Rate for the priviledged group was 93.98 \% and 82.52 \% for the unpriviledged group. The difference was 11.46 \%.
 
 \section{Equal Opportunity}
-As a Fairness Metric, we chose Equal Opportunity because it seemed to be the best choice in our case. It shows if all applicants have the same opportunity to recieve a loan. 
+As a Fairness Metric, we chose Equal Opportunity~\citep{eo} because it seemed to be the best choice in our case. It shows if all applicants have the same opportunity to recieve a loan. 
 It is defined by calculating True Positive Rates (TPR). TPR is the fraction of positive cases which were correctly predicted out of all the ground truths. 
 It is usually referred to as sensitivity or recall, and it represents the probability of the positive subjects to be classified correctly as such. 
 It is given by the formula: $TPR = P(prediction = 1 | actual = 1) = \frac{TP}{TP + FN}$. 
@@ -67,12 +67,12 @@ to $\delta = (1 - \frac{TPR_{unpriviledged}}{TPR_{priviledged}}) * 100 $ for the
 \section{Unfairness Mitigation}
 
 For mitigating the unfairness in our models, we could in principle choose between Preprocessing, Learning with Fairness Constraints, and Postprocessing methods. 
-We decided to go with Learning with Fairness Constraints. It seemed to be the most interesting approach and also a good fit for our Neural Network model.
+We decided to go with Learning with Fairness Constraints from \citet{learning_fairness}. It seemed to be the most interesting approach and also a good fit for our Neural Network model.
 This means we modified the loss function of the Neural Network to include a penalty for unfairness according to the Equal Opportunity metric. 
 The idea behind this was to directly optimize the model for both accuracy and fairness during training and search for a local minimum of both objectives.
 
 \subsection{Equal Opportunity Loss Function}
-To implement our own loss function, which can be seen in Figure~\ref{fig:eo_loss}, we took the Binary Cross Entropy Loss as the actual loss, 
+To implement our own loss function~\citep{learning_fairness}, which can be seen in Figure~\ref{fig:eo_loss}, we took the Binary Cross Entropy Loss as the actual loss, 
 lable prediction probabilities, current sensitive attribute values as well as the labels.
 
 We at first we created a mask for positive labels, with what we filtered the predicted probabilities and sensitive attribute values 
